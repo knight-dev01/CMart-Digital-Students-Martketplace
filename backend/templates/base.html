@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}TUMart | Student Marketplace{% endblock %}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-900">
+    <nav class="bg-white border-b border-gray-100 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center gap-8">
+                    <a href="/" class="text-xl font-black tracking-tighter text-gray-900 uppercase">TU<span
+                            class="text-indigo-600">Mart</span></a>
+                    <div class="hidden md:flex items-center space-x-6">
+                        <a href="/shops/"
+                            class="text-[10px] font-bold text-gray-400 hover:text-indigo-600 uppercase tracking-[0.2em] transition-colors">Student
+                            Shops</a>
+                        <a href="/products/"
+                            class="text-[10px] font-bold text-gray-400 hover:text-indigo-600 uppercase tracking-[0.2em] transition-colors">Marketplace</a>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="/admin/"
+                        class="text-[10px] font-bold text-gray-500 hover:text-indigo-600 uppercase tracking-[0.2em]">Admin
+                        Portal</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    {% block content %}
+    {% endblock %}
+
+    <footer class="bg-white border-t border-gray-100 py-12 mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-gray-400 text-sm font-medium">© 2026 TUMart. Built for students, by students.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

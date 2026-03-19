@@ -1,0 +1,2328 @@
+INFO 2026-03-07 23:33:08,825 autoreload 7936 3108 Watching for file changes with StatReloader
+INFO 2026-03-07 23:42:38,051 autoreload 16412 16972 Watching for file changes with StatReloader
+INFO 2026-03-07 23:52:55,402 autoreload 13276 13164 Watching for file changes with StatReloader
+WARNING 2026-03-08 00:02:50,644 log 7936 1844 Not Found: /
+WARNING 2026-03-08 00:02:50,963 log 7936 1844 "GET / HTTP/1.1" 404 3089
+WARNING 2026-03-08 00:02:52,587 log 7936 1844 Not Found: /
+WARNING 2026-03-08 00:02:52,694 log 7936 1844 "GET / HTTP/1.1" 404 3089
+WARNING 2026-03-08 00:02:56,535 log 7936 1844 Not Found: /favicon.ico
+WARNING 2026-03-08 00:02:56,850 log 7936 1844 "GET /favicon.ico HTTP/1.1" 404 3140
+INFO 2026-03-08 00:05:29,176 autoreload 16412 16972 C:\Users\Adegoke\Desktop\TU Marketplace\backend\core\settings.py changed, reloading.
+INFO 2026-03-08 00:05:29,609 autoreload 13276 13164 C:\Users\Adegoke\Desktop\TU Marketplace\backend\core\settings.py changed, reloading.
+INFO 2026-03-08 00:05:29,624 autoreload 7936 3108 C:\Users\Adegoke\Desktop\TU Marketplace\backend\core\settings.py changed, reloading.
+INFO 2026-03-08 00:05:54,043 autoreload 14032 12892 Watching for file changes with StatReloader
+INFO 2026-03-08 00:05:54,394 autoreload 17268 3884 Watching for file changes with StatReloader
+INFO 2026-03-08 00:05:54,413 autoreload 4996 9592 Watching for file changes with StatReloader
+ERROR 2026-03-08 00:06:31,192 log 4996 12180 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\base.py", line 174, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\base.py", line 166, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\base.py", line 1091, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\base.py", line 1052, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\loader_tags.py", line 135, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\loader_tags.py", line 132, in get_parent
+    return self.find_template(parent, context)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\loader_tags.py", line 110, in find_template
+    template, origin = context.template.engine.find_template(
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        template_name,
+        ^^^^^^^^^^^^^^
+        skip=history,
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 221, in _get_response
+    response = response.render()
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\backends\django.py", line 109, in render
+    reraise(exc, self.backend)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\backends\django.py", line 130, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+ERROR 2026-03-08 00:06:31,270 log 4996 12180 "GET / HTTP/1.1" 500 128833
+INFO 2026-03-08 00:08:23,365 autoreload 16116 14440 Watching for file changes with StatReloader
+ERROR 2026-03-08 00:09:17,051 log 4996 12180 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\base.py", line 174, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\base.py", line 166, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\base.py", line 1091, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\base.py", line 1052, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\loader_tags.py", line 135, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\loader_tags.py", line 132, in get_parent
+    return self.find_template(parent, context)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\loader_tags.py", line 110, in find_template
+    template, origin = context.template.engine.find_template(
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        template_name,
+        ^^^^^^^^^^^^^^
+        skip=history,
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 221, in _get_response
+    response = response.render()
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\backends\django.py", line 109, in render
+    reraise(exc, self.backend)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\backends\django.py", line 130, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+ERROR 2026-03-08 00:09:17,198 log 4996 12180 "GET / HTTP/1.1" 500 128833
+WARNING 2026-03-08 00:10:55,210 log 17268 9844 Not Found: /intelligence/briefing
+WARNING 2026-03-08 00:10:55,215 log 17268 9844 "GET /intelligence/briefing?role=EXPERT HTTP/1.1" 404 3338
+WARNING 2026-03-08 00:11:16,910 log 17268 6420 Not Found: /intelligence/briefing
+WARNING 2026-03-08 00:11:16,914 log 17268 6420 "GET /intelligence/briefing?role=EXPERT HTTP/1.1" 404 3338
+WARNING 2026-03-08 00:25:40,381 log 17268 16880 Not Found: /intelligence/briefing
+WARNING 2026-03-08 00:25:40,387 log 17268 16880 "GET /intelligence/briefing?role=EXPERT HTTP/1.1" 404 3338
+WARNING 2026-03-08 00:25:55,903 log 17268 14512 Not Found: /intelligence/briefing
+WARNING 2026-03-08 00:25:55,905 log 17268 14512 "GET /intelligence/briefing?role=EXPERT HTTP/1.1" 404 3338
+ERROR 2026-03-08 00:26:03,415 log 17268 3656 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\base.py", line 174, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\base.py", line 166, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\base.py", line 1091, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\base.py", line 1052, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\loader_tags.py", line 135, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\loader_tags.py", line 132, in get_parent
+    return self.find_template(parent, context)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\loader_tags.py", line 110, in find_template
+    template, origin = context.template.engine.find_template(
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        template_name,
+        ^^^^^^^^^^^^^^
+        skip=history,
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 221, in _get_response
+    response = response.render()
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\backends\django.py", line 109, in render
+    reraise(exc, self.backend)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\backends\django.py", line 130, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+ERROR 2026-03-08 00:26:03,731 log 17268 3656 "GET / HTTP/1.1" 500 128696
+INFO 2026-03-08 00:30:11,867 log 17268 3656 "GET / HTTP/1.1" 200 3834
+WARNING 2026-03-08 00:30:34,363 log 17268 3656 Not Found: /shops/
+WARNING 2026-03-08 00:30:34,370 log 17268 3656 "GET /shops/ HTTP/1.1" 404 3281
+INFO 2026-03-08 00:30:47,304 log 17268 3656 "GET /admin/ HTTP/1.1" 302 0
+INFO 2026-03-08 00:30:50,746 log 17268 3656 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4085
+INFO 2026-03-08 00:30:53,102 log 17268 14448 "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2026-03-08 00:30:53,133 log 17268 14828 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 3538
+INFO 2026-03-08 00:30:53,309 log 17268 13576 "GET /static/admin/css/responsive.css HTTP/1.1" 200 16273
+INFO 2026-03-08 00:30:53,349 log 17268 15724 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2026-03-08 00:30:53,386 log 17268 3656 "GET /static/admin/css/base.css HTTP/1.1" 200 23100
+INFO 2026-03-08 00:30:54,120 log 17268 2488 "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2026-03-08 00:30:54,170 log 17268 3656 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+WARNING 2026-03-08 00:30:54,851 log 17268 10252 Not Found: /intelligence/briefing
+WARNING 2026-03-08 00:30:54,852 log 17268 10252 "GET /intelligence/briefing?role=EXPERT HTTP/1.1" 404 3338
+WARNING 2026-03-08 00:31:16,863 log 17268 3656 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-03-08 00:31:16,911 log 17268 3656 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 3407
+WARNING 2026-03-08 00:31:34,254 log 17268 3656 Not Found: /shops/
+WARNING 2026-03-08 00:31:34,256 log 17268 3656 "GET /shops/ HTTP/1.1" 404 3281
+WARNING 2026-03-08 00:31:34,900 log 17268 3656 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-03-08 00:31:34,966 log 17268 3656 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 3407
+WARNING 2026-03-08 00:31:42,340 log 17268 14092 Not Found: /intelligence/briefing
+WARNING 2026-03-08 00:31:42,343 log 17268 14092 "GET /intelligence/briefing?role=EXPERT HTTP/1.1" 404 3338
+WARNING 2026-03-08 00:32:41,821 log 17268 4280 Not Found: /intelligence/briefing
+WARNING 2026-03-08 00:32:41,838 log 17268 4280 "GET /intelligence/briefing?role=EXPERT HTTP/1.1" 404 3338
+INFO 2026-03-08 00:33:09,700 log 17268 3656 "GET /admin/ HTTP/1.1" 302 0
+INFO 2026-03-08 00:33:09,842 log 17268 3656 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4085
+WARNING 2026-03-08 00:33:43,498 log 17268 2856 Not Found: /intelligence/briefing
+WARNING 2026-03-08 00:33:43,550 log 17268 2856 "GET /intelligence/briefing?role=EXPERT HTTP/1.1" 404 3338
+INFO 2026-03-08 00:33:58,038 autoreload 14032 12892 C:\Users\Adegoke\Desktop\TU Marketplace\backend\core\urls.py changed, reloading.
+INFO 2026-03-08 00:33:58,156 autoreload 17268 3884 C:\Users\Adegoke\Desktop\TU Marketplace\backend\core\urls.py changed, reloading.
+INFO 2026-03-08 00:33:58,172 autoreload 16116 14440 C:\Users\Adegoke\Desktop\TU Marketplace\backend\core\urls.py changed, reloading.
+INFO 2026-03-08 00:33:58,239 autoreload 4996 9592 C:\Users\Adegoke\Desktop\TU Marketplace\backend\core\urls.py changed, reloading.
+INFO 2026-03-08 00:35:20,821 autoreload 13144 16740 Watching for file changes with StatReloader
+INFO 2026-03-08 00:35:20,821 autoreload 2480 8104 Watching for file changes with StatReloader
+INFO 2026-03-08 00:35:20,826 autoreload 4176 11808 Watching for file changes with StatReloader
+INFO 2026-03-08 00:35:20,847 autoreload 10848 4452 Watching for file changes with StatReloader
+WARNING 2026-03-08 00:35:43,566 log 2480 2388 Not Found: /intelligence/briefing
+WARNING 2026-03-08 00:35:44,175 log 2480 2388 "GET /intelligence/briefing?role=EXPERT HTTP/1.1" 404 3680
+INFO 2026-03-08 00:35:57,735 log 2480 3888 "GET /admin/ HTTP/1.1" 302 0
+INFO 2026-03-08 00:35:58,454 log 2480 3888 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4085
+WARNING 2026-03-08 00:36:42,184 log 2480 1328 Not Found: /intelligence/briefing
+WARNING 2026-03-08 00:36:42,259 log 2480 1328 "GET /intelligence/briefing?role=EXPERT HTTP/1.1" 404 3680
+INFO 2026-03-08 00:36:46,401 autoreload 13144 16740 C:\Users\Adegoke\Desktop\TU Marketplace\backend\core\urls.py changed, reloading.
+INFO 2026-03-08 00:36:47,467 autoreload 4176 11808 C:\Users\Adegoke\Desktop\TU Marketplace\backend\core\urls.py changed, reloading.
+INFO 2026-03-08 00:36:49,633 autoreload 2480 8104 C:\Users\Adegoke\Desktop\TU Marketplace\backend\core\urls.py changed, reloading.
+
+INFO 2026-03-08 00:36:53,275 log 2480 3888 "GET /admin/ HTTP/1.1" 302 0
+INFO 2026-03-08 00:37:18,234 autoreload 10380 5260 Watching for file changes with StatReloader
+INFO 2026-03-08 00:37:18,236 autoreload 14076 4260 Watching for file changes with StatReloader
+INFO 2026-03-08 00:37:18,239 autoreload 13980 8500 Watching for file changes with StatReloader
+INFO 2026-03-08 00:37:18,243 autoreload 13840 1804 Watching for file changes with StatReloader
+INFO 2026-03-08 00:37:38,071 log 13840 15724 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4085
+WARNING 2026-03-08 00:37:42,666 log 13840 16492 Not Found: /intelligence/briefing
+WARNING 2026-03-08 00:37:42,750 log 13840 16492 "GET /intelligence/briefing?role=EXPERT HTTP/1.1" 404 4072
+WARNING 2026-03-08 00:38:42,843 log 13840 16892 Not Found: /intelligence/briefing
+WARNING 2026-03-08 00:38:43,514 log 13840 16892 "GET /intelligence/briefing?role=EXPERT HTTP/1.1" 404 4072
+WARNING 2026-03-08 00:39:42,218 log 13840 8920 Not Found: /intelligence/briefing
+WARNING 2026-03-08 00:39:42,221 log 13840 8920 "GET /intelligence/briefing?role=EXPERT HTTP/1.1" 404 4072
+WARNING 2026-03-08 00:40:44,773 log 13840 2488 Not Found: /intelligence/briefing
+WARNING 2026-03-08 00:40:45,436 log 13840 2488 "GET /intelligence/briefing?role=EXPERT HTTP/1.1" 404 4072
+INFO 2026-03-08 00:40:58,704 log 13840 15724 "GET /shops/ HTTP/1.1" 200 5167
+INFO 2026-03-08 00:41:02,484 log 13840 15724 "GET /api/vendors/shops/ HTTP/1.1" 200 2
+INFO 2026-03-08 00:41:07,202 log 13840 15724 "GET /admin/ HTTP/1.1" 302 0
+INFO 2026-03-08 00:41:07,277 log 13840 15724 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4085
+INFO 2026-03-08 00:41:31,045 log 13840 15724 "GET /shops/ HTTP/1.1" 200 5167
+INFO 2026-03-08 00:41:33,270 log 13840 15724 "GET /api/vendors/shops/ HTTP/1.1" 200 2
+INFO 2026-03-08 00:41:37,207 log 13840 15724 "GET /products/ HTTP/1.1" 200 4820
+INFO 2026-03-08 00:41:38,561 log 13840 15724 "GET /api/products/ HTTP/1.1" 200 2
+WARNING 2026-03-08 00:41:42,200 log 13840 12152 Not Found: /intelligence/briefing
+WARNING 2026-03-08 00:41:42,202 log 13840 12152 "GET /intelligence/briefing?role=EXPERT HTTP/1.1" 404 4072
+WARNING 2026-03-08 00:42:27,786 log 13840 9356 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-03-08 00:42:27,788 log 13840 9356 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4141
+INFO 2026-03-08 00:42:35,294 log 13840 9356 "GET / HTTP/1.1" 200 6443
+WARNING 2026-03-08 00:42:35,573 log 13840 9356 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-03-08 00:42:35,598 log 13840 9356 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4141
+INFO 2026-03-08 00:42:36,819 log 13840 9356 "GET /api/products/?campus_drops=true HTTP/1.1" 200 2
+INFO 2026-03-08 00:42:37,634 log 13840 9356 "GET /api/notifications/activity/ HTTP/1.1" 200 2
+WARNING 2026-03-08 00:42:41,809 log 13840 17072 Not Found: /intelligence/briefing
+WARNING 2026-03-08 00:42:41,969 log 13840 17072 "GET /intelligence/briefing?role=EXPERT HTTP/1.1" 404 4072
+INFO 2026-03-08 00:42:41,978 log 13840 9356 "GET /shops/ HTTP/1.1" 200 5167
+WARNING 2026-03-08 00:42:42,209 log 13840 10588 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+INFO 2026-03-08 00:42:43,005 log 13840 9356 "GET /api/vendors/shops/ HTTP/1.1" 200 2
+WARNING 2026-03-08 00:42:43,120 log 13840 10588 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4141
+INFO 2026-03-08 00:42:45,489 log 13840 10588 "GET /admin/ HTTP/1.1" 302 0
+INFO 2026-03-08 00:42:45,519 log 13840 10588 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4085
+INFO 2026-03-08 00:42:45,767 log 13840 9356 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+WARNING 2026-03-08 00:42:45,799 log 13840 10588 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+INFO 2026-03-08 00:42:45,800 log 13840 9356 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+WARNING 2026-03-08 00:42:45,933 log 13840 10588 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4141
+INFO 2026-03-08 00:42:45,999 log 13840 9356 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2026-03-08 00:42:46,085 log 13840 9356 "GET /static/admin/css/login.css HTTP/1.1" 304 0
+INFO 2026-03-08 00:42:46,159 log 13840 17340 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2026-03-08 00:42:46,185 log 13840 17076 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2026-03-08 00:42:46,230 log 13840 17076 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+ERROR 2026-03-08 00:43:15,732 log 13840 17076 Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: users_user
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\contrib\admin\sites.py", line 450, in login
+    return LoginView.as_view(**defaults)(request)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\views\decorators\debug.py", line 143, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\contrib\auth\views.py", line 89, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\views\generic\base.py", line 145, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\views\generic\edit.py", line 150, in post
+    if form.is_valid():
+       ~~~~~~~~~~~~~^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\forms\forms.py", line 206, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\forms\forms.py", line 201, in errors
+    self.full_clean()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\forms\forms.py", line 338, in full_clean
+    self._clean_form()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\forms\forms.py", line 354, in _clean_form
+    cleaned_data = self.clean()
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\views\decorators\debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\contrib\auth\forms.py", line 349, in clean
+    self.user_cache = authenticate(
+                      ~~~~~~~~~~~~^
+        self.request, username=username, password=password
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\views\decorators\debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 114, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\contrib\auth\backends.py", line 65, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\contrib\auth\base_user.py", line 37, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\db\models\query.py", line 635, in get
+    num = len(clone)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\db\models\query.py", line 372, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\db\models\query.py", line 2000, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\db\models\query.py", line 95, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1624, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\db\utils.py", line 94, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: users_user
+ERROR 2026-03-08 00:43:15,986 log 13840 17076 "POST /admin/login/?next=/admin/ HTTP/1.1" 500 242953
+WARNING 2026-03-08 00:43:17,090 log 13840 17340 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-03-08 00:43:17,442 log 13840 17340 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4141
+INFO 2026-03-08 00:48:30,559 log 13840 15408 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4085
+INFO 2026-03-08 00:48:45,683 log 13840 15408 "GET / HTTP/1.1" 200 6443
+INFO 2026-03-08 00:48:53,128 log 13840 15408 "GET /api/products/?campus_drops=true HTTP/1.1" 200 2
+INFO 2026-03-08 00:48:53,713 log 13840 8736 "GET /api/notifications/activity/ HTTP/1.1" 200 2
+INFO 2026-03-08 00:49:15,122 log 13840 8736 "GET /products/ HTTP/1.1" 200 4820
+INFO 2026-03-08 00:49:18,794 log 13840 8736 "GET /api/products/ HTTP/1.1" 200 2
+INFO 2026-03-08 00:49:26,313 log 13840 8736 "GET /shops/ HTTP/1.1" 200 5167
+INFO 2026-03-08 00:49:28,685 log 13840 8736 "GET /api/vendors/shops/ HTTP/1.1" 200 2
+INFO 2026-03-08 00:50:28,635 log 13840 8736 "GET / HTTP/1.1" 200 6443
+INFO 2026-03-08 00:50:30,411 log 13840 8736 "GET /api/products/?campus_drops=true HTTP/1.1" 200 2
+INFO 2026-03-08 00:50:30,419 log 13840 15408 "GET /api/notifications/activity/ HTTP/1.1" 200 2
+INFO 2026-03-08 00:57:06,140 autoreload 14076 4260 C:\Users\Adegoke\Desktop\TU Marketplace\backend\payments\views.py changed, reloading.
+INFO 2026-03-08 00:57:06,942 autoreload 13980 8500 C:\Users\Adegoke\Desktop\TU Marketplace\backend\payments\views.py changed, reloading.
+INFO 2026-03-08 00:57:07,429 autoreload 13840 1804 C:\Users\Adegoke\Desktop\TU Marketplace\backend\payments\views.py changed, reloading.
+INFO 2026-03-08 00:57:07,462 autoreload 10380 5260 C:\Users\Adegoke\Desktop\TU Marketplace\backend\payments\views.py changed, reloading.
+INFO 2026-03-08 00:57:18,593 autoreload 7196 5728 Watching for file changes with StatReloader
+INFO 2026-03-08 00:57:18,602 autoreload 13528 2796 Watching for file changes with StatReloader
+INFO 2026-03-08 00:57:18,594 autoreload 340 16816 Watching for file changes with StatReloader
+INFO 2026-03-08 00:57:18,642 autoreload 2100 4164 Watching for file changes with StatReloader
+INFO 2026-03-08 01:15:54,097 autoreload 19300 8304 Watching for file changes with StatReloader
+INFO 2026-03-08 02:13:25,194 autoreload 17228 6840 Watching for file changes with StatReloader
+INFO 2026-03-08 02:14:53,181 log 17228 3700 "GET / HTTP/1.1" 302 0
+INFO 2026-03-08 02:16:10,710 log 17228 3700 "GET / HTTP/1.1" 302 0
+INFO 2026-03-08 02:26:46,419 autoreload 17228 6840 C:\Users\Adegoke\Desktop\TU Marketplace\backend\core\urls.py changed, reloading.
+INFO 2026-03-08 02:26:51,944 autoreload 8844 15448 Watching for file changes with StatReloader
+INFO 2026-03-08 02:43:44,756 log 8844 17596 "GET / HTTP/1.1" 200 2345
+INFO 2026-03-08 02:43:53,321 log 8844 17596 "GET /admin/ HTTP/1.1" 302 0
+INFO 2026-03-08 02:43:57,874 log 8844 17596 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4085
+INFO 2026-03-08 02:43:58,776 log 8844 17596 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2026-03-08 02:43:58,779 log 8844 19272 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2026-03-08 02:43:58,830 log 8844 19272 "GET /static/admin/css/login.css HTTP/1.1" 304 0
+INFO 2026-03-08 02:43:58,834 log 8844 17596 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2026-03-08 02:43:58,902 log 8844 17596 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2026-03-08 02:43:58,902 log 8844 19272 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2026-03-08 02:43:59,820 log 8844 19272 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+ERROR 2026-03-08 02:44:15,824 log 8844 19272 Internal Server Error: /shops/
+Traceback (most recent call last):
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 221, in _get_response
+    response = response.render()
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: shops_list.html
+ERROR 2026-03-08 02:44:15,848 log 8844 19272 "GET /shops/ HTTP/1.1" 500 85162
+ERROR 2026-03-08 02:44:21,270 log 8844 19272 Internal Server Error: /products/
+Traceback (most recent call last):
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 221, in _get_response
+    response = response.render()
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: products_list.html
+ERROR 2026-03-08 02:44:21,429 log 8844 19272 "GET /products/ HTTP/1.1" 500 85237
+INFO 2026-03-10 10:28:35,815 autoreload 3184 2784 Watching for file changes with StatReloader
+INFO 2026-03-10 10:29:11,399 log 3184 17988 "GET / HTTP/1.1" 200 2345
+WARNING 2026-03-10 10:29:13,629 log 3184 17988 Not Found: /favicon.ico
+WARNING 2026-03-10 10:29:13,650 log 3184 17988 "GET /favicon.ico HTTP/1.1" 404 4030
+INFO 2026-03-10 10:29:32,277 log 3184 17988 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4085
+INFO 2026-03-10 10:29:32,588 log 3184 17988 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2026-03-10 10:29:32,629 log 3184 12816 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2026-03-10 10:29:32,640 log 3184 17988 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2026-03-10 10:29:32,644 log 3184 12816 "GET /static/admin/css/login.css HTTP/1.1" 304 0
+INFO 2026-03-10 10:29:32,678 log 3184 17988 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2026-03-10 10:29:32,696 log 3184 12816 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2026-03-10 10:29:32,772 log 3184 12816 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+ERROR 2026-03-10 14:39:53,572 log 3184 15764 Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: users_user
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\contrib\admin\sites.py", line 450, in login
+    return LoginView.as_view(**defaults)(request)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\views\decorators\debug.py", line 143, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\contrib\auth\views.py", line 89, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\views\generic\base.py", line 145, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\views\generic\edit.py", line 150, in post
+    if form.is_valid():
+       ~~~~~~~~~~~~~^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\forms\forms.py", line 206, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\forms\forms.py", line 201, in errors
+    self.full_clean()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\forms\forms.py", line 338, in full_clean
+    self._clean_form()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\forms\forms.py", line 354, in _clean_form
+    cleaned_data = self.clean()
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\views\decorators\debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\contrib\auth\forms.py", line 349, in clean
+    self.user_cache = authenticate(
+                      ~~~~~~~~~~~~^
+        self.request, username=username, password=password
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\views\decorators\debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 114, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\contrib\auth\backends.py", line 65, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\contrib\auth\base_user.py", line 37, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\db\models\query.py", line 635, in get
+    num = len(clone)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\db\models\query.py", line 372, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\db\models\query.py", line 2000, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\db\models\query.py", line 95, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1624, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\db\utils.py", line 94, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: users_user
+ERROR 2026-03-10 14:39:54,125 log 3184 15764 "POST /admin/login/?next=/admin/ HTTP/1.1" 500 242560
+ERROR 2026-03-10 14:52:10,276 log 3184 6244 Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: users_user
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\contrib\admin\sites.py", line 450, in login
+    return LoginView.as_view(**defaults)(request)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\views\decorators\debug.py", line 143, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\contrib\auth\views.py", line 89, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\views\generic\base.py", line 145, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\views\generic\edit.py", line 150, in post
+    if form.is_valid():
+       ~~~~~~~~~~~~~^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\forms\forms.py", line 206, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\forms\forms.py", line 201, in errors
+    self.full_clean()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\forms\forms.py", line 338, in full_clean
+    self._clean_form()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\forms\forms.py", line 354, in _clean_form
+    cleaned_data = self.clean()
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\views\decorators\debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\contrib\auth\forms.py", line 349, in clean
+    self.user_cache = authenticate(
+                      ~~~~~~~~~~~~^
+        self.request, username=username, password=password
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\views\decorators\debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 114, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\contrib\auth\backends.py", line 65, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\contrib\auth\base_user.py", line 37, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\db\models\query.py", line 635, in get
+    num = len(clone)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\db\models\query.py", line 372, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\db\models\query.py", line 2000, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\db\models\query.py", line 95, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1624, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\db\utils.py", line 94, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: users_user
+ERROR 2026-03-10 14:52:10,333 log 3184 6244 "POST /admin/login/?next=/admin/ HTTP/1.1" 500 242560
+INFO 2026-03-10 15:29:10,099 log 3184 15160 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4266
+INFO 2026-03-10 15:33:17,244 log 3184 15160 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4266
+INFO 2026-03-10 15:33:37,857 log 3184 15160 "GET /admin/ HTTP/1.1" 302 0
+INFO 2026-03-10 15:33:38,076 log 3184 15160 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4085
+INFO 2026-03-10 15:34:24,112 log 3184 15160 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4258
+INFO 2026-03-10 15:34:49,883 log 3184 15160 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2026-03-10 15:34:51,057 log 3184 15160 "GET /admin/ HTTP/1.1" 200 5470
+INFO 2026-03-10 15:34:52,312 log 3184 15160 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2026-03-10 15:34:52,818 log 3184 15160 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 593
+INFO 2026-03-10 15:34:52,818 log 3184 428 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 978
+INFO 2026-03-10 15:35:26,880 log 3184 428 "GET /admin/auth/group/add/ HTTP/1.1" 200 15357
+INFO 2026-03-10 15:35:27,861 log 3184 428 "GET /static/admin/css/forms.css HTTP/1.1" 200 8831
+INFO 2026-03-10 15:35:27,959 log 3184 15160 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-03-10 15:35:29,565 log 3184 19028 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2026-03-10 15:35:29,891 log 3184 19028 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11811
+INFO 2026-03-10 15:35:31,122 log 3184 428 "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4530
+INFO 2026-03-10 15:35:31,254 log 3184 19028 "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 16428
+INFO 2026-03-10 15:35:32,328 log 3184 428 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2026-03-10 15:35:32,386 log 3184 6884 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2026-03-10 15:35:32,390 log 3184 15160 "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2026-03-10 15:35:32,446 log 3184 19028 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2026-03-10 15:35:32,531 log 3184 6884 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2026-03-10 15:35:32,774 log 3184 15320 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2026-03-10 15:35:33,979 log 3184 15828 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2026-03-10 15:35:34,111 log 3184 15828 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2026-03-10 15:35:34,170 log 3184 428 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2026-03-10 15:35:35,012 log 3184 428 "GET /static/admin/img/search.svg HTTP/1.1" 200 607
+INFO 2026-03-10 15:35:35,090 log 3184 15828 "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 2387
+INFO 2026-03-10 15:36:11,745 log 3184 15828 "GET /admin/auth/ HTTP/1.1" 200 5490
+INFO 2026-03-10 15:38:25,575 log 3184 4816 "OPTIONS /api/users/login/ HTTP/1.1" 200 0
+WARNING 2026-03-10 15:38:25,759 log 3184 4816 Not Found: /api/users/login/
+WARNING 2026-03-10 15:38:25,766 log 3184 4816 "POST /api/users/login/ HTTP/1.1" 404 4046
+INFO 2026-03-10 15:39:10,617 log 3184 4816 "OPTIONS /api/users/register/ HTTP/1.1" 200 0
+WARNING 2026-03-10 15:39:10,678 log 3184 4816 Not Found: /api/users/register/
+WARNING 2026-03-10 15:39:10,681 log 3184 4816 "POST /api/users/register/ HTTP/1.1" 404 4055
+INFO 2026-03-10 15:53:24,589 log 3184 4452 "GET /admin/ HTTP/1.1" 200 5470
+INFO 2026-03-10 15:53:34,442 log 3184 4452 "GET / HTTP/1.1" 200 2343
+INFO 2026-03-10 15:53:56,804 log 3184 4452 "GET /admin/ HTTP/1.1" 200 5470
+INFO 2026-03-10 15:53:59,984 log 3184 4452 "GET / HTTP/1.1" 200 2343
+ERROR 2026-03-10 15:54:02,918 log 3184 4452 Internal Server Error: /shops/
+Traceback (most recent call last):
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 221, in _get_response
+    response = response.render()
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: shops_list.html
+ERROR 2026-03-10 15:54:03,080 log 3184 4452 "GET /shops/ HTTP/1.1" 500 85434
+ERROR 2026-03-10 15:54:10,900 log 3184 4452 Internal Server Error: /products/
+Traceback (most recent call last):
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 221, in _get_response
+    response = response.render()
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: products_list.html
+ERROR 2026-03-10 15:54:10,933 log 3184 4452 "GET /products/ HTTP/1.1" 500 85509
+INFO 2026-03-10 16:17:45,812 log 3184 9208 "GET /admin/ HTTP/1.1" 200 5470
+INFO 2026-03-10 16:17:53,119 log 3184 9208 "GET / HTTP/1.1" 200 2343
+INFO 2026-03-10 16:18:39,791 log 3184 9992 "OPTIONS /api/auth/register/ HTTP/1.1" 200 0
+INFO 2026-03-10 16:18:46,410 log 3184 9992 "POST /api/auth/register/ HTTP/1.1" 201 577
+INFO 2026-03-10 16:19:30,102 log 3184 9992 "OPTIONS /api/auth/profile/ HTTP/1.1" 200 0
+INFO 2026-03-10 16:19:31,118 log 3184 9992 "GET /api/auth/profile/ HTTP/1.1" 200 80
+INFO 2026-03-10 16:21:42,491 log 3184 9992 "GET /api/auth/profile/ HTTP/1.1" 200 80
+INFO 2026-03-10 16:22:02,781 log 3184 9992 "GET /api/auth/profile/ HTTP/1.1" 200 80
+INFO 2026-03-10 16:27:09,635 autoreload 3184 2784 C:\Users\Adegoke\Desktop\TU Marketplace\backend\vendors\admin.py changed, reloading.
+INFO 2026-03-10 16:28:05,322 autoreload 10980 9064 Watching for file changes with StatReloader
+INFO 2026-03-10 16:32:32,583 log 10980 8012 "GET /admin/ HTTP/1.1" 200 8775
+INFO 2026-03-10 16:32:32,790 log 10980 15772 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2026-03-10 16:32:32,793 log 10980 17112 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2026-03-10 16:32:32,832 log 10980 15772 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2026-03-10 16:32:32,857 log 10980 8012 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2026-03-10 16:32:32,908 log 10980 17112 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2026-03-10 16:32:32,967 log 10980 17112 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2026-03-10 16:32:57,198 log 10980 17112 "GET /admin/users/user/ HTTP/1.1" 200 14820
+INFO 2026-03-10 16:32:57,683 log 10980 8012 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-03-10 16:32:58,992 log 10980 15772 "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 645
+INFO 2026-03-10 16:32:59,001 log 10980 8012 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 558
+INFO 2026-03-10 16:32:59,220 log 10980 17112 "GET /static/admin/css/changelists.css HTTP/1.1" 200 7498
+INFO 2026-03-10 16:32:59,455 log 10980 15772 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 928
+INFO 2026-03-10 16:32:59,530 log 10980 17112 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 593
+INFO 2026-03-10 16:32:59,823 log 10980 15772 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1761
+INFO 2026-03-10 16:33:00,476 log 10980 8012 "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2026-03-10 16:33:45,991 log 10980 8012 "GET /admin/vendors/vendor/ HTTP/1.1" 200 11346
+INFO 2026-03-10 16:33:46,136 log 10980 8012 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-03-10 16:35:37,828 log 10980 892 "POST /api/auth/register/ HTTP/1.1" 201 575
+INFO 2026-03-10 16:37:00,091 log 10980 892 "GET /api/auth/profile/ HTTP/1.1" 200 78
+INFO 2026-03-10 16:37:02,938 log 10980 892 "GET /api/auth/profile/ HTTP/1.1" 200 78
+INFO 2026-03-10 16:46:05,695 autoreload 10980 9064 C:\Users\Adegoke\Desktop\TU Marketplace\backend\core\settings.py changed, reloading.
+INFO 2026-03-10 16:46:12,984 autoreload 15080 15176 Watching for file changes with StatReloader
+INFO 2026-03-10 16:53:28,314 autoreload 15080 15176 C:\Users\Adegoke\Desktop\TU Marketplace\backend\core\settings.py changed, reloading.
+INFO 2026-03-10 16:53:35,472 autoreload 10344 18080 Watching for file changes with StatReloader
+INFO 2026-03-10 16:54:01,830 autoreload 10344 18080 C:\Users\Adegoke\Desktop\TU Marketplace\backend\orders\models.py changed, reloading.
+INFO 2026-03-10 16:54:07,583 autoreload 16888 11216 Watching for file changes with StatReloader
+INFO 2026-03-10 16:59:32,347 log 16888 2760 "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+WARNING 2026-03-10 16:59:32,382 log 16888 2760 Bad Request: /api/auth/login/
+WARNING 2026-03-10 16:59:32,385 log 16888 2760 "POST /api/auth/login/ HTTP/1.1" 400 37
+INFO 2026-03-10 17:00:29,683 autoreload 16888 11216 C:\Users\Adegoke\Desktop\TU Marketplace\backend\core\urls.py changed, reloading.
+INFO 2026-03-10 17:00:36,303 autoreload 13772 4204 Watching for file changes with StatReloader
+INFO 2026-03-10 17:03:55,696 log 13772 9984 "GET /admin/ HTTP/1.1" 200 10437
+INFO 2026-03-10 17:10:31,167 log 13772 11064 "GET /admin/chat/message/ HTTP/1.1" 200 12558
+INFO 2026-03-10 17:10:32,121 log 13772 11064 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-03-10 17:10:51,874 log 13772 11064 "GET /admin/users/user/add/ HTTP/1.1" 200 17147
+INFO 2026-03-10 17:10:52,122 log 13772 8040 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-03-10 17:10:54,439 log 13772 11064 "GET /static/admin/css/unusable_password_field.css HTTP/1.1" 200 663
+INFO 2026-03-10 17:11:08,951 log 13772 11064 "GET /admin/vendors/vendorwallet/add/ HTTP/1.1" 200 13418
+INFO 2026-03-10 17:11:09,080 log 13772 11064 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-03-10 17:11:16,319 log 13772 11064 "GET /admin/vendors/vendor/add/?_to_field=id&_popup=1 HTTP/1.1" 200 7455
+INFO 2026-03-10 17:11:17,964 log 13772 11064 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-03-10 17:11:28,332 log 13772 11064 "GET /admin/vendors/vendor/add/ HTTP/1.1" 200 14780
+INFO 2026-03-10 17:11:28,594 log 13772 11064 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-03-10 17:11:36,099 log 13772 11064 "GET /admin/auth/group/add/ HTTP/1.1" 200 19850
+INFO 2026-03-10 17:11:36,297 log 13772 11064 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-03-10 17:12:59,397 autoreload 13772 4204 C:\Users\Adegoke\Desktop\TU Marketplace\backend\core\settings.py changed, reloading.
+INFO 2026-03-10 17:13:04,247 autoreload 6488 8256 Watching for file changes with StatReloader
+INFO 2026-03-10 17:13:12,422 autoreload 6488 8256 C:\Users\Adegoke\Desktop\TU Marketplace\backend\core\urls.py changed, reloading.
+INFO 2026-03-10 17:13:15,912 autoreload 9956 16988 Watching for file changes with StatReloader
+INFO 2026-03-10 17:19:44,440 autoreload 9956 16988 C:\Users\Adegoke\Desktop\TU Marketplace\backend\core\urls.py changed, reloading.
+INFO 2026-03-10 17:19:54,072 autoreload 5300 15764 Watching for file changes with StatReloader
+INFO 2026-03-10 17:20:06,610 log 5300 16796 "GET /api/products HTTP/1.1" 301 0
+INFO 2026-03-10 17:20:06,611 log 5300 2668 "GET /api/vendors/shops?featured=true HTTP/1.1" 301 0
+INFO 2026-03-11 10:01:43,080 log 5300 13052 "GET /api/schema/swagger-ui/ HTTP/1.1" 200 4659
+INFO 2026-03-11 10:02:10,639 log 5300 4632 "GET /api/schema/swagger-ui/ HTTP/1.1" 200 4659
+INFO 2026-03-11 10:06:38,947 log 5300 17436 "GET /api/schema/swagger-ui/ HTTP/1.1" 200 4659
+INFO 2026-03-11 10:10:28,286 log 5300 5156 "GET /api/schema/redoc/ HTTP/1.1" 200 742
+WARNING 2026-03-11 10:10:43,522 log 5300 5156 Not Found: /favicon.ico
+WARNING 2026-03-11 10:10:43,524 log 5300 5156 "GET /favicon.ico HTTP/1.1" 404 4878
+INFO 2026-03-11 10:16:39,903 log 5300 15020 "GET /api/schema/swagger-ui/ HTTP/1.1" 200 4659
+INFO 2026-03-11 10:17:34,269 log 5300 15020 "GET /api/schema/ HTTP/1.1" 200 67020
+INFO 2026-03-11 10:22:59,452 autoreload 5300 15764 C:\Users\Adegoke\Desktop\TU Marketplace\backend\core\urls.py changed, reloading.
+INFO 2026-03-11 10:24:26,299 autoreload 17464 19028 Watching for file changes with StatReloader
+INFO 2026-03-11 10:27:19,248 log 17464 10552 "GET /admin/auth/group/add/ HTTP/1.1" 200 19850
+INFO 2026-03-11 10:27:19,470 log 17464 18936 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2026-03-11 10:27:19,471 log 17464 4340 "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2026-03-11 10:27:19,472 log 17464 10552 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2026-03-11 10:27:19,495 log 17464 4340 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2026-03-11 10:27:19,495 log 17464 18936 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2026-03-11 10:27:19,501 log 17464 10552 "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2026-03-11 10:27:19,532 log 17464 4340 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2026-03-11 10:27:19,542 log 17464 18936 "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2026-03-11 10:27:19,575 log 17464 4340 "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2026-03-11 10:27:19,579 log 17464 18936 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2026-03-11 10:27:19,625 log 17464 4340 "GET /static/admin/js/SelectBox.js HTTP/1.1" 304 0
+INFO 2026-03-11 10:27:19,645 log 17464 4340 "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 304 0
+INFO 2026-03-11 10:27:19,636 log 17464 18936 "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2026-03-11 10:27:19,651 log 17464 18936 "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2026-03-11 10:27:19,705 log 17464 4340 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2026-03-11 10:27:19,711 log 17464 18936 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2026-03-11 10:27:19,751 log 17464 10552 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-03-11 10:27:19,816 log 17464 10552 "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2026-03-11 10:27:19,841 log 17464 10552 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2026-03-11 10:27:19,877 log 17464 14320 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2026-03-11 10:27:19,881 log 17464 10552 "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2026-03-11 10:27:20,094 log 17464 10552 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2026-03-11 10:27:20,318 log 17464 10552 "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2026-03-11 10:27:20,351 log 17464 10552 "GET /static/admin/img/selector-icons.svg HTTP/1.1" 304 0
+INFO 2026-03-11 10:27:24,003 log 17464 16540 "GET /api/schema/swagger-ui/ HTTP/1.1" 200 4659
+INFO 2026-03-11 10:27:25,369 log 17464 16540 "GET /api/schema/ HTTP/1.1" 200 67020
+INFO 2026-03-11 10:27:48,628 log 17464 10552 "GET / HTTP/1.1" 200 2343
+INFO 2026-03-11 10:28:40,080 log 17464 16540 "GET /api/schema/redoc/ HTTP/1.1" 200 742
+INFO 2026-03-11 10:28:47,733 log 17464 16540 "GET /api/schema/ HTTP/1.1" 200 30287
+INFO 2026-03-11 10:54:48,404 log 17464 5484 "GET /admin/ HTTP/1.1" 200 10437
+INFO 2026-03-11 10:54:48,560 log 17464 5484 "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2026-03-11 10:54:48,587 log 17464 5484 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+WARNING 2026-03-12 18:33:03,498 log 17464 3224 Not Found: /docs
+WARNING 2026-03-12 18:33:04,273 log 17464 3224 "GET /docs HTTP/1.1" 404 4688
+WARNING 2026-03-12 19:02:25,578 log 17464 16660 Not Found: /healthcheck
+WARNING 2026-03-12 19:02:25,595 log 17464 16660 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:02:27,955 log 17464 16660 Not Found: /healthcheck
+WARNING 2026-03-12 19:02:27,983 log 17464 16660 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:02:30,037 log 17464 16660 Not Found: /healthcheck
+WARNING 2026-03-12 19:02:30,045 log 17464 16660 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:02:32,082 log 17464 16660 Not Found: /healthcheck
+WARNING 2026-03-12 19:02:32,089 log 17464 16660 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:02:34,207 log 17464 16660 Not Found: /healthcheck
+WARNING 2026-03-12 19:02:34,215 log 17464 16660 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:02:36,268 log 17464 16660 Not Found: /healthcheck
+WARNING 2026-03-12 19:02:36,289 log 17464 16660 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:02:38,532 log 17464 16660 Not Found: /healthcheck
+WARNING 2026-03-12 19:02:38,737 log 17464 16660 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:02:40,779 log 17464 16660 Not Found: /healthcheck
+WARNING 2026-03-12 19:02:40,780 log 17464 16660 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:02:42,806 log 17464 16660 Not Found: /healthcheck
+WARNING 2026-03-12 19:02:42,808 log 17464 16660 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:02:44,853 log 17464 16660 Not Found: /healthcheck
+WARNING 2026-03-12 19:02:44,880 log 17464 16660 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:03:46,692 log 17464 2072 Not Found: /users/me
+WARNING 2026-03-12 19:03:46,693 log 17464 2072 "GET /users/me HTTP/1.1" 404 4700
+WARNING 2026-03-12 19:03:48,827 log 17464 16204 Not Found: /alerts/list
+WARNING 2026-03-12 19:03:48,828 log 17464 16204 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:03:52,303 log 17464 15744 Not Found: /healthcheck
+WARNING 2026-03-12 19:03:52,334 log 17464 15744 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:03:54,466 log 17464 16044 Not Found: /system/startup-insight
+WARNING 2026-03-12 19:03:54,467 log 17464 16044 "GET /system/startup-insight HTTP/1.1" 404 4742
+WARNING 2026-03-12 19:03:56,691 log 17464 3884 Not Found: /system/metrics
+WARNING 2026-03-12 19:03:56,706 log 17464 3884 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:03:58,745 log 17464 2288 Not Found: /alerts/list
+WARNING 2026-03-12 19:03:58,747 log 17464 2288 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:04:00,886 log 17464 9328 Not Found: /system/activity
+WARNING 2026-03-12 19:04:00,888 log 17464 9328 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:04:03,702 log 17464 13632 Not Found: /system/metrics
+WARNING 2026-03-12 19:04:03,857 log 17464 13632 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:04:11,747 log 17464 17828 Not Found: /system/metrics
+WARNING 2026-03-12 19:04:11,751 log 17464 17828 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:04:14,408 log 17464 8816 Not Found: /alerts/list
+WARNING 2026-03-12 19:04:14,410 log 17464 8816 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:04:16,637 log 17464 9064 Not Found: /system/activity
+WARNING 2026-03-12 19:04:16,638 log 17464 9064 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:04:18,764 log 17464 2692 Not Found: /system/metrics
+WARNING 2026-03-12 19:04:18,770 log 17464 2692 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:04:21,212 log 17464 4220 Not Found: /system/metrics
+WARNING 2026-03-12 19:04:21,223 log 17464 4220 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:04:23,296 log 17464 5652 Not Found: /alerts/list
+WARNING 2026-03-12 19:04:23,311 log 17464 5652 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:04:25,468 log 17464 1120 Not Found: /system/activity
+WARNING 2026-03-12 19:04:25,556 log 17464 1120 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:04:27,897 log 17464 7532 Not Found: /system/metrics
+WARNING 2026-03-12 19:04:27,903 log 17464 7532 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:04:30,476 log 17464 16084 Not Found: /system/metrics
+WARNING 2026-03-12 19:04:30,759 log 17464 16084 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:04:37,726 log 17464 7736 Not Found: /alerts/list
+WARNING 2026-03-12 19:04:37,811 log 17464 7736 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:04:40,380 log 17464 18096 Not Found: /system/activity
+WARNING 2026-03-12 19:04:40,403 log 17464 18096 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:04:43,300 log 17464 8428 Not Found: /system/metrics
+WARNING 2026-03-12 19:04:43,301 log 17464 8428 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:04:45,372 log 17464 19088 Not Found: /alerts/list
+WARNING 2026-03-12 19:04:45,374 log 17464 19088 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:04:47,510 log 17464 16096 Not Found: /system/activity
+WARNING 2026-03-12 19:04:47,513 log 17464 16096 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:04:49,777 log 17464 11592 Not Found: /system/metrics
+WARNING 2026-03-12 19:04:49,829 log 17464 11592 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:04:51,893 log 17464 17956 Not Found: /alerts/list
+WARNING 2026-03-12 19:04:51,895 log 17464 17956 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:04:54,009 log 17464 8296 Not Found: /system/activity
+WARNING 2026-03-12 19:04:54,027 log 17464 8296 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:04:56,690 log 17464 11652 Not Found: /system/metrics
+WARNING 2026-03-12 19:04:56,692 log 17464 11652 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:04:59,397 log 17464 6848 Not Found: /system/metrics
+WARNING 2026-03-12 19:04:59,477 log 17464 6848 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:05:00,071 log 17464 14404 Not Found: /alerts/list
+WARNING 2026-03-12 19:05:01,088 log 17464 14404 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:05:03,898 log 17464 11432 Not Found: /healthcheck
+WARNING 2026-03-12 19:05:03,903 log 17464 11432 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:05:06,477 log 17464 6612 Not Found: /healthcheck
+WARNING 2026-03-12 19:05:06,480 log 17464 6612 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:05:08,571 log 17464 17480 Not Found: /system/startup-insight
+WARNING 2026-03-12 19:05:08,575 log 17464 17480 "GET /system/startup-insight HTTP/1.1" 404 4742
+WARNING 2026-03-12 19:05:10,705 log 17464 11588 Not Found: /system/metrics
+WARNING 2026-03-12 19:05:10,711 log 17464 11588 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:05:12,791 log 17464 15288 Not Found: /alerts/list
+WARNING 2026-03-12 19:05:12,792 log 17464 15288 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:05:14,853 log 17464 11112 Not Found: /system/activity
+WARNING 2026-03-12 19:05:14,856 log 17464 11112 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:05:17,152 log 17464 13444 Not Found: /system/metrics
+WARNING 2026-03-12 19:05:17,202 log 17464 13444 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:05:20,763 log 17464 9784 Not Found: /system/metrics
+WARNING 2026-03-12 19:05:20,788 log 17464 9784 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:05:23,745 log 17464 12576 Not Found: /alerts/list
+WARNING 2026-03-12 19:05:23,747 log 17464 12576 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:05:25,807 log 17464 4300 Not Found: /system/activity
+WARNING 2026-03-12 19:05:25,808 log 17464 4300 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:05:28,028 log 17464 2504 Not Found: /system/metrics
+WARNING 2026-03-12 19:05:28,029 log 17464 2504 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:05:30,942 log 17464 10368 Not Found: /system/metrics
+WARNING 2026-03-12 19:05:31,090 log 17464 10368 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:05:33,476 log 17464 18392 Not Found: /alerts/list
+WARNING 2026-03-12 19:05:33,478 log 17464 18392 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:05:35,547 log 17464 7036 Not Found: /system/activity
+WARNING 2026-03-12 19:05:35,550 log 17464 7036 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:05:37,936 log 17464 6944 Not Found: /system/metrics
+WARNING 2026-03-12 19:05:37,939 log 17464 6944 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:05:40,740 log 17464 16628 Not Found: /system/metrics
+WARNING 2026-03-12 19:05:40,742 log 17464 16628 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:05:43,747 log 17464 8276 Not Found: /alerts/list
+WARNING 2026-03-12 19:05:43,749 log 17464 8276 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:05:45,793 log 17464 16456 Not Found: /system/activity
+WARNING 2026-03-12 19:05:45,800 log 17464 16456 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:05:48,209 log 17464 4240 Not Found: /system/metrics
+WARNING 2026-03-12 19:05:48,218 log 17464 4240 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:05:51,331 log 17464 16340 Not Found: /system/metrics
+WARNING 2026-03-12 19:05:51,364 log 17464 16340 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:05:53,810 log 17464 8464 Not Found: /alerts/list
+WARNING 2026-03-12 19:05:53,813 log 17464 8464 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:05:55,865 log 17464 12100 Not Found: /system/activity
+WARNING 2026-03-12 19:05:55,867 log 17464 12100 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:05:58,102 log 17464 6276 Not Found: /system/metrics
+WARNING 2026-03-12 19:05:58,103 log 17464 6276 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:06:00,789 log 17464 8660 Not Found: /system/metrics
+WARNING 2026-03-12 19:06:00,790 log 17464 8660 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:06:03,733 log 17464 16792 Not Found: /alerts/list
+WARNING 2026-03-12 19:06:03,734 log 17464 16792 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:06:05,798 log 17464 8380 Not Found: /system/activity
+WARNING 2026-03-12 19:06:05,800 log 17464 8380 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:06:08,039 log 17464 7392 Not Found: /system/metrics
+WARNING 2026-03-12 19:06:08,041 log 17464 7392 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:06:10,747 log 17464 5952 Not Found: /system/metrics
+WARNING 2026-03-12 19:06:10,778 log 17464 5952 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:06:13,746 log 17464 19072 Not Found: /alerts/list
+WARNING 2026-03-12 19:06:13,747 log 17464 19072 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:06:15,795 log 17464 16724 Not Found: /system/activity
+WARNING 2026-03-12 19:06:15,823 log 17464 16724 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:06:18,023 log 17464 3732 Not Found: /system/metrics
+WARNING 2026-03-12 19:06:18,026 log 17464 3732 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:06:20,740 log 17464 2764 Not Found: /system/metrics
+WARNING 2026-03-12 19:06:20,741 log 17464 2764 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:06:23,802 log 17464 3900 Not Found: /alerts/list
+WARNING 2026-03-12 19:06:23,803 log 17464 3900 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:06:25,848 log 17464 3088 Not Found: /system/activity
+WARNING 2026-03-12 19:06:25,850 log 17464 3088 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:06:28,072 log 17464 2096 Not Found: /system/metrics
+WARNING 2026-03-12 19:06:28,082 log 17464 2096 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:06:30,843 log 17464 392 Not Found: /system/metrics
+WARNING 2026-03-12 19:06:30,909 log 17464 392 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:06:33,739 log 17464 8840 Not Found: /alerts/list
+WARNING 2026-03-12 19:06:33,752 log 17464 8840 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:06:35,801 log 17464 13056 Not Found: /system/activity
+WARNING 2026-03-12 19:06:35,835 log 17464 13056 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:06:38,026 log 17464 12616 Not Found: /system/metrics
+WARNING 2026-03-12 19:06:38,030 log 17464 12616 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:06:40,795 log 17464 17260 Not Found: /system/metrics
+WARNING 2026-03-12 19:06:40,802 log 17464 17260 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:07:16,585 log 17464 8220 Not Found: /alerts/list
+WARNING 2026-03-12 19:07:16,753 log 17464 8220 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:07:19,564 log 17464 9592 Not Found: /system/activity
+WARNING 2026-03-12 19:07:19,812 log 17464 9592 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:07:22,981 log 17464 5296 Not Found: /system/metrics
+WARNING 2026-03-12 19:07:23,126 log 17464 5296 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:08:05,758 log 17464 16700 Not Found: /alerts/list
+WARNING 2026-03-12 19:08:05,759 log 17464 16700 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:08:07,816 log 17464 13696 Not Found: /system/activity
+WARNING 2026-03-12 19:08:07,855 log 17464 13696 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:08:10,064 log 17464 7896 Not Found: /system/metrics
+WARNING 2026-03-12 19:08:10,066 log 17464 7896 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:09:06,155 log 17464 184 Not Found: /system/metrics
+WARNING 2026-03-12 19:09:06,157 log 17464 184 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:09:08,990 log 17464 3976 Not Found: /alerts/list
+WARNING 2026-03-12 19:09:09,006 log 17464 3976 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:09:11,330 log 17464 12384 Not Found: /system/activity
+WARNING 2026-03-12 19:09:11,374 log 17464 12384 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:09:38,543 log 17464 19128 Not Found: /system/metrics
+WARNING 2026-03-12 19:09:38,546 log 17464 19128 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:09:40,808 log 17464 240 Not Found: /alerts/list
+WARNING 2026-03-12 19:09:40,810 log 17464 240 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:09:42,678 log 17464 10856 Not Found: /users/me
+WARNING 2026-03-12 19:09:42,680 log 17464 10856 "GET /users/me HTTP/1.1" 404 4700
+WARNING 2026-03-12 19:09:44,794 log 17464 8464 Not Found: /alerts/list
+WARNING 2026-03-12 19:09:44,804 log 17464 8464 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:09:47,097 log 17464 14660 Not Found: /healthcheck
+WARNING 2026-03-12 19:09:47,126 log 17464 14660 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:09:49,186 log 17464 10160 Not Found: /system/startup-insight
+WARNING 2026-03-12 19:09:49,188 log 17464 10160 "GET /system/startup-insight HTTP/1.1" 404 4742
+WARNING 2026-03-12 19:09:51,256 log 17464 15748 Not Found: /system/metrics
+WARNING 2026-03-12 19:09:51,260 log 17464 15748 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:09:53,315 log 17464 13364 Not Found: /alerts/list
+WARNING 2026-03-12 19:09:53,353 log 17464 13364 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:09:54,301 log 17464 9476 Not Found: /healthcheck
+WARNING 2026-03-12 19:09:54,305 log 17464 9476 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:09:56,912 log 17464 10388 Not Found: /healthcheck
+WARNING 2026-03-12 19:09:56,914 log 17464 10388 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:09:59,314 log 17464 15504 Not Found: /system/startup-insight
+WARNING 2026-03-12 19:09:59,360 log 17464 15504 "GET /system/startup-insight HTTP/1.1" 404 4742
+WARNING 2026-03-12 19:10:01,555 log 17464 8908 Not Found: /system/metrics
+WARNING 2026-03-12 19:10:01,579 log 17464 8908 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:10:03,854 log 17464 16824 Not Found: /alerts/list
+WARNING 2026-03-12 19:10:03,882 log 17464 16824 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:10:06,234 log 17464 13704 Not Found: /system/activity
+WARNING 2026-03-12 19:10:06,236 log 17464 13704 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:10:08,482 log 17464 6328 Not Found: /system/metrics
+WARNING 2026-03-12 19:10:08,483 log 17464 6328 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:10:11,769 log 17464 12204 Not Found: /system/metrics
+WARNING 2026-03-12 19:10:11,772 log 17464 12204 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:10:14,057 log 17464 13428 Not Found: /alerts/list
+WARNING 2026-03-12 19:10:14,061 log 17464 13428 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:10:16,545 log 17464 7456 Not Found: /system/activity
+WARNING 2026-03-12 19:10:16,669 log 17464 7456 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:10:18,839 log 17464 16516 Not Found: /system/metrics
+WARNING 2026-03-12 19:10:18,843 log 17464 16516 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:10:21,806 log 17464 8256 Not Found: /system/metrics
+WARNING 2026-03-12 19:10:21,813 log 17464 8256 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:10:24,220 log 17464 1132 Not Found: /alerts/list
+WARNING 2026-03-12 19:10:24,228 log 17464 1132 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:10:26,284 log 17464 16964 Not Found: /system/activity
+WARNING 2026-03-12 19:10:26,286 log 17464 16964 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:10:28,743 log 17464 12624 Not Found: /system/metrics
+WARNING 2026-03-12 19:10:28,748 log 17464 12624 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:10:31,761 log 17464 13692 Not Found: /system/metrics
+WARNING 2026-03-12 19:10:31,765 log 17464 13692 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:10:34,629 log 17464 17140 Not Found: /alerts/list
+WARNING 2026-03-12 19:10:34,645 log 17464 17140 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:10:36,967 log 17464 16092 Not Found: /system/activity
+WARNING 2026-03-12 19:10:37,004 log 17464 16092 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:10:39,191 log 17464 2324 Not Found: /system/metrics
+WARNING 2026-03-12 19:10:39,193 log 17464 2324 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:10:41,738 log 17464 17660 Not Found: /system/metrics
+WARNING 2026-03-12 19:10:41,740 log 17464 17660 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:10:44,027 log 17464 18572 Not Found: /alerts/list
+WARNING 2026-03-12 19:10:44,035 log 17464 18572 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:10:46,116 log 17464 6012 Not Found: /system/activity
+WARNING 2026-03-12 19:10:46,121 log 17464 6012 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:10:48,345 log 17464 11408 Not Found: /system/metrics
+WARNING 2026-03-12 19:10:48,346 log 17464 11408 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:10:51,742 log 17464 8412 Not Found: /system/metrics
+WARNING 2026-03-12 19:10:51,744 log 17464 8412 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:10:53,976 log 17464 3184 Not Found: /alerts/list
+WARNING 2026-03-12 19:10:53,980 log 17464 3184 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:10:56,078 log 17464 14212 Not Found: /system/activity
+WARNING 2026-03-12 19:10:56,091 log 17464 14212 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:10:58,339 log 17464 11004 Not Found: /system/metrics
+WARNING 2026-03-12 19:10:58,341 log 17464 11004 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:11:01,790 log 17464 1900 Not Found: /system/metrics
+WARNING 2026-03-12 19:11:01,793 log 17464 1900 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:11:04,052 log 17464 17684 Not Found: /alerts/list
+WARNING 2026-03-12 19:11:04,078 log 17464 17684 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:11:06,108 log 17464 18868 Not Found: /system/activity
+WARNING 2026-03-12 19:11:06,109 log 17464 18868 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:12:06,260 log 17464 6520 Not Found: /system/metrics
+WARNING 2026-03-12 19:12:06,297 log 17464 6520 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:12:08,554 log 17464 6620 Not Found: /alerts/list
+WARNING 2026-03-12 19:12:08,556 log 17464 6620 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:12:10,631 log 17464 14636 Not Found: /system/activity
+WARNING 2026-03-12 19:12:10,635 log 17464 14636 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:13:04,658 log 17464 11836 Not Found: /alerts/list
+WARNING 2026-03-12 19:13:04,960 log 17464 11836 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:13:06,572 log 17464 13344 Not Found: /system/metrics
+WARNING 2026-03-12 19:13:06,665 log 17464 13344 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:13:07,886 log 17464 15220 Not Found: /healthcheck
+WARNING 2026-03-12 19:13:07,904 log 17464 15220 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:13:09,923 log 17464 5616 Not Found: /alerts/list
+WARNING 2026-03-12 19:13:09,990 log 17464 5616 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:13:10,773 log 17464 13800 Not Found: /system/startup-insight
+WARNING 2026-03-12 19:13:11,003 log 17464 13800 "GET /system/startup-insight HTTP/1.1" 404 4742
+WARNING 2026-03-12 19:13:12,482 log 17464 14064 Not Found: /system/activity
+WARNING 2026-03-12 19:13:12,483 log 17464 14064 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:13:13,818 log 17464 13712 Not Found: /system/metrics
+WARNING 2026-03-12 19:13:13,824 log 17464 13712 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:13:16,001 log 17464 16568 Not Found: /healthcheck
+WARNING 2026-03-12 19:13:16,004 log 17464 16568 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:13:18,202 log 17464 18184 Not Found: /system/startup-insight
+WARNING 2026-03-12 19:13:18,203 log 17464 18184 "GET /system/startup-insight HTTP/1.1" 404 4742
+WARNING 2026-03-12 19:13:20,245 log 17464 19268 Not Found: /system/metrics
+WARNING 2026-03-12 19:13:20,246 log 17464 19268 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:13:31,638 log 17464 19192 Not Found: /alerts/list
+WARNING 2026-03-12 19:13:31,640 log 17464 19192 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:13:38,945 log 17464 1036 Not Found: /healthcheck
+WARNING 2026-03-12 19:13:38,997 log 17464 1036 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:13:41,456 log 17464 17328 Not Found: /system/startup-insight
+WARNING 2026-03-12 19:13:41,597 log 17464 17328 "GET /system/startup-insight HTTP/1.1" 404 4742
+WARNING 2026-03-12 19:13:44,112 log 17464 16392 Not Found: /system/metrics
+WARNING 2026-03-12 19:13:44,509 log 17464 16392 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:13:46,710 log 17464 11176 Not Found: /alerts/list
+WARNING 2026-03-12 19:13:46,718 log 17464 11176 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:13:49,504 log 17464 7524 Not Found: /system/activity
+WARNING 2026-03-12 19:13:49,770 log 17464 7524 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:13:52,317 log 17464 17300 Not Found: /system/metrics
+WARNING 2026-03-12 19:13:52,322 log 17464 17300 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:13:54,761 log 17464 11844 Not Found: /system/metrics
+WARNING 2026-03-12 19:13:54,762 log 17464 11844 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:13:57,794 log 17464 4812 Not Found: /alerts/list
+WARNING 2026-03-12 19:13:57,803 log 17464 4812 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:13:59,893 log 17464 6896 Not Found: /system/activity
+WARNING 2026-03-12 19:13:59,897 log 17464 6896 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:14:02,118 log 17464 12984 Not Found: /system/metrics
+WARNING 2026-03-12 19:14:02,120 log 17464 12984 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:14:04,367 log 17464 14692 Not Found: /system/metrics
+WARNING 2026-03-12 19:14:04,383 log 17464 14692 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:14:07,779 log 17464 16756 Not Found: /alerts/list
+WARNING 2026-03-12 19:14:07,785 log 17464 16756 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:14:09,856 log 17464 7236 Not Found: /system/activity
+WARNING 2026-03-12 19:14:09,879 log 17464 7236 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:14:12,117 log 17464 7288 Not Found: /system/metrics
+WARNING 2026-03-12 19:14:12,121 log 17464 7288 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:14:14,367 log 17464 14360 Not Found: /system/metrics
+WARNING 2026-03-12 19:14:14,370 log 17464 14360 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:14:17,726 log 17464 18780 Not Found: /alerts/list
+WARNING 2026-03-12 19:14:17,727 log 17464 18780 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:14:19,791 log 17464 15068 Not Found: /system/activity
+WARNING 2026-03-12 19:14:19,792 log 17464 15068 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:14:22,037 log 17464 11200 Not Found: /system/metrics
+WARNING 2026-03-12 19:14:22,044 log 17464 11200 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:14:24,302 log 17464 9280 Not Found: /system/metrics
+WARNING 2026-03-12 19:14:24,322 log 17464 9280 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:14:28,105 log 17464 10804 Not Found: /alerts/list
+WARNING 2026-03-12 19:14:28,205 log 17464 10804 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:14:30,915 log 17464 1712 Not Found: /system/activity
+WARNING 2026-03-12 19:14:30,981 log 17464 1712 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:14:33,423 log 17464 9560 Not Found: /healthcheck
+WARNING 2026-03-12 19:14:33,425 log 17464 9560 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:14:34,043 log 17464 15108 Not Found: /system/metrics
+WARNING 2026-03-12 19:14:34,060 log 17464 15108 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:14:35,491 log 17464 9560 Not Found: /healthcheck
+WARNING 2026-03-12 19:14:35,500 log 17464 9560 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:14:36,300 log 17464 14912 Not Found: /system/metrics
+WARNING 2026-03-12 19:14:36,301 log 17464 14912 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:14:37,897 log 17464 9560 Not Found: /healthcheck
+WARNING 2026-03-12 19:14:37,899 log 17464 9560 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:14:38,547 log 17464 10684 Not Found: /alerts/list
+WARNING 2026-03-12 19:14:38,562 log 17464 10684 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:14:39,924 log 17464 9560 Not Found: /healthcheck
+WARNING 2026-03-12 19:14:39,929 log 17464 9560 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:14:40,621 log 17464 18216 Not Found: /system/activity
+WARNING 2026-03-12 19:14:40,623 log 17464 18216 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:14:41,952 log 17464 9560 Not Found: /healthcheck
+WARNING 2026-03-12 19:14:41,953 log 17464 9560 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:14:42,855 log 17464 7852 Not Found: /system/metrics
+WARNING 2026-03-12 19:14:42,859 log 17464 7852 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:14:43,975 log 17464 9560 Not Found: /healthcheck
+WARNING 2026-03-12 19:14:43,982 log 17464 9560 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:14:45,091 log 17464 2224 Not Found: /system/metrics
+WARNING 2026-03-12 19:14:45,093 log 17464 2224 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:14:46,009 log 17464 9560 Not Found: /healthcheck
+WARNING 2026-03-12 19:14:46,012 log 17464 9560 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:14:47,745 log 17464 8280 Not Found: /alerts/list
+WARNING 2026-03-12 19:14:47,747 log 17464 8280 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:14:48,052 log 17464 9560 Not Found: /healthcheck
+WARNING 2026-03-12 19:14:48,055 log 17464 9560 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:14:49,830 log 17464 13156 Not Found: /system/activity
+WARNING 2026-03-12 19:14:49,851 log 17464 13156 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:14:50,081 log 17464 9560 Not Found: /healthcheck
+WARNING 2026-03-12 19:14:50,085 log 17464 9560 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:14:52,105 log 17464 9560 Not Found: /healthcheck
+WARNING 2026-03-12 19:14:52,111 log 17464 9560 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:14:54,139 log 17464 9560 Not Found: /healthcheck
+WARNING 2026-03-12 19:14:54,141 log 17464 9560 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:14:56,220 log 17464 9560 Not Found: /healthcheck
+WARNING 2026-03-12 19:14:56,262 log 17464 9560 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:14:58,284 log 17464 9560 Not Found: /healthcheck
+WARNING 2026-03-12 19:14:58,286 log 17464 9560 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:15:00,310 log 17464 9560 Not Found: /healthcheck
+WARNING 2026-03-12 19:15:00,312 log 17464 9560 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:15:02,335 log 17464 9560 Not Found: /healthcheck
+WARNING 2026-03-12 19:15:02,338 log 17464 9560 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:15:05,762 log 17464 15876 Not Found: /system/metrics
+WARNING 2026-03-12 19:15:05,806 log 17464 15876 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:15:08,463 log 17464 16096 Not Found: /alerts/list
+WARNING 2026-03-12 19:15:08,833 log 17464 16096 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:15:11,169 log 17464 18164 Not Found: /system/activity
+WARNING 2026-03-12 19:15:11,172 log 17464 18164 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:15:12,356 log 17464 10260 Not Found: /alerts/list
+WARNING 2026-03-12 19:15:12,400 log 17464 10260 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:15:15,178 log 17464 5924 Not Found: /healthcheck
+WARNING 2026-03-12 19:15:15,250 log 17464 5924 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:15:17,770 log 17464 5776 Not Found: /system/startup-insight
+WARNING 2026-03-12 19:15:17,902 log 17464 5776 "GET /system/startup-insight HTTP/1.1" 404 4742
+WARNING 2026-03-12 19:15:20,067 log 17464 19220 Not Found: /system/metrics
+WARNING 2026-03-12 19:15:20,094 log 17464 19220 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:15:22,363 log 17464 6816 Not Found: /alerts/list
+WARNING 2026-03-12 19:15:22,379 log 17464 6816 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:15:24,738 log 17464 15012 Not Found: /system/activity
+WARNING 2026-03-12 19:15:24,771 log 17464 15012 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:15:32,853 log 17464 18228 Not Found: /system/metrics
+WARNING 2026-03-12 19:15:32,855 log 17464 18228 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:15:35,487 log 17464 18052 Not Found: /system/metrics
+WARNING 2026-03-12 19:15:35,492 log 17464 18052 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:15:38,030 log 17464 5908 Not Found: /alerts/list
+WARNING 2026-03-12 19:15:38,047 log 17464 5908 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:15:40,523 log 17464 18528 Not Found: /system/activity
+WARNING 2026-03-12 19:15:40,526 log 17464 18528 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:15:42,894 log 17464 8732 Not Found: /system/metrics
+WARNING 2026-03-12 19:15:43,092 log 17464 8732 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:15:46,118 log 17464 6904 Not Found: /system/metrics
+WARNING 2026-03-12 19:15:46,120 log 17464 6904 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:15:48,810 log 17464 17440 Not Found: /alerts/list
+WARNING 2026-03-12 19:15:48,920 log 17464 17440 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:15:51,262 log 17464 10808 Not Found: /system/activity
+WARNING 2026-03-12 19:15:51,337 log 17464 10808 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:15:53,998 log 17464 8380 Not Found: /system/metrics
+WARNING 2026-03-12 19:15:54,149 log 17464 8380 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:15:58,276 log 17464 6004 Not Found: /system/metrics
+WARNING 2026-03-12 19:15:59,640 log 17464 6004 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:16:00,823 log 17464 13792 Not Found: /alerts/list
+WARNING 2026-03-12 19:16:00,855 log 17464 13792 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:16:03,957 log 17464 7108 Not Found: /healthcheck
+WARNING 2026-03-12 19:16:04,068 log 17464 7108 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:16:07,014 log 17464 7316 Not Found: /alerts/list
+WARNING 2026-03-12 19:16:07,184 log 17464 7316 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:16:08,027 log 17464 12204 Not Found: /healthcheck
+WARNING 2026-03-12 19:16:08,031 log 17464 12204 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:16:09,511 log 17464 13428 Not Found: /system/activity
+WARNING 2026-03-12 19:16:09,695 log 17464 13428 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:16:11,298 log 17464 18580 Not Found: /system/startup-insight
+WARNING 2026-03-12 19:16:11,492 log 17464 18580 "GET /system/startup-insight HTTP/1.1" 404 4742
+WARNING 2026-03-12 19:16:13,079 log 17464 15864 Not Found: /system/metrics
+WARNING 2026-03-12 19:16:13,104 log 17464 15864 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:16:13,715 log 17464 18584 Not Found: /system/metrics
+WARNING 2026-03-12 19:16:13,720 log 17464 18584 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:16:16,018 log 17464 15560 Not Found: /alerts/list
+WARNING 2026-03-12 19:16:16,019 log 17464 15560 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:16:18,533 log 17464 2164 Not Found: /system/activity
+WARNING 2026-03-12 19:16:18,626 log 17464 2164 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:16:21,032 log 17464 14428 Not Found: /system/metrics
+WARNING 2026-03-12 19:16:21,051 log 17464 14428 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:16:25,947 log 17464 12160 Not Found: /system/metrics
+WARNING 2026-03-12 19:16:25,987 log 17464 12160 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:16:28,427 log 17464 12624 Not Found: /alerts/list
+WARNING 2026-03-12 19:16:28,428 log 17464 12624 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:16:30,481 log 17464 17644 Not Found: /system/activity
+WARNING 2026-03-12 19:16:30,482 log 17464 17644 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:16:32,727 log 17464 17708 Not Found: /system/metrics
+WARNING 2026-03-12 19:16:32,729 log 17464 17708 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:16:35,727 log 17464 15216 Not Found: /system/metrics
+WARNING 2026-03-12 19:16:35,757 log 17464 15216 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:16:37,992 log 17464 12440 Not Found: /alerts/list
+WARNING 2026-03-12 19:16:37,997 log 17464 12440 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:16:40,045 log 17464 10576 Not Found: /system/activity
+WARNING 2026-03-12 19:16:40,047 log 17464 10576 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:16:42,350 log 17464 14308 Not Found: /system/metrics
+WARNING 2026-03-12 19:16:42,352 log 17464 14308 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:16:45,841 log 17464 8840 Not Found: /system/metrics
+WARNING 2026-03-12 19:16:45,842 log 17464 8840 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:16:48,155 log 17464 14544 Not Found: /alerts/list
+WARNING 2026-03-12 19:16:48,190 log 17464 14544 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:16:50,229 log 17464 11408 Not Found: /system/activity
+WARNING 2026-03-12 19:16:50,274 log 17464 11408 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:16:52,569 log 17464 1080 Not Found: /system/metrics
+WARNING 2026-03-12 19:16:52,571 log 17464 1080 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:16:55,741 log 17464 13564 Not Found: /system/metrics
+WARNING 2026-03-12 19:16:55,752 log 17464 13564 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:16:58,149 log 17464 18944 Not Found: /alerts/list
+WARNING 2026-03-12 19:16:58,354 log 17464 18944 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:17:00,432 log 17464 17956 Not Found: /system/activity
+WARNING 2026-03-12 19:17:00,434 log 17464 17956 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:17:02,731 log 17464 1508 Not Found: /system/metrics
+WARNING 2026-03-12 19:17:02,733 log 17464 1508 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:17:05,997 log 17464 15756 Not Found: /alerts/list
+WARNING 2026-03-12 19:17:06,006 log 17464 18012 Not Found: /system/metrics
+WARNING 2026-03-12 19:17:06,158 log 17464 15756 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:17:06,163 log 17464 18012 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:17:08,160 log 17464 7468 Not Found: /system/activity
+WARNING 2026-03-12 19:17:08,162 log 17464 7468 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:17:08,593 log 17464 18136 Not Found: /alerts/list
+WARNING 2026-03-12 19:17:08,607 log 17464 18136 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:17:10,505 log 17464 13852 Not Found: /system/metrics
+WARNING 2026-03-12 19:17:10,508 log 17464 13852 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:17:10,869 log 17464 9768 Not Found: /system/activity
+WARNING 2026-03-12 19:17:10,959 log 17464 9768 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:17:16,761 log 17464 18064 Not Found: /alerts/list
+WARNING 2026-03-12 19:17:16,776 log 17464 18064 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:17:18,818 log 17464 13028 Not Found: /system/activity
+WARNING 2026-03-12 19:17:18,823 log 17464 13028 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:17:40,953 log 17464 17352 Not Found: /system/metrics
+WARNING 2026-03-12 19:17:40,993 log 17464 17352 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:17:43,305 log 17464 19284 Not Found: /alerts/list
+WARNING 2026-03-12 19:17:43,315 log 17464 19284 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:17:45,359 log 17464 15060 Not Found: /system/activity
+WARNING 2026-03-12 19:17:45,364 log 17464 15060 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:17:47,590 log 17464 11892 Not Found: /system/metrics
+WARNING 2026-03-12 19:17:47,667 log 17464 11892 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:17:49,663 log 17464 17288 Not Found: /alerts/list
+WARNING 2026-03-12 19:17:49,679 log 17464 17288 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:17:53,384 log 17464 8480 Not Found: /system/activity
+WARNING 2026-03-12 19:17:53,632 log 17464 8480 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:17:56,774 log 17464 9760 Not Found: /system/metrics
+WARNING 2026-03-12 19:17:56,845 log 17464 9760 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:17:59,967 log 17464 17908 Not Found: /alerts/list
+WARNING 2026-03-12 19:17:59,971 log 17464 17908 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:18:02,354 log 17464 8396 Not Found: /system/activity
+WARNING 2026-03-12 19:18:02,356 log 17464 8396 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:18:05,516 log 17464 19292 Not Found: /system/metrics
+WARNING 2026-03-12 19:18:05,545 log 17464 19292 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:18:06,953 log 17464 15220 Not Found: /alerts/list
+WARNING 2026-03-12 19:18:06,959 log 17464 15220 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:18:08,353 log 17464 7768 Not Found: /system/metrics
+WARNING 2026-03-12 19:18:08,361 log 17464 7768 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:18:09,349 log 17464 17776 Not Found: /system/activity
+WARNING 2026-03-12 19:18:09,351 log 17464 17776 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:18:10,481 log 17464 15572 Not Found: /alerts/list
+WARNING 2026-03-12 19:18:10,492 log 17464 15572 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:18:11,996 log 17464 9112 Not Found: /system/metrics
+WARNING 2026-03-12 19:18:12,011 log 17464 9112 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:18:12,591 log 17464 8828 Not Found: /system/activity
+WARNING 2026-03-12 19:18:12,596 log 17464 8828 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:18:16,254 log 17464 17980 Not Found: /system/metrics
+WARNING 2026-03-12 19:18:16,493 log 17464 17980 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:18:16,559 log 17464 8664 Not Found: /alerts/list
+WARNING 2026-03-12 19:18:16,576 log 17464 8664 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:18:19,351 log 17464 19000 Not Found: /alerts/list
+WARNING 2026-03-12 19:18:19,353 log 17464 19000 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:18:43,874 log 17464 11424 Not Found: /alerts/list
+WARNING 2026-03-12 19:18:43,876 log 17464 11424 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:18:56,988 log 17464 12332 Not Found: /healthcheck
+WARNING 2026-03-12 19:18:56,993 log 17464 12332 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:18:59,054 log 17464 6760 Not Found: /system/startup-insight
+WARNING 2026-03-12 19:18:59,060 log 17464 6760 "GET /system/startup-insight HTTP/1.1" 404 4742
+WARNING 2026-03-12 19:19:04,032 log 17464 17948 Not Found: /system/metrics
+WARNING 2026-03-12 19:19:04,089 log 17464 17948 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:19:06,629 log 17464 19384 Not Found: /alerts/list
+WARNING 2026-03-12 19:19:06,637 log 17464 19384 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:19:08,687 log 17464 13696 Not Found: /system/activity
+WARNING 2026-03-12 19:19:08,693 log 17464 13696 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:19:10,940 log 17464 5912 Not Found: /system/metrics
+WARNING 2026-03-12 19:19:10,942 log 17464 5912 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:19:23,666 log 17464 2552 Not Found: /alerts/list
+WARNING 2026-03-12 19:19:23,706 log 17464 2552 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:19:26,057 log 17464 17432 Not Found: /healthcheck
+WARNING 2026-03-12 19:19:26,060 log 17464 17432 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:19:28,109 log 17464 9712 Not Found: /system/startup-insight
+WARNING 2026-03-12 19:19:28,113 log 17464 9712 "GET /system/startup-insight HTTP/1.1" 404 4742
+WARNING 2026-03-12 19:19:30,217 log 17464 11960 Not Found: /system/metrics
+WARNING 2026-03-12 19:19:30,221 log 17464 11960 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:19:32,297 log 17464 7896 Not Found: /alerts/list
+WARNING 2026-03-12 19:19:32,298 log 17464 7896 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:19:34,351 log 17464 16944 Not Found: /system/activity
+WARNING 2026-03-12 19:19:34,357 log 17464 16944 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:19:36,767 log 17464 7360 Not Found: /system/metrics
+WARNING 2026-03-12 19:19:36,827 log 17464 7360 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:19:41,643 log 17464 15528 Not Found: /system/metrics
+WARNING 2026-03-12 19:19:41,707 log 17464 15528 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:19:45,547 log 17464 16800 Not Found: /alerts/list
+WARNING 2026-03-12 19:19:45,573 log 17464 16800 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:19:47,897 log 17464 5052 Not Found: /system/activity
+WARNING 2026-03-12 19:19:47,899 log 17464 5052 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:19:50,334 log 17464 14848 Not Found: /system/metrics
+WARNING 2026-03-12 19:19:50,336 log 17464 14848 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:19:52,600 log 17464 18356 Not Found: /system/metrics
+WARNING 2026-03-12 19:19:52,605 log 17464 18356 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:19:54,964 log 17464 17332 Not Found: /alerts/list
+WARNING 2026-03-12 19:19:54,981 log 17464 17332 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:19:57,869 log 17464 8132 Not Found: /system/activity
+WARNING 2026-03-12 19:19:57,886 log 17464 8132 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:20:00,124 log 17464 18540 Not Found: /system/metrics
+WARNING 2026-03-12 19:20:00,191 log 17464 18540 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:20:02,436 log 17464 6912 Not Found: /system/metrics
+WARNING 2026-03-12 19:20:02,437 log 17464 6912 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:20:04,648 log 17464 5244 Not Found: /alerts/list
+WARNING 2026-03-12 19:20:04,649 log 17464 5244 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:20:05,755 log 17464 12792 Not Found: /alerts/list
+WARNING 2026-03-12 19:20:05,757 log 17464 12792 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:20:06,715 log 17464 11304 Not Found: /system/activity
+WARNING 2026-03-12 19:20:06,717 log 17464 11304 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:20:07,813 log 17464 12352 Not Found: /system/activity
+WARNING 2026-03-12 19:20:07,837 log 17464 12352 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:20:08,921 log 17464 16168 Not Found: /system/metrics
+WARNING 2026-03-12 19:20:08,925 log 17464 16168 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:20:10,141 log 17464 12896 Not Found: /system/metrics
+WARNING 2026-03-12 19:20:10,235 log 17464 12896 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:20:11,189 log 17464 1512 Not Found: /system/metrics
+WARNING 2026-03-12 19:20:11,191 log 17464 1512 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:20:13,511 log 17464 8152 Not Found: /alerts/list
+WARNING 2026-03-12 19:20:13,560 log 17464 8152 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:20:15,942 log 17464 15108 Not Found: /system/activity
+WARNING 2026-03-12 19:20:16,019 log 17464 15108 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:20:18,193 log 17464 2916 Not Found: /system/metrics
+WARNING 2026-03-12 19:20:18,235 log 17464 2916 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:20:26,460 log 17464 18124 Not Found: /healthcheck
+WARNING 2026-03-12 19:20:26,475 log 17464 18124 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:20:28,632 log 17464 18124 Not Found: /healthcheck
+WARNING 2026-03-12 19:20:28,691 log 17464 18124 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:20:30,741 log 17464 18124 Not Found: /healthcheck
+WARNING 2026-03-12 19:20:30,751 log 17464 18124 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:20:32,995 log 17464 18124 Not Found: /healthcheck
+WARNING 2026-03-12 19:20:32,997 log 17464 18124 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:20:35,050 log 17464 18124 Not Found: /healthcheck
+WARNING 2026-03-12 19:20:35,060 log 17464 18124 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:20:37,178 log 17464 18124 Not Found: /healthcheck
+WARNING 2026-03-12 19:20:37,222 log 17464 18124 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:20:39,319 log 17464 18124 Not Found: /healthcheck
+WARNING 2026-03-12 19:20:39,320 log 17464 18124 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:20:41,352 log 17464 18124 Not Found: /healthcheck
+WARNING 2026-03-12 19:20:41,356 log 17464 18124 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:20:43,378 log 17464 18124 Not Found: /healthcheck
+WARNING 2026-03-12 19:20:43,379 log 17464 18124 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:20:45,554 log 17464 18124 Not Found: /healthcheck
+WARNING 2026-03-12 19:20:45,858 log 17464 18124 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:20:49,751 log 17464 18124 Not Found: /healthcheck
+WARNING 2026-03-12 19:20:49,759 log 17464 18124 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:20:51,809 log 17464 18124 Not Found: /healthcheck
+WARNING 2026-03-12 19:20:51,820 log 17464 18124 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:20:54,058 log 17464 18124 Not Found: /healthcheck
+WARNING 2026-03-12 19:20:54,075 log 17464 18124 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:20:56,380 log 17464 18124 Not Found: /healthcheck
+WARNING 2026-03-12 19:20:56,381 log 17464 18124 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:20:58,419 log 17464 18124 Not Found: /healthcheck
+WARNING 2026-03-12 19:20:58,449 log 17464 18124 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:21:28,221 log 17464 19112 Not Found: /users/me
+WARNING 2026-03-12 19:21:28,228 log 17464 19112 "GET /users/me HTTP/1.1" 404 4700
+WARNING 2026-03-12 19:21:29,004 log 17464 15428 Not Found: /alerts/list
+WARNING 2026-03-12 19:21:29,030 log 17464 15428 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:21:30,147 log 17464 12544 Not Found: /docs
+WARNING 2026-03-12 19:21:30,197 log 17464 12544 "GET /docs HTTP/1.1" 404 4688
+WARNING 2026-03-12 19:21:30,749 log 17464 8008 Not Found: /users/me
+WARNING 2026-03-12 19:21:30,815 log 17464 8008 "GET /users/me HTTP/1.1" 404 4700
+WARNING 2026-03-12 19:21:32,499 log 17464 12544 Not Found: /docs
+WARNING 2026-03-12 19:21:32,663 log 17464 12544 "GET /docs HTTP/1.1" 404 4688
+WARNING 2026-03-12 19:21:33,568 log 17464 7468 Not Found: /healthcheck
+WARNING 2026-03-12 19:21:33,596 log 17464 7468 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:21:33,950 log 17464 13852 Not Found: /healthcheck
+WARNING 2026-03-12 19:21:33,951 log 17464 13852 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:21:36,688 log 17464 14644 Not Found: /system/startup-insight
+WARNING 2026-03-12 19:21:36,850 log 17464 14644 "GET /system/startup-insight HTTP/1.1" 404 4742
+WARNING 2026-03-12 19:21:36,937 log 17464 15816 Not Found: /system/startup-insight
+WARNING 2026-03-12 19:21:36,963 log 17464 15816 "GET /system/startup-insight HTTP/1.1" 404 4742
+WARNING 2026-03-12 19:21:39,259 log 17464 12616 Not Found: /system/metrics
+WARNING 2026-03-12 19:21:39,321 log 17464 12616 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:21:39,479 log 17464 11432 Not Found: /system/metrics
+WARNING 2026-03-12 19:21:39,502 log 17464 11432 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:21:41,653 log 17464 12548 Not Found: /alerts/list
+WARNING 2026-03-12 19:21:41,654 log 17464 12548 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:21:41,761 log 17464 16260 Not Found: /alerts/list
+WARNING 2026-03-12 19:21:41,951 log 17464 16260 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:21:44,097 log 17464 14980 Not Found: /system/activity
+WARNING 2026-03-12 19:21:44,102 log 17464 14980 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:21:46,969 log 17464 19272 Not Found: /system/metrics
+WARNING 2026-03-12 19:21:46,971 log 17464 19272 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:21:51,461 log 17464 5648 Not Found: /system/metrics
+WARNING 2026-03-12 19:21:51,462 log 17464 5648 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:21:54,025 log 17464 7872 Not Found: /alerts/list
+WARNING 2026-03-12 19:21:54,026 log 17464 7872 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:21:56,290 log 17464 256 Not Found: /system/activity
+WARNING 2026-03-12 19:21:56,334 log 17464 256 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:21:58,684 log 17464 14808 Not Found: /system/metrics
+WARNING 2026-03-12 19:21:58,690 log 17464 14808 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:22:00,925 log 17464 19000 Not Found: /system/metrics
+WARNING 2026-03-12 19:22:00,944 log 17464 19000 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:22:04,345 log 17464 9196 Not Found: /alerts/list
+WARNING 2026-03-12 19:22:04,517 log 17464 9196 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:22:07,369 log 17464 18388 Not Found: /system/activity
+WARNING 2026-03-12 19:22:07,877 log 17464 18388 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:22:10,369 log 17464 13580 Not Found: /system/metrics
+WARNING 2026-03-12 19:22:10,445 log 17464 13580 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:22:13,905 log 17464 7880 Not Found: /system/metrics
+WARNING 2026-03-12 19:22:14,044 log 17464 7880 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:22:16,465 log 17464 16072 Not Found: /alerts/list
+WARNING 2026-03-12 19:22:16,466 log 17464 16072 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:22:18,686 log 17464 16276 Not Found: /system/activity
+WARNING 2026-03-12 19:22:18,693 log 17464 16276 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:22:20,897 log 17464 4192 Not Found: /system/metrics
+WARNING 2026-03-12 19:22:20,899 log 17464 4192 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:22:23,146 log 17464 16028 Not Found: /alerts/list
+WARNING 2026-03-12 19:22:23,148 log 17464 16028 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:22:25,193 log 17464 10080 Not Found: /system/activity
+WARNING 2026-03-12 19:22:25,194 log 17464 10080 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:22:27,487 log 17464 16392 Not Found: /system/metrics
+WARNING 2026-03-12 19:22:27,498 log 17464 16392 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:22:30,074 log 17464 9280 Not Found: /system/metrics
+WARNING 2026-03-12 19:22:30,076 log 17464 9280 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:22:32,343 log 17464 17468 Not Found: /alerts/list
+WARNING 2026-03-12 19:22:32,344 log 17464 17468 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:22:34,418 log 17464 16712 Not Found: /system/activity
+WARNING 2026-03-12 19:22:34,419 log 17464 16712 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:22:36,614 log 17464 9764 Not Found: /system/metrics
+WARNING 2026-03-12 19:22:36,617 log 17464 9764 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:22:39,830 log 17464 9076 Not Found: /system/metrics
+WARNING 2026-03-12 19:22:39,850 log 17464 9076 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:22:42,377 log 17464 10980 Not Found: /alerts/list
+WARNING 2026-03-12 19:22:42,467 log 17464 10980 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:22:44,511 log 17464 18708 Not Found: /system/activity
+WARNING 2026-03-12 19:22:44,512 log 17464 18708 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:22:46,807 log 17464 17424 Not Found: /system/metrics
+WARNING 2026-03-12 19:22:46,809 log 17464 17424 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:23:05,958 log 17464 17628 Not Found: /system/metrics
+WARNING 2026-03-12 19:23:06,120 log 17464 17628 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:23:08,445 log 17464 17172 Not Found: /alerts/list
+WARNING 2026-03-12 19:23:08,447 log 17464 17172 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:23:10,505 log 17464 19180 Not Found: /system/activity
+WARNING 2026-03-12 19:23:10,507 log 17464 19180 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:24:06,244 log 17464 18620 Not Found: /system/metrics
+WARNING 2026-03-12 19:24:06,245 log 17464 18620 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:24:08,500 log 17464 8408 Not Found: /alerts/list
+WARNING 2026-03-12 19:24:08,510 log 17464 8408 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:24:10,577 log 17464 15288 Not Found: /system/activity
+WARNING 2026-03-12 19:24:10,578 log 17464 15288 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:24:25,739 log 17464 15852 Not Found: /system/metrics
+WARNING 2026-03-12 19:24:25,741 log 17464 15852 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:24:28,289 log 17464 13760 Not Found: /alerts/list
+WARNING 2026-03-12 19:24:28,367 log 17464 13760 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:24:30,363 log 17464 16092 Not Found: /system/activity
+WARNING 2026-03-12 19:24:30,377 log 17464 16092 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:24:33,507 log 17464 8176 Not Found: /system/metrics
+WARNING 2026-03-12 19:24:33,673 log 17464 8176 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:24:35,733 log 17464 10852 Not Found: /alerts/list
+WARNING 2026-03-12 19:24:35,735 log 17464 10852 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:24:37,793 log 17464 14976 Not Found: /system/activity
+WARNING 2026-03-12 19:24:37,795 log 17464 14976 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:24:39,998 log 17464 8008 Not Found: /system/metrics
+WARNING 2026-03-12 19:24:39,999 log 17464 8008 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:24:42,314 log 17464 7400 Not Found: /alerts/list
+WARNING 2026-03-12 19:24:42,327 log 17464 7400 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:24:44,382 log 17464 912 Not Found: /system/activity
+WARNING 2026-03-12 19:24:44,396 log 17464 912 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:24:46,664 log 17464 2508 Not Found: /system/metrics
+WARNING 2026-03-12 19:24:46,666 log 17464 2508 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:24:49,486 log 17464 14544 Not Found: /system/metrics
+WARNING 2026-03-12 19:24:49,487 log 17464 14544 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:24:51,716 log 17464 9560 Not Found: /alerts/list
+WARNING 2026-03-12 19:24:51,718 log 17464 9560 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:24:53,772 log 17464 8128 Not Found: /system/activity
+WARNING 2026-03-12 19:24:53,774 log 17464 8128 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:24:56,027 log 17464 3076 Not Found: /system/metrics
+WARNING 2026-03-12 19:24:56,052 log 17464 3076 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:24:59,941 log 17464 6848 Not Found: /system/metrics
+WARNING 2026-03-12 19:24:59,994 log 17464 6848 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:25:02,248 log 17464 4948 Not Found: /alerts/list
+WARNING 2026-03-12 19:25:02,250 log 17464 4948 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:25:04,302 log 17464 15756 Not Found: /system/activity
+WARNING 2026-03-12 19:25:04,304 log 17464 15756 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:25:06,521 log 17464 18832 Not Found: /system/metrics
+WARNING 2026-03-12 19:25:06,522 log 17464 18832 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:25:09,758 log 17464 6440 Not Found: /system/metrics
+WARNING 2026-03-12 19:25:09,792 log 17464 6440 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:25:11,991 log 17464 1548 Not Found: /alerts/list
+WARNING 2026-03-12 19:25:11,993 log 17464 1548 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:25:14,058 log 17464 18664 Not Found: /system/activity
+WARNING 2026-03-12 19:25:14,061 log 17464 18664 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:25:16,307 log 17464 17544 Not Found: /system/metrics
+WARNING 2026-03-12 19:25:16,309 log 17464 17544 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:25:19,483 log 17464 13620 Not Found: /system/metrics
+WARNING 2026-03-12 19:25:19,486 log 17464 13620 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:25:21,970 log 17464 7392 Not Found: /alerts/list
+WARNING 2026-03-12 19:25:22,028 log 17464 7392 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:25:24,055 log 17464 2476 Not Found: /system/activity
+WARNING 2026-03-12 19:25:24,056 log 17464 2476 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:25:26,347 log 17464 9724 Not Found: /system/metrics
+WARNING 2026-03-12 19:25:26,360 log 17464 9724 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:25:29,764 log 17464 11432 Not Found: /system/metrics
+WARNING 2026-03-12 19:25:29,765 log 17464 11432 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:25:31,974 log 17464 8164 Not Found: /alerts/list
+WARNING 2026-03-12 19:25:31,975 log 17464 8164 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:25:34,049 log 17464 15576 Not Found: /system/activity
+WARNING 2026-03-12 19:25:34,051 log 17464 15576 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:25:36,286 log 17464 6632 Not Found: /system/metrics
+WARNING 2026-03-12 19:25:36,288 log 17464 6632 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:25:39,775 log 17464 14268 Not Found: /system/metrics
+WARNING 2026-03-12 19:25:39,777 log 17464 14268 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:25:42,951 log 17464 2900 Not Found: /alerts/list
+WARNING 2026-03-12 19:25:42,969 log 17464 2900 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:25:43,608 log 17464 14488 Not Found: /alerts/list
+WARNING 2026-03-12 19:25:43,612 log 17464 14488 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:25:45,007 log 17464 3020 Not Found: /system/activity
+WARNING 2026-03-12 19:25:45,016 log 17464 3020 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:25:45,734 log 17464 6316 Not Found: /healthcheck
+WARNING 2026-03-12 19:25:45,739 log 17464 6316 "GET /healthcheck HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:25:47,253 log 17464 2764 Not Found: /system/metrics
+WARNING 2026-03-12 19:25:47,255 log 17464 2764 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:25:47,791 log 17464 16600 Not Found: /system/startup-insight
+WARNING 2026-03-12 19:25:47,793 log 17464 16600 "GET /system/startup-insight HTTP/1.1" 404 4742
+WARNING 2026-03-12 19:25:49,752 log 17464 17288 Not Found: /system/metrics
+WARNING 2026-03-12 19:25:49,754 log 17464 17288 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:25:49,931 log 17464 2572 Not Found: /system/metrics
+WARNING 2026-03-12 19:25:49,933 log 17464 2572 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:25:51,987 log 17464 12992 Not Found: /alerts/list
+WARNING 2026-03-12 19:25:51,996 log 17464 12992 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:25:52,033 log 17464 7976 Not Found: /alerts/list
+WARNING 2026-03-12 19:25:52,050 log 17464 7976 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:25:54,248 log 17464 19072 Not Found: /system/activity
+WARNING 2026-03-12 19:25:54,352 log 17464 19072 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:25:54,415 log 17464 18880 Not Found: /system/activity
+WARNING 2026-03-12 19:25:54,474 log 17464 18880 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:26:03,564 log 17464 16772 Not Found: /system/metrics
+WARNING 2026-03-12 19:26:03,621 log 17464 16772 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:26:04,141 log 17464 5004 Not Found: /system/metrics
+WARNING 2026-03-12 19:26:04,232 log 17464 5004 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:26:06,277 log 17464 11924 Not Found: /system/metrics
+WARNING 2026-03-12 19:26:06,278 log 17464 11924 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:26:06,863 log 17464 13512 Not Found: /system/metrics
+WARNING 2026-03-12 19:26:06,864 log 17464 13512 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:26:08,595 log 17464 9572 Not Found: /alerts/list
+WARNING 2026-03-12 19:26:08,614 log 17464 9572 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:26:10,664 log 17464 14648 Not Found: /system/activity
+WARNING 2026-03-12 19:26:10,665 log 17464 14648 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:26:12,901 log 17464 13232 Not Found: /system/metrics
+WARNING 2026-03-12 19:26:12,902 log 17464 13232 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:26:15,219 log 17464 17392 Not Found: /alerts/list
+WARNING 2026-03-12 19:26:15,356 log 17464 17392 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:26:17,427 log 17464 16484 Not Found: /system/activity
+WARNING 2026-03-12 19:26:17,429 log 17464 16484 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:26:19,813 log 17464 16540 Not Found: /system/metrics
+WARNING 2026-03-12 19:26:19,903 log 17464 16540 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:26:22,316 log 17464 19304 Not Found: /system/metrics
+WARNING 2026-03-12 19:26:22,317 log 17464 19304 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:26:24,553 log 17464 18112 Not Found: /alerts/list
+WARNING 2026-03-12 19:26:24,555 log 17464 18112 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:26:26,603 log 17464 10708 Not Found: /system/activity
+WARNING 2026-03-12 19:26:26,605 log 17464 10708 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:26:28,910 log 17464 17200 Not Found: /system/metrics
+WARNING 2026-03-12 19:26:28,912 log 17464 17200 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:26:31,184 log 17464 14184 Not Found: /system/metrics
+WARNING 2026-03-12 19:26:31,186 log 17464 14184 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:26:33,420 log 17464 2656 Not Found: /alerts/list
+WARNING 2026-03-12 19:26:33,421 log 17464 2656 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:26:35,474 log 17464 13696 Not Found: /system/activity
+WARNING 2026-03-12 19:26:35,476 log 17464 13696 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:26:37,686 log 17464 16232 Not Found: /system/metrics
+WARNING 2026-03-12 19:26:37,688 log 17464 16232 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:26:39,902 log 17464 18820 Not Found: /system/metrics
+WARNING 2026-03-12 19:26:39,930 log 17464 18820 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:26:42,181 log 17464 16276 Not Found: /alerts/list
+WARNING 2026-03-12 19:26:42,182 log 17464 16276 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:26:44,239 log 17464 14356 Not Found: /system/activity
+WARNING 2026-03-12 19:26:44,241 log 17464 14356 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:26:46,502 log 17464 14776 Not Found: /system/metrics
+WARNING 2026-03-12 19:26:46,505 log 17464 14776 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:26:49,786 log 17464 16768 Not Found: /system/metrics
+WARNING 2026-03-12 19:26:49,901 log 17464 16768 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:26:53,782 log 17464 9688 Not Found: /docs
+WARNING 2026-03-12 19:26:53,883 log 17464 9688 "GET /docs HTTP/1.1" 404 4688
+WARNING 2026-03-12 19:26:53,945 log 17464 15332 Not Found: /alerts/list
+WARNING 2026-03-12 19:26:53,961 log 17464 15332 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:26:56,397 log 17464 15176 Not Found: /system/activity
+WARNING 2026-03-12 19:26:56,398 log 17464 15176 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:26:58,625 log 17464 19312 Not Found: /system/metrics
+WARNING 2026-03-12 19:26:58,627 log 17464 19312 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:27:00,852 log 17464 5940 Not Found: /system/metrics
+WARNING 2026-03-12 19:27:00,854 log 17464 5940 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:27:03,068 log 17464 10080 Not Found: /alerts/list
+WARNING 2026-03-12 19:27:03,070 log 17464 10080 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:27:05,158 log 17464 15364 Not Found: /system/activity
+WARNING 2026-03-12 19:27:05,172 log 17464 15364 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:27:07,403 log 17464 18360 Not Found: /system/metrics
+WARNING 2026-03-12 19:27:07,406 log 17464 18360 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:27:09,947 log 17464 6080 Not Found: /system/metrics
+WARNING 2026-03-12 19:27:10,047 log 17464 6080 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:27:13,043 log 17464 18660 Not Found: /alerts/list
+WARNING 2026-03-12 19:27:13,044 log 17464 18660 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:27:15,127 log 17464 12760 Not Found: /system/activity
+WARNING 2026-03-12 19:27:15,129 log 17464 12760 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:27:17,462 log 17464 7844 Not Found: /system/metrics
+WARNING 2026-03-12 19:27:17,545 log 17464 7844 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:27:19,978 log 17464 7416 Not Found: /system/metrics
+WARNING 2026-03-12 19:27:19,979 log 17464 7416 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:27:22,178 log 17464 7508 Not Found: /alerts/list
+WARNING 2026-03-12 19:27:22,182 log 17464 7508 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:27:24,230 log 17464 15508 Not Found: /system/activity
+WARNING 2026-03-12 19:27:24,232 log 17464 15508 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:27:26,445 log 17464 7096 Not Found: /system/metrics
+WARNING 2026-03-12 19:27:26,447 log 17464 7096 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:27:29,879 log 17464 8412 Not Found: /system/metrics
+WARNING 2026-03-12 19:27:29,912 log 17464 8412 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:27:32,113 log 17464 5244 Not Found: /alerts/list
+WARNING 2026-03-12 19:27:32,128 log 17464 5244 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:27:34,170 log 17464 11304 Not Found: /system/activity
+WARNING 2026-03-12 19:27:34,172 log 17464 11304 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:27:36,450 log 17464 14848 Not Found: /system/metrics
+WARNING 2026-03-12 19:27:36,451 log 17464 14848 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:27:39,734 log 17464 4988 Not Found: /system/metrics
+WARNING 2026-03-12 19:27:39,736 log 17464 4988 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:27:41,954 log 17464 11888 Not Found: /alerts/list
+WARNING 2026-03-12 19:27:41,956 log 17464 11888 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:27:44,022 log 17464 9772 Not Found: /system/activity
+WARNING 2026-03-12 19:27:44,023 log 17464 9772 "GET /system/activity HTTP/1.1" 404 4721
+WARNING 2026-03-12 19:27:46,237 log 17464 14896 Not Found: /system/metrics
+WARNING 2026-03-12 19:27:46,239 log 17464 14896 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:28:05,801 log 17464 6968 Not Found: /system/metrics
+WARNING 2026-03-12 19:28:05,943 log 17464 6968 "GET /system/metrics HTTP/1.1" 404 4718
+WARNING 2026-03-12 19:28:08,807 log 17464 340 Not Found: /alerts/list
+WARNING 2026-03-12 19:28:08,895 log 17464 340 "GET /alerts/list HTTP/1.1" 404 4709
+WARNING 2026-03-12 19:28:10,906 log 17464 12584 Not Found: /system/activity
+WARNING 2026-03-12 19:28:10,908 log 17464 12584 "GET /system/activity HTTP/1.1" 404 4721
+INFO 2026-03-18 17:47:36,815 autoreload 6888 14376 Watching for file changes with StatReloader
+INFO 2026-03-18 17:48:03,414 log 6888 15596 "GET / HTTP/1.1" 200 2343
+WARNING 2026-03-18 17:48:06,579 log 6888 15596 Not Found: /favicon.ico
+WARNING 2026-03-18 17:48:06,580 log 6888 15596 "GET /favicon.ico HTTP/1.1" 404 4709
+INFO 2026-03-18 17:48:37,212 log 6888 15596 "GET /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2026-03-18 17:48:46,433 log 6888 15596 "GET /admin/ HTTP/1.1" 200 10437
+INFO 2026-03-18 17:48:47,005 log 6888 9188 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2026-03-18 17:48:47,056 log 6888 15596 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2026-03-18 17:48:47,058 log 6888 8928 "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2026-03-18 17:48:47,219 log 6888 9188 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2026-03-18 17:48:47,256 log 6888 8928 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2026-03-18 17:48:47,295 log 6888 15596 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2026-03-18 17:48:47,709 log 6888 15596 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2026-03-18 17:48:48,494 log 6888 9256 "GET /api/schema/redoc/ HTTP/1.1" 200 742
+INFO 2026-03-18 17:48:48,593 log 6888 15596 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2026-03-18 17:48:48,633 log 6888 8928 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+WARNING 2026-03-18 17:48:50,344 log 6888 1784 Not Found: /favicon.ico
+WARNING 2026-03-18 17:48:52,036 log 6888 1784 "GET /favicon.ico HTTP/1.1" 404 4709
+INFO 2026-03-18 17:48:53,702 log 6888 9256 "GET /api/schema/ HTTP/1.1" 200 30287
+INFO 2026-03-18 17:48:56,421 log 6888 9256 "GET /api/schema/swagger-ui/ HTTP/1.1" 200 4659
+INFO 2026-03-18 17:49:07,751 log 6888 9256 "GET /api/schema/ HTTP/1.1" 200 67020
+INFO 2026-03-18 18:09:21,713 log 6888 14144 "GET /api/products/ HTTP/1.1" 200 7003
+INFO 2026-03-18 18:09:21,799 log 6888 14144 "GET /api/vendors/shops/ HTTP/1.1" 200 1730
+INFO 2026-03-18 18:10:29,241 autoreload 6888 14376 C:\Users\Adegoke\Desktop\TU Marketplace\backend\products\serializers.py changed, reloading.
+INFO 2026-03-18 18:13:15,781 autoreload 7532 4816 Watching for file changes with StatReloader
+INFO 2026-03-18 18:17:25,798 log 7532 16176 "GET /api/products/ HTTP/1.1" 200 8659
+INFO 2026-03-18 18:17:31,138 log 7532 16176 "GET /api/vendors/shops/ HTTP/1.1" 200 1825
+INFO 2026-03-18 18:29:24,042 log 7532 13888 "GET /api/products/ HTTP/1.1" 200 8659
+INFO 2026-03-18 18:29:24,147 log 7532 868 "GET /api/vendors/shops/ HTTP/1.1" 200 1825
+INFO 2026-03-18 18:29:24,439 log 7532 13888 "GET /api/products/ HTTP/1.1" 200 8659
+INFO 2026-03-18 18:29:24,795 log 7532 13888 "GET /api/vendors/shops/ HTTP/1.1" 200 1825
+INFO 2026-03-18 18:34:35,542 log 7532 3312 "GET /api/products/ HTTP/1.1" 200 8659
+INFO 2026-03-18 18:34:35,956 log 7532 3312 "GET /api/vendors/shops/ HTTP/1.1" 200 1825
+WARNING 2026-03-18 18:35:57,443 log 7532 3312 Unauthorized: /api/chat/conversations/
+WARNING 2026-03-18 18:35:57,824 log 7532 3312 "GET /api/chat/conversations/ HTTP/1.1" 401 58
+INFO 2026-03-18 18:35:58,704 log 7532 3312 "OPTIONS /api/chat/conversations/ HTTP/1.1" 200 0
+WARNING 2026-03-18 18:35:59,691 log 7532 3312 Unauthorized: /api/chat/conversations/
+WARNING 2026-03-18 18:36:00,688 log 7532 3312 "POST /api/chat/conversations/ HTTP/1.1" 401 58
+INFO 2026-03-18 20:37:22,528 log 7532 14144 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-18 20:37:26,626 log 7532 14144 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-18 20:45:50,728 log 7532 7332 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-18 20:45:50,909 log 7532 7332 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-18 20:47:43,413 log 7532 7332 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-18 20:47:43,607 log 7532 7332 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-18 20:50:27,216 log 7532 7332 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-18 20:50:28,089 log 7532 7332 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-18 20:53:36,468 log 7532 7332 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-18 20:53:43,370 log 7532 7332 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-18 20:53:44,272 log 7532 7332 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-18 20:53:49,271 log 7532 7332 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-18 20:58:33,918 log 7532 7332 "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+WARNING 2026-03-18 20:58:47,157 log 7532 7332 Bad Request: /api/auth/login/
+WARNING 2026-03-18 20:58:47,485 log 7532 7332 "POST /api/auth/login/ HTTP/1.1" 400 37
+WARNING 2026-03-18 20:59:00,194 log 7532 7332 Bad Request: /api/auth/login/
+WARNING 2026-03-18 20:59:00,641 log 7532 7332 "POST /api/auth/login/ HTTP/1.1" 400 37
+INFO 2026-03-18 20:59:12,966 log 7532 7332 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-18 20:59:17,532 log 7532 7332 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-18 20:59:19,990 log 7532 9044 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-18 20:59:25,105 log 7532 9044 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-18 20:59:47,018 log 7532 9044 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-18 20:59:51,062 log 7532 7332 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-18 20:59:51,230 log 7532 9044 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-18 20:59:52,948 log 7532 9044 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-18 21:05:13,584 log 7532 864 "OPTIONS /api/auth/register/ HTTP/1.1" 200 0
+INFO 2026-03-18 21:05:54,044 log 7532 864 "POST /api/auth/register/ HTTP/1.1" 201 582
+INFO 2026-03-18 21:05:58,368 log 7532 864 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-18 21:05:58,732 log 7532 864 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-18 21:05:58,756 log 7532 17176 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-18 21:05:59,253 log 7532 17176 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-18 21:08:21,183 log 7532 17176 "OPTIONS /api/auth/profile/ HTTP/1.1" 200 0
+INFO 2026-03-18 21:08:25,739 log 7532 17176 "GET /api/auth/profile/ HTTP/1.1" 200 83
+INFO 2026-03-18 21:08:51,229 log 7532 17176 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-18 21:08:54,354 log 7532 17176 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+WARNING 2026-03-18 21:10:07,143 log 7532 17176 Bad Request: /api/auth/login/
+WARNING 2026-03-18 21:10:07,159 log 7532 17176 "POST /api/auth/login/ HTTP/1.1" 400 37
+WARNING 2026-03-18 21:10:10,986 log 7532 17176 Bad Request: /api/auth/login/
+WARNING 2026-03-18 21:10:11,052 log 7532 17176 "POST /api/auth/login/ HTTP/1.1" 400 37
+WARNING 2026-03-18 21:10:16,632 log 7532 17176 Bad Request: /api/auth/login/
+WARNING 2026-03-18 21:10:16,654 log 7532 17176 "POST /api/auth/login/ HTTP/1.1" 400 37
+WARNING 2026-03-18 21:10:26,777 log 7532 17176 Bad Request: /api/auth/login/
+WARNING 2026-03-18 21:10:26,788 log 7532 17176 "POST /api/auth/login/ HTTP/1.1" 400 37
+INFO 2026-03-18 21:10:37,883 log 7532 17176 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-18 21:10:38,566 log 7532 17176 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-18 21:10:38,747 log 7532 864 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-18 21:10:39,329 log 7532 864 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-18 21:15:42,613 log 7532 1912 "GET /admin/ HTTP/1.1" 200 10437
+INFO 2026-03-18 21:21:41,320 log 7532 8292 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-18 21:21:41,836 log 7532 8292 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+WARNING 2026-03-18 21:34:33,249 log 7532 3112 Unauthorized: /api/chat/conversations/
+WARNING 2026-03-18 21:34:33,251 log 7532 3112 "GET /api/chat/conversations/ HTTP/1.1" 401 58
+INFO 2026-03-18 21:34:33,313 log 7532 3112 "OPTIONS /api/chat/conversations/ HTTP/1.1" 200 0
+WARNING 2026-03-18 21:34:33,329 log 7532 3112 Unauthorized: /api/chat/conversations/
+WARNING 2026-03-18 21:34:33,333 log 7532 3112 "POST /api/chat/conversations/ HTTP/1.1" 401 58
+INFO 2026-03-18 21:39:06,557 log 7532 3112 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-18 21:39:11,790 log 7532 3112 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-18 21:39:13,935 log 7532 7012 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-18 21:39:14,204 log 7532 3112 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-18 21:47:49,212 log 7532 14852 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-18 21:47:54,367 log 7532 14852 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-18 21:52:41,414 autoreload 7532 4816 C:\Users\Adegoke\Desktop\TU Marketplace\backend\users\serializers.py changed, reloading.
+INFO 2026-03-18 21:52:53,879 autoreload 2684 7892 Watching for file changes with StatReloader
+WARNING 2026-03-18 21:55:26,008 log 2684 18248 Bad Request: /api/auth/login/
+WARNING 2026-03-18 21:55:26,226 log 2684 18248 "POST /api/auth/login/ HTTP/1.1" 400 37
+WARNING 2026-03-18 21:55:35,756 log 2684 18248 Bad Request: /api/auth/login/
+WARNING 2026-03-18 21:55:35,833 log 2684 18248 "POST /api/auth/login/ HTTP/1.1" 400 37
+WARNING 2026-03-18 21:55:46,177 log 2684 18248 Bad Request: /api/auth/login/
+WARNING 2026-03-18 21:55:46,339 log 2684 18248 "POST /api/auth/login/ HTTP/1.1" 400 37
+WARNING 2026-03-18 21:56:35,919 log 2684 18248 Bad Request: /api/auth/register/
+WARNING 2026-03-18 21:56:36,504 log 2684 18248 "POST /api/auth/register/ HTTP/1.1" 400 115
+INFO 2026-03-18 21:57:25,123 log 2684 18248 "POST /api/auth/register/ HTTP/1.1" 201 579
+INFO 2026-03-18 21:57:27,612 log 2684 18248 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-18 21:57:28,213 log 2684 18248 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-18 21:57:28,293 log 2684 15708 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-18 21:57:30,130 log 2684 15708 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-18 21:59:33,843 log 2684 15708 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-18 21:59:37,390 log 2684 18248 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-18 21:59:37,630 log 2684 18248 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-18 21:59:42,989 log 2684 18248 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-18 22:00:15,293 log 2684 15708 "GET /api/auth/profile/ HTTP/1.1" 200 80
+INFO 2026-03-18 22:00:19,184 log 2684 18248 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-18 22:00:25,706 log 2684 18248 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-18 22:04:28,140 log 2684 18248 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-18 22:04:30,571 log 2684 15708 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-18 22:04:30,574 log 2684 18248 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-18 22:04:32,850 log 2684 15708 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-18 22:06:08,548 log 2684 18248 "GET /api/auth/profile/ HTTP/1.1" 200 80
+INFO 2026-03-18 22:06:09,403 log 2684 15708 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-18 22:06:10,126 log 2684 15708 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-18 22:18:34,420 log 2684 11064 "GET /api/auth/profile/ HTTP/1.1" 200 80
+INFO 2026-03-18 22:18:34,704 log 2684 3224 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-18 22:18:34,994 log 2684 3224 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-18 22:42:52,242 log 2684 16212 "GET /api/auth/profile/ HTTP/1.1" 200 80
+INFO 2026-03-18 22:42:52,521 log 2684 5576 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-18 22:42:52,633 log 2684 5576 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-18 22:48:40,208 log 2684 15440 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2026-03-18 22:48:40,975 log 2684 15440 "POST /api/chat/conversations/ HTTP/1.1" 201 221
+INFO 2026-03-18 22:48:44,020 log 2684 15440 "OPTIONS /api/chat/messages/?conversation=1 HTTP/1.1" 200 0
+INFO 2026-03-18 22:48:44,042 log 2684 15440 "GET /api/chat/messages/?conversation=1 HTTP/1.1" 200 2
+INFO 2026-03-18 22:48:47,037 log 2684 15440 "GET /api/chat/messages/?conversation=1 HTTP/1.1" 200 2
+INFO 2026-03-18 22:48:50,005 log 2684 15440 "GET /api/chat/messages/?conversation=1 HTTP/1.1" 200 2
+INFO 2026-03-18 22:48:53,009 log 2684 15440 "GET /api/chat/messages/?conversation=1 HTTP/1.1" 200 2
+INFO 2026-03-18 22:48:55,730 log 2684 15440 "OPTIONS /api/chat/messages/ HTTP/1.1" 200 0
+WARNING 2026-03-18 22:48:55,793 log 2684 15440 Bad Request: /api/chat/messages/
+WARNING 2026-03-18 22:48:55,795 log 2684 15440 "POST /api/chat/messages/ HTTP/1.1" 400 38
+INFO 2026-03-18 22:49:01,982 log 2684 15440 "GET /api/chat/messages/?conversation=1 HTTP/1.1" 200 2
+INFO 2026-03-18 22:49:05,019 log 2684 15440 "GET /api/chat/messages/?conversation=1 HTTP/1.1" 200 2
+INFO 2026-03-18 22:49:08,025 log 2684 15440 "GET /api/chat/messages/?conversation=1 HTTP/1.1" 200 2
+INFO 2026-03-18 22:49:11,015 log 2684 15440 "GET /api/chat/messages/?conversation=1 HTTP/1.1" 200 2
+INFO 2026-03-18 22:49:14,005 log 2684 15440 "GET /api/chat/messages/?conversation=1 HTTP/1.1" 200 2
+INFO 2026-03-18 22:53:41,284 log 2684 15440 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-18 22:53:42,753 log 2684 9608 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-18 22:53:43,030 log 2684 15440 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-18 22:53:43,692 log 2684 15440 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-18 23:03:04,078 log 2684 10640 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-18 23:03:09,125 log 2684 10640 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-18 23:06:07,219 log 2684 10640 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-18 23:06:14,255 log 2684 10640 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-18 23:12:45,631 log 2684 3808 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-18 23:12:45,824 log 2684 3808 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-18 23:17:54,032 log 2684 11120 "OPTIONS /api/auth/register/ HTTP/1.1" 200 0
+INFO 2026-03-18 23:17:58,317 log 2684 11120 "POST /api/auth/register/ HTTP/1.1" 201 577
+INFO 2026-03-18 23:18:00,174 log 2684 11120 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-18 23:18:01,314 log 2684 11120 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-18 23:18:01,532 log 2684 10556 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-18 23:18:01,911 log 2684 10556 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 00:11:23,097 log 2684 3844 "OPTIONS /api/auth/profile/ HTTP/1.1" 200 0
+INFO 2026-03-19 00:11:23,912 log 2684 3844 "GET /api/auth/profile/ HTTP/1.1" 200 78
+INFO 2026-03-19 00:14:03,189 log 2684 1140 "GET /api/auth/profile/ HTTP/1.1" 200 78
+INFO 2026-03-19 00:14:07,480 log 2684 1140 "GET /api/auth/profile/ HTTP/1.1" 200 78
+INFO 2026-03-19 00:14:10,065 log 2684 1140 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 00:14:10,931 log 2684 5012 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 00:14:12,849 log 2684 5012 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 00:14:13,065 log 2684 5012 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 00:17:31,849 log 2684 11564 "GET /api/auth/profile/ HTTP/1.1" 200 78
+INFO 2026-03-19 00:17:33,753 log 2684 11564 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 00:17:34,047 log 2684 9736 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 00:17:35,365 log 2684 11564 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 00:17:38,121 log 2684 11564 "GET /api/auth/profile/ HTTP/1.1" 200 78
+INFO 2026-03-19 00:19:44,293 log 2684 16680 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 00:19:45,320 log 2684 16680 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 00:19:45,773 log 2684 8876 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 00:19:46,665 log 2684 8876 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 00:23:26,957 log 2684 8876 "OPTIONS /api/products/ HTTP/1.1" 200 0
+WARNING 2026-03-19 00:23:27,437 log 2684 8876 Method Not Allowed: /api/products/
+WARNING 2026-03-19 00:23:27,442 log 2684 8876 "POST /api/products/ HTTP/1.1" 405 41
+INFO 2026-03-19 00:23:55,523 log 2684 8876 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 00:23:58,195 log 2684 8876 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 00:23:58,245 log 2684 16680 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 00:24:02,951 log 2684 16680 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 00:35:40,771 log 2684 104 "GET /api/auth/profile/ HTTP/1.1" 200 78
+INFO 2026-03-19 00:35:43,801 log 2684 9956 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 00:35:47,549 log 2684 9956 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 00:46:44,586 log 2684 9712 "GET /api/auth/profile/ HTTP/1.1" 200 78
+INFO 2026-03-19 00:46:45,448 log 2684 10688 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 00:46:48,769 log 2684 10688 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 00:54:19,103 log 2684 12844 "GET /api/auth/profile/ HTTP/1.1" 200 78
+INFO 2026-03-19 00:54:19,567 log 2684 9276 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 00:54:20,901 log 2684 9276 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 00:57:33,842 log 2684 12844 "GET /api/auth/profile/ HTTP/1.1" 200 78
+INFO 2026-03-19 00:57:36,742 log 2684 9276 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 00:57:50,428 log 2684 9276 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 01:00:29,675 log 2684 12844 "GET /api/auth/profile/ HTTP/1.1" 200 78
+INFO 2026-03-19 01:00:30,423 log 2684 9276 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 01:00:35,418 log 2684 9276 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 01:02:26,255 log 2684 9544 "GET /admin/ HTTP/1.1" 200 10437
+INFO 2026-03-19 01:02:43,803 log 2684 6864 "GET /api/schema/ HTTP/1.1" 200 30674
+INFO 2026-03-19 01:03:23,555 log 2684 9544 "GET /admin/users/user/ HTTP/1.1" 200 22408
+INFO 2026-03-19 01:03:23,820 log 2684 9544 "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2026-03-19 01:03:24,034 log 2684 9544 "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2026-03-19 01:03:24,073 log 2684 9544 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2026-03-19 01:03:24,089 log 2684 18824 "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2026-03-19 01:03:24,136 log 2684 18824 "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2026-03-19 01:03:24,138 log 2684 17520 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2026-03-19 01:03:24,142 log 2684 8876 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2026-03-19 01:03:24,143 log 2684 9544 "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2026-03-19 01:03:24,159 log 2684 18288 "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2026-03-19 01:03:24,364 log 2684 8876 "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2026-03-19 01:03:26,102 log 2684 18288 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 558
+INFO 2026-03-19 01:03:26,102 log 2684 8876 "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 645
+INFO 2026-03-19 01:03:26,220 log 2684 8876 "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2026-03-19 01:03:27,599 log 2684 7984 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-03-19 01:03:27,933 log 2684 18288 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2026-03-19 01:03:27,935 log 2684 8876 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2026-03-19 01:03:28,577 log 2684 7984 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1761
+INFO 2026-03-19 01:04:31,560 log 2684 7984 "GET /admin/vendors/shop/add/ HTTP/1.1" 200 18525
+INFO 2026-03-19 01:04:31,695 log 2684 8876 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-03-19 01:04:31,699 log 2684 7984 "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2026-03-19 01:04:31,757 log 2684 18288 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2026-03-19 01:04:31,833 log 2684 18288 "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2026-03-19 01:04:31,879 log 2684 8876 "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2026-03-19 01:04:45,390 log 2684 8876 "GET /admin/vendors/vendor/add/?_to_field=id&_popup=1 HTTP/1.1" 200 7981
+INFO 2026-03-19 01:04:45,483 log 2684 8876 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-03-19 01:05:07,162 log 2684 8876 "GET /admin/vendors/vendorwallet/add/ HTTP/1.1" 200 13711
+INFO 2026-03-19 01:05:07,240 log 2684 8876 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-03-19 01:05:26,519 log 2684 8876 "GET /admin/vendors/vendor/3/change/?_to_field=id HTTP/1.1" 200 15646
+INFO 2026-03-19 01:05:26,669 log 2684 8876 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-03-19 01:06:02,492 log 2684 8876 "GET / HTTP/1.1" 200 2343
+ERROR 2026-03-19 01:06:16,151 log 2684 8876 Internal Server Error: /shops/
+Traceback (most recent call last):
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 221, in _get_response
+    response = response.render()
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: shops_list.html
+ERROR 2026-03-19 01:06:16,260 log 2684 8876 "GET /shops/ HTTP/1.1" 500 86734
+INFO 2026-03-19 01:06:25,524 log 2684 8876 "GET /admin/ HTTP/1.1" 200 10437
+INFO 2026-03-19 01:06:28,641 log 2684 8876 "GET /admin/auth/group/add/ HTTP/1.1" 200 19850
+INFO 2026-03-19 01:06:28,701 log 2684 8876 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-03-19 01:06:28,813 log 2684 8876 "GET /static/admin/js/SelectBox.js HTTP/1.1" 304 0
+INFO 2026-03-19 01:06:28,840 log 2684 8876 "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 304 0
+INFO 2026-03-19 01:06:29,133 log 2684 8876 "GET /static/admin/img/selector-icons.svg HTTP/1.1" 304 0
+INFO 2026-03-19 01:06:50,700 log 2684 8876 "GET /admin/chat/conversation/add/ HTTP/1.1" 200 19214
+INFO 2026-03-19 01:06:50,814 log 2684 8876 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-03-19 01:06:51,956 log 2684 18288 "GET /static/admin/js/inlines.js HTTP/1.1" 200 15628
+INFO 2026-03-19 01:07:01,261 log 2684 18288 "POST /admin/chat/conversation/add/ HTTP/1.1" 200 19411
+INFO 2026-03-19 01:07:01,373 log 2684 18288 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-03-19 01:07:11,759 log 2684 18288 "POST /admin/chat/conversation/add/ HTTP/1.1" 302 0
+INFO 2026-03-19 01:07:11,874 log 2684 18288 "GET /admin/chat/conversation/add/ HTTP/1.1" 200 19486
+INFO 2026-03-19 01:07:11,972 log 2684 18288 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-03-19 01:07:18,693 log 2684 18288 "GET /admin/chat/conversation/2/change/ HTTP/1.1" 200 19520
+INFO 2026-03-19 01:07:18,785 log 2684 18288 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-03-19 01:07:23,661 log 2684 18288 "GET /admin/chat/conversation/2/history/ HTTP/1.1" 200 10298
+INFO 2026-03-19 01:07:38,701 log 2684 18288 "GET /admin/chat/message/add/ HTTP/1.1" 200 16472
+INFO 2026-03-19 01:07:38,781 log 2684 18288 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-03-19 01:08:32,561 log 2684 6868 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 01:08:33,620 log 2684 6868 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 01:08:33,716 log 2684 6124 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 01:08:35,551 log 2684 6124 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 01:09:36,159 log 2684 6868 "GET /api/auth/profile/ HTTP/1.1" 200 78
+INFO 2026-03-19 01:09:37,046 log 2684 6124 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 01:09:41,433 log 2684 6124 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 01:13:38,044 log 2684 6124 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 01:13:38,423 log 2684 6124 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 01:13:39,734 log 2684 6124 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 01:13:41,532 log 2684 6124 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 01:15:25,049 log 2684 6124 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 01:15:25,065 log 2684 6124 "GET /api/auth/profile/ HTTP/1.1" 200 78
+INFO 2026-03-19 01:15:25,210 log 2684 6124 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 01:18:30,356 log 2684 9616 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 01:18:30,801 log 2684 9616 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 01:43:22,917 autoreload 2684 7892 C:\Users\Adegoke\Desktop\TU Marketplace\backend\users\models.py changed, reloading.
+INFO 2026-03-19 01:45:17,315 autoreload 11372 17964 Watching for file changes with StatReloader
+INFO 2026-03-19 01:48:08,865 autoreload 11372 17964 C:\Users\Adegoke\Desktop\TU Marketplace\backend\users\admin.py changed, reloading.
+INFO 2026-03-19 01:48:26,381 autoreload 7288 884 Watching for file changes with StatReloader
+INFO 2026-03-19 02:05:22,535 log 7288 7108 "GET /admin/chat/message/add/ HTTP/1.1" 200 16472
+INFO 2026-03-19 02:05:34,504 log 7288 7108 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-03-19 02:05:35,915 log 7288 13480 "GET /api/schema/ HTTP/1.1" 200 67790
+INFO 2026-03-19 02:07:34,574 log 7288 7108 "GET /admin/users/user/add/ HTTP/1.1" 200 17856
+INFO 2026-03-19 02:07:34,789 log 7288 18624 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-03-19 02:07:35,834 log 7288 7108 "GET /static/admin/css/unusable_password_field.css HTTP/1.1" 200 663
+INFO 2026-03-19 02:07:41,669 log 7288 7108 "GET /admin/users/user/ HTTP/1.1" 200 23564
+INFO 2026-03-19 02:07:41,999 log 7288 7108 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-03-19 02:08:15,857 log 7288 7108 "GET /admin/users/user/1/change/ HTTP/1.1" 200 33103
+INFO 2026-03-19 02:08:16,450 log 7288 16128 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-03-19 02:08:19,628 log 7288 7108 "GET /static/admin/js/calendar.js HTTP/1.1" 200 9159
+INFO 2026-03-19 02:08:20,759 log 7288 18624 "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19698
+INFO 2026-03-19 02:08:22,262 log 7288 18624 "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1112
+INFO 2026-03-19 02:08:22,262 log 7288 7108 "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 805
+INFO 2026-03-19 02:08:32,547 log 7288 7108 "GET /admin/users/user/1/history/ HTTP/1.1" 200 9752
+INFO 2026-03-19 02:08:36,749 log 7288 7108 "GET /admin/users/user/1/change/ HTTP/1.1" 200 33103
+INFO 2026-03-19 02:08:36,844 log 7288 7108 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-03-19 02:09:11,271 log 7288 4116 "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+WARNING 2026-03-19 02:09:11,344 log 7288 4116 Bad Request: /api/auth/login/
+WARNING 2026-03-19 02:09:11,346 log 7288 4116 "POST /api/auth/login/ HTTP/1.1" 400 37
+WARNING 2026-03-19 02:09:19,379 log 7288 4116 Bad Request: /api/auth/login/
+WARNING 2026-03-19 02:09:19,416 log 7288 4116 "POST /api/auth/login/ HTTP/1.1" 400 37
+INFO 2026-03-19 02:09:27,770 log 7288 7108 "GET /admin/users/user/1/password/ HTTP/1.1" 200 12266
+INFO 2026-03-19 02:09:48,137 log 7288 7108 "POST /admin/users/user/1/password/ HTTP/1.1" 200 12488
+INFO 2026-03-19 02:10:07,043 log 7288 7108 "POST /admin/users/user/1/password/ HTTP/1.1" 200 12590
+INFO 2026-03-19 02:10:21,171 log 7288 7108 "POST /admin/users/user/1/password/ HTTP/1.1" 200 12515
+INFO 2026-03-19 02:10:54,263 log 7288 7108 "GET /admin/users/user/ HTTP/1.1" 200 23564
+INFO 2026-03-19 02:10:54,338 log 7288 7108 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2026-03-19 02:11:22,835 log 7288 4116 Bad Request: /api/auth/login/
+WARNING 2026-03-19 02:11:22,841 log 7288 4116 "POST /api/auth/login/ HTTP/1.1" 400 37
+WARNING 2026-03-19 02:11:31,793 log 7288 4116 Bad Request: /api/auth/login/
+WARNING 2026-03-19 02:11:31,801 log 7288 4116 "POST /api/auth/login/ HTTP/1.1" 400 37
+WARNING 2026-03-19 02:11:49,053 log 7288 4116 Bad Request: /api/auth/login/
+WARNING 2026-03-19 02:11:49,059 log 7288 4116 "POST /api/auth/login/ HTTP/1.1" 400 37
+INFO 2026-03-19 02:15:00,734 log 7288 13912 "GET / HTTP/1.1" 200 2343
+INFO 2026-03-19 02:16:02,461 log 7288 13912 "GET / HTTP/1.1" 200 2343
+INFO 2026-03-19 02:16:20,579 log 7288 13912 "GET /admin/ HTTP/1.1" 200 10848
+INFO 2026-03-19 02:17:53,863 log 7288 13912 "GET /admin/users/user/ HTTP/1.1" 200 23564
+INFO 2026-03-19 02:17:54,533 log 7288 13912 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2026-03-19 02:18:32,610 log 7288 14280 Bad Request: /api/auth/login/
+WARNING 2026-03-19 02:18:33,161 log 7288 14280 "POST /api/auth/login/ HTTP/1.1" 400 37
+WARNING 2026-03-19 02:18:54,555 log 7288 14280 Bad Request: /api/auth/login/
+WARNING 2026-03-19 02:18:55,322 log 7288 14280 "POST /api/auth/login/ HTTP/1.1" 400 37
+INFO 2026-03-19 06:21:51,767 log 7288 15888 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 06:21:52,310 log 7288 15888 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 06:21:52,312 log 7288 15708 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 06:21:52,818 log 7288 15708 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 06:25:42,778 log 7288 15708 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 06:25:46,427 log 7288 15708 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 06:26:00,655 log 7288 15708 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 06:26:00,823 log 7288 15708 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 06:26:01,057 log 7288 15708 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 06:26:01,125 log 7288 15708 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 06:27:05,656 log 7288 15708 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 06:27:06,979 log 7288 15708 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 06:27:06,987 log 7288 11644 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 06:27:07,788 log 7288 15708 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 06:27:26,787 log 7288 15708 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 06:27:27,344 log 7288 15708 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 06:27:27,590 log 7288 11644 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 06:27:27,896 log 7288 11644 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 06:30:55,158 log 7288 11644 "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+WARNING 2026-03-19 06:30:55,397 log 7288 11644 Bad Request: /api/auth/login/
+WARNING 2026-03-19 06:30:55,400 log 7288 11644 "POST /api/auth/login/ HTTP/1.1" 400 37
+INFO 2026-03-19 06:31:31,194 log 7288 11644 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 06:31:34,038 log 7288 15708 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 06:31:34,059 log 7288 11644 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 06:31:35,013 log 7288 15708 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+WARNING 2026-03-19 06:35:35,974 log 7288 1220 Bad Request: /api/auth/login/
+WARNING 2026-03-19 06:35:35,976 log 7288 1220 "POST /api/auth/login/ HTTP/1.1" 400 37
+INFO 2026-03-19 06:36:17,086 log 7288 7568 "POST /api/auth/login/ HTTP/1.1" 200 489
+INFO 2026-03-19 06:39:20,383 log 7288 17796 "POST /api/auth/login/ HTTP/1.1" 200 489
+INFO 2026-03-19 06:39:20,775 log 7288 17796 "OPTIONS /api/auth/profile/ HTTP/1.1" 200 0
+INFO 2026-03-19 06:39:22,812 log 7288 17796 "GET /api/auth/profile/ HTTP/1.1" 200 106
+INFO 2026-03-19 06:41:09,479 log 7288 17796 "GET /api/auth/profile/ HTTP/1.1" 200 106
+INFO 2026-03-19 06:43:10,282 log 7288 17796 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 06:43:16,983 log 7288 17796 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 06:43:17,387 log 7288 4256 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 06:43:19,704 log 7288 17796 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 07:10:34,286 autoreload 7288 884 C:\Users\Adegoke\Desktop\TU Marketplace\backend\products\views.py changed, reloading.
+INFO 2026-03-19 07:10:57,166 autoreload 11800 5100 Watching for file changes with StatReloader
+INFO 2026-03-19 07:12:37,733 log 11800 15472 "GET /api/auth/profile/ HTTP/1.1" 200 106
+INFO 2026-03-19 07:12:45,224 autoreload 11800 5100 C:\Users\Adegoke\Desktop\TU Marketplace\backend\products\serializers.py changed, reloading.
+INFO 2026-03-19 07:12:56,215 autoreload 14928 10876 Watching for file changes with StatReloader
+INFO 2026-03-19 07:13:13,103 log 14928 15744 "GET /api/auth/profile/ HTTP/1.1" 200 106
+INFO 2026-03-19 07:15:56,708 log 14928 15744 "GET /api/auth/profile/ HTTP/1.1" 200 106
+INFO 2026-03-19 07:16:26,349 log 14928 15744 "GET /api/auth/profile/ HTTP/1.1" 200 106
+INFO 2026-03-19 07:16:40,031 log 14928 15744 "GET /api/auth/profile/ HTTP/1.1" 200 106
+INFO 2026-03-19 07:17:23,772 log 14928 15744 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 07:17:24,064 log 14928 15744 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 07:17:24,541 log 14928 15744 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 07:17:24,780 log 14928 15744 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 07:17:30,137 log 14928 15744 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 07:17:30,651 log 14928 6300 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 07:17:30,816 log 14928 15744 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 07:17:31,772 log 14928 15744 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 07:17:33,707 log 14928 15744 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 07:17:34,099 log 14928 15744 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 07:17:34,354 log 14928 6300 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 07:17:34,578 log 14928 6300 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 07:20:50,505 log 14928 6300 "GET /api/auth/profile/ HTTP/1.1" 200 106
+INFO 2026-03-19 07:21:26,800 log 14928 6300 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 07:21:28,142 log 14928 6300 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 07:21:28,913 log 14928 15744 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 07:21:31,273 log 14928 15744 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 07:23:52,028 log 14928 15744 "GET /api/auth/profile/ HTTP/1.1" 200 106
+INFO 2026-03-19 07:24:40,140 log 14928 15744 "GET /api/auth/profile/ HTTP/1.1" 200 106
+INFO 2026-03-19 07:24:40,626 log 14928 15744 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 07:24:41,042 log 14928 15744 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 07:24:41,453 log 14928 15744 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 07:24:41,493 log 14928 15744 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 07:26:02,649 log 14928 15744 "GET /api/auth/profile/ HTTP/1.1" 200 106
+INFO 2026-03-19 07:26:03,501 log 14928 6300 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 07:26:03,964 log 14928 6300 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 07:26:04,487 log 14928 15744 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 07:26:06,062 log 14928 15744 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 07:26:18,837 log 14928 15744 "GET /api/auth/profile/ HTTP/1.1" 200 106
+INFO 2026-03-19 07:26:19,897 log 14928 6300 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 07:26:20,158 log 14928 15744 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 07:26:20,535 log 14928 6300 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 07:26:20,797 log 14928 6300 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 07:26:29,317 log 14928 6300 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 07:26:29,952 log 14928 15744 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 07:26:33,650 log 14928 6300 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 07:26:57,929 log 14928 6300 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 07:27:24,480 log 14928 6300 "GET /api/auth/profile/ HTTP/1.1" 200 106
+INFO 2026-03-19 07:27:36,910 log 14928 6300 "GET /api/auth/profile/ HTTP/1.1" 200 106
+INFO 2026-03-19 07:27:38,375 log 14928 6300 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 07:27:39,164 log 14928 15744 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 07:27:40,312 log 14928 15744 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 07:27:40,610 log 14928 15744 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 07:27:50,708 log 14928 15744 "GET /api/auth/profile/ HTTP/1.1" 200 106
+INFO 2026-03-19 07:27:51,910 log 14928 15744 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 07:27:52,273 log 14928 15744 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 07:27:53,030 log 14928 15744 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 07:27:53,092 log 14928 15744 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 07:28:29,238 log 14928 15744 "GET /api/auth/profile/ HTTP/1.1" 200 106
+INFO 2026-03-19 07:28:30,385 log 14928 15744 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 07:28:30,470 log 14928 6300 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 07:28:30,720 log 14928 15744 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 07:28:30,806 log 14928 15744 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 07:29:52,909 log 14928 15744 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 07:29:53,365 log 14928 15744 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 07:29:53,472 log 14928 6300 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 07:29:54,056 log 14928 6300 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 07:29:58,102 log 14928 6300 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 07:29:58,817 log 14928 15744 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 07:30:01,004 log 14928 15744 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 07:30:01,115 log 14928 15744 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 07:30:07,183 log 14928 15744 "GET /api/auth/profile/ HTTP/1.1" 200 106
+INFO 2026-03-19 07:30:08,468 log 14928 6300 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 07:30:09,067 log 14928 6300 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 07:30:09,180 log 14928 15744 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 07:30:10,007 log 14928 15744 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 07:33:44,158 log 14928 15744 "GET /api/auth/profile/ HTTP/1.1" 200 106
+INFO 2026-03-19 07:34:14,367 log 14928 15744 "GET /api/auth/profile/ HTTP/1.1" 200 106
+INFO 2026-03-19 07:34:16,299 log 14928 15744 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 07:34:16,526 log 14928 15744 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 07:34:17,757 log 14928 15744 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 07:34:17,905 log 14928 15744 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+ERROR 2026-03-19 07:36:40,419 log 14928 12844 Internal Server Error: /api/products/search/
+Traceback (most recent call last):
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\products\views.py", line 77, in get
+    'products': product_serializer.data,
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\rest_framework\serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\rest_framework\serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\rest_framework\serializers.py", line 716, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\rest_framework\serializers.py", line 540, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\rest_framework\fields.py", line 1870, in to_representation
+    return method(value)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\products\serializers.py", line 31, in get_is_liked
+    user = self.context.get('request').user
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'user'
+ERROR 2026-03-19 07:36:40,428 log 14928 15744 Internal Server Error: /api/products/search/
+Traceback (most recent call last):
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\products\views.py", line 77, in get
+    'products': product_serializer.data,
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\rest_framework\serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\rest_framework\serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\rest_framework\serializers.py", line 716, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\rest_framework\serializers.py", line 540, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\venv\Lib\site-packages\rest_framework\fields.py", line 1870, in to_representation
+    return method(value)
+  File "C:\Users\Adegoke\Desktop\TU Marketplace\backend\products\serializers.py", line 31, in get_is_liked
+    user = self.context.get('request').user
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'user'
+ERROR 2026-03-19 07:36:40,906 log 14928 12844 "GET /api/products/search/?q=tobi HTTP/1.1" 500 133993
+ERROR 2026-03-19 07:36:40,909 log 14928 15744 "GET /api/products/search/?q=t HTTP/1.1" 500 140563
+INFO 2026-03-19 07:38:12,402 log 14928 15744 "GET /api/auth/profile/ HTTP/1.1" 200 106
+INFO 2026-03-19 07:38:12,983 log 14928 15744 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 07:38:13,123 log 14928 15744 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 07:38:13,289 log 14928 15744 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 07:39:02,831 log 14928 15744 "GET /api/auth/profile/ HTTP/1.1" 200 106
+INFO 2026-03-19 07:39:38,830 log 14928 15744 "GET /api/auth/profile/ HTTP/1.1" 200 106
+INFO 2026-03-19 07:39:49,302 log 14928 12844 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 07:39:49,708 log 14928 15744 "GET /api/products/ HTTP/1.1" 200 8347
+INFO 2026-03-19 07:39:53,781 log 14928 15744 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-19 07:39:53,870 log 14928 15744 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
