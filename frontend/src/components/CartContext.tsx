@@ -2,6 +2,7 @@
 
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import { useAuth } from './AuthContext';
+import { useLoading } from './LoadingContext';
 
 export interface CartItem {
     id: number;
@@ -27,6 +28,7 @@ const CartContext = createContext<CartContextType | undefined>(undefined);
 export function CartProvider({ children }: { children: React.ReactNode }) {
     const [cartItems, setCartItems] = useState<CartItem[]>([]);
     const { user } = useAuth();
+    const { setIsLoading } = useLoading();
 
     const [isInitialized, setIsInitialized] = useState(false);
 
@@ -62,25 +64,28 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
             return;
         }
 
-        setCartItems(prev => {
-            const existing = prev.find(item => Number(item.id) === productId);
-            if (existing) {
-                return prev.map(item =>
-                    Number(item.id) === productId ? { ...item, quantity: item.quantity + 1 } : item
-                );
-            }
+        setIsLoading(true);
+        setTimeout(() => {
+            setCartItems(prev => {
+                const existing = prev.find(item => Number(item.id) === productId);
+                if (existing) {
+                    return prev.map(item =>
+                        Number(item.id) === productId ? { ...item, quantity: item.quantity + 1 } : item
+                    );
+                }
 
-            const newProduct: CartItem = {
-                id: productId,
-                name: product.name || 'Unknown Product',
-                price: product.price || 0,
-                image: product.image || product.images?.[0]?.image || 'https://via.placeholder.com/300?text=Product',
-                shop_name: product.shop_name || 'Campus Vendor',
-                quantity: 1
-            };
-            console.log('Adding NEW product to cart:', newProduct);
-            return [...prev, newProduct];
-        });
+                const newProduct: CartItem = {
+                    id: productId,
+                    name: product.name || 'Unknown Product',
+                    price: product.price || 0,
+                    image: product.image || product.images?.[0]?.image || 'https://via.placeholder.com/300?text=Product',
+                    shop_name: product.shop_name || 'Campus Vendor',
+                    quantity: 1
+                };
+                return [...prev, newProduct];
+            });
+            setIsLoading(false);
+        }, 500); // Brief feedback for the user
     };
 
     const removeFromCart = (productId: number) => {

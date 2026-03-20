@@ -5,6 +5,7 @@ import { AuthProvider } from "@/components/AuthContext";
 import { AuthGuard } from "@/components/AuthGuard";
 import PWARegistration from "@/components/PWARegistration";
 import { PageTransitionOverlay } from "@/components/PageTransitionOverlay";
+import { LoadingProvider } from "@/components/LoadingContext";
 import "./globals.css";
 
 export const metadata = {
@@ -33,14 +34,16 @@ export default function RootLayout({
         <PWARegistration />
         <ThemeProvider>
           <AuthProvider>
-            <AuthGuard>
-              <CartProvider>
-                <PageTransitionOverlay />
-                <Navbar />
-                {children}
-                <MobileBottomNav />
-              </CartProvider>
-            </AuthGuard>
+            <LoadingProvider>
+              <AuthGuard>
+                <CartProvider>
+                  <PageTransitionOverlay />
+                  <Navbar />
+                  {children}
+                  <MobileBottomNav />
+                </CartProvider>
+              </AuthGuard>
+            </LoadingProvider>
           </AuthProvider>
         </ThemeProvider>
       </body>
