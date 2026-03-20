@@ -18,11 +18,16 @@ class ProductListView(generics.ListAPIView):
     def get_queryset(self):
         queryset = Product.objects.filter(active_status=True, shop__vendor__approval_status='APPROVED')
         
+        # Filter by Shop
+        shop_slug = self.request.query_params.get('shop_slug')
+        if shop_slug:
+            queryset = queryset.filter(shop__shop_slug=shop_slug)
+
         # Campus Drops: Created in last 48 hours
         if self.request.query_params.get('campus_drops'):
             queryset = queryset.filter(created_at__gte=timezone.now() - timedelta(hours=48))
         
-        # Popular on Campus: Based on views or likes (for MVP, let's use view_count > some threshold or just sort)
+        # Popular on Campus: Based on views or likes
         if self.request.query_params.get('popular'):
              queryset = queryset.order_by('-view_count')
 

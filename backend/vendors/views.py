@@ -16,7 +16,24 @@ class ShopDetailView(generics.RetrieveUpdateAPIView):
     permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
     serializer_class = ShopSerializer
     queryset = Shop.objects.all()
-    lookup_field = 'shop_slug'
+
+    def get_object(self):
+        queryset = self.filter_queryset(self.get_queryset())
+        lookup_value = self.kwargs.get('shop_slug')
+        
+        # Try slug first
+        obj = queryset.filter(shop_slug=lookup_value).first()
+        if obj:
+            return obj
+            
+        # Fallback to ID if numeric
+        if lookup_value.isdigit():
+            obj = queryset.filter(id=lookup_value).first()
+            if obj:
+                return obj
+                
+        # If still not found, raise 404 correctly
+        return get_object_or_404(queryset, shop_slug=lookup_value)
 
 class ShopListView(generics.ListAPIView):
     permission_classes = (permissions.AllowAny,)
