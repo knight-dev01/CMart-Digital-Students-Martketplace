@@ -1,29 +1,40 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
-
-interface Notification {
-    id: number;
-    title: string;
-    message: string;
-    time: string;
-    type: 'order' | 'message' | 'price' | 'system';
-    read: boolean;
-}
+import { useNotifications } from './NotificationContext';
 
 export const NotificationDropdown = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const [notifications, setNotifications] = useState<Notification[]>([
-        { id: 1, title: 'New Message', message: '@Adegoke sent you a message about the Vintage Jacket', time: '2m ago', type: 'message', read: false },
-        { id: 2, title: 'Price Drop!', message: 'An item in your wishlist just dropped in price by 10%', time: '1h ago', type: 'price', read: false },
-        { id: 3, title: 'Order Confirmed', message: 'Your payment for #ORD-1024 is now in safe escrow.', time: '3h ago', type: 'order', read: true },
-    ]);
+    const { notifications, unreadCount, markAsRead, markAllAsRead } = useNotifications();
 
-    const unreadCount = notifications.filter(n => !n.read).length;
+    const getIcon = (type: string) => {
+        switch (type) {
+            case 'ORDER': return '📦';
+            case 'ENGAGEMENT': return '💬';
+            case 'SYSTEM': return '🔔';
+            default: return '🔔';
+        }
+    };
 
-    const markAllAsRead = () => {
-        setNotifications(notifications.map(n => ({ ...n, read: true })));
+    const getColors = (type: string) => {
+        switch (type) {
+            case 'ORDER': return 'bg-blue-100 text-blue-600';
+            case 'ENGAGEMENT': return 'bg-emerald-100 text-emerald-600';
+            case 'SYSTEM': return 'bg-orange-100 text-orange-600';
+            default: return 'bg-gray-100 text-gray-600';
+        }
+    };
+
+    const formatTime = (dateStr: string) => {
+        const date = new Date(dateStr);
+        const now = new Date();
+        const diff = Math.floor((now.getTime() - date.getTime()) / 1000);
+        
+        if (diff < 60) return 'Just now';
+        if (diff < 3600) return `${Math.floor(diff / 60)}m ago`;
+        if (diff < 86400) return `${Math.floor(diff / 3600)}h ago`;
+        return date.toLocaleDateString();
     };
 
     return (
@@ -56,23 +67,30 @@ export const NotificationDropdown = () => {
                                 </div>
                             ) : (
                                 notifications.map((n) => (
-                                    <div key={n.id} className={`p-6 border-b border-[var(--border-color)]/50 transition-colors hover:bg-[var(--foreground)]/5 flex gap-4 ${!n.read ? 'bg-emerald-50/5 dark:bg-emerald-950/5' : ''}`}>
-                                        <div className={`w-10 h-10 rounded-xl shrink-0 flex items-center justify-center text-lg ${
-                                            n.type === 'order' ? 'bg-blue-100 text-blue-600' :
-                                            n.type === 'message' ? 'bg-emerald-100 text-emerald-600' :
-                                            n.type === 'price' ? 'bg-orange-100 text-orange-600' :
-                                            'bg-gray-100 text-gray-600'
-                                        }`}>
-                                            {n.type === 'order' ? '📦' : n.type === 'message' ? '💬' : n.type === 'price' ? '🔥' : '🔔'}
+                                    <Link 
+                                        key={n.id} 
+                                        href={n.link || '#'}
+                                        onClick={() => {
+                                            markAsRead(n.id);
+                                            setIsOpen(false);
+                                        }}
+                                        className={`p-6 border-b border-[var(--border-color)]/50 transition-colors hover:bg-[var(--foreground)]/5 flex gap-4 ${!n.is_read ? 'bg-emerald-50/5 dark:bg-emerald-950/5' : ''}`}
+                                    >
+                                        <div className={`w-10 h-10 rounded-xl shrink-0 flex items-center justify-center text-lg ${getColors(n.notification_type)}`}>
+                                            {getIcon(n.notification_type)}
                                         </div>
                                         <div className="flex-1">
                                             <div className="flex items-center justify-between gap-2 mb-1">
-                                                <p className="text-[10px] font-black text-[var(--foreground)] uppercase tracking-tight">{n.title}</p>
-                                                <span className="text-[8px] font-bold text-[var(--text-muted)] uppercase tracking-widest">{n.time}</span>
+                                                <p className="text-[10px] font-black text-[var(--foreground)] uppercase tracking-tight">
+                                                    {n.notification_type}
+                                                </p>
+                                                <span className="text-[8px] font-bold text-[var(--text-muted)] uppercase tracking-widest">
+                                                    {formatTime(n.created_at)}
+                                                </span>
                                             </div>
                                             <p className="text-[11px] font-medium text-[var(--text-muted)] leading-relaxed">{n.message}</p>
                                         </div>
-                                    </div>
+                                    </Link>
                                 ))
                             )}
                         </div>

@@ -24,7 +24,10 @@ const mockShops = [
 
 import { productService } from '@/services/product';
 
+import { useNotifications } from '@/components/NotificationContext';
+
 export default function Home() {
+  const { activities } = useNotifications();
   const [products, setProducts] = React.useState(mockProducts);
   const [shops, setShops] = React.useState(mockShops);
 
@@ -60,7 +63,7 @@ export default function Home() {
         <div className="sticky top-[72px] z-40 px-4 py-4 rounded-[2rem] mx-2 sm:mx-0 mb-8 transition-all duration-500">
           <FeaturedShops shops={shops} />
           <div className="mt-4 overflow-hidden rounded-full">
-            <MarketTicker activities={mockActivities} />
+            <MarketTicker activities={activities.length > 0 ? activities : mockActivities} />
           </div>
         </div>
 
@@ -107,7 +110,7 @@ export default function Home() {
             <div className="bg-white/[0.03] backdrop-blur-3xl rounded-[2.5rem] p-8 border border-white/10 shadow-2xl shadow-black/40">
               <h3 className="font-black text-[var(--text-muted)] text-[10px] uppercase tracking-widest mb-6 opacity-40">Market Insights</h3>
               <div className="space-y-4">
-                {mockActivities.map(activity => (
+                {(activities.length > 0 ? activities : mockActivities).map((activity: any) => (
                   <div key={activity.id} className="flex gap-3 group">
                     <div className="w-1.5 h-1.5 rounded-full bg-emerald-500/50 group-hover:bg-emerald-400 mt-1.5 group-hover:scale-150 transition-all"></div>
                     <p className="text-xs text-[var(--foreground)] font-medium leading-relaxed opacity-60 group-hover:opacity-100 transition-all font-sans">{activity.message}</p>
