@@ -1,7 +1,8 @@
 import api from './api';
+import { Shop, VendorProfile } from '@/types';
 
 export const vendorService = {
-    applyAsVendor: async (data: any) => {
+    applyAsVendor: async (data: Partial<VendorProfile>): Promise<VendorProfile> => {
         try {
             const response = await api.post('/vendors/apply/', data);
             return response.data;
@@ -11,7 +12,7 @@ export const vendorService = {
         }
     },
 
-    getShops: async () => {
+    getShops: async (): Promise<Shop[]> => {
         try {
             const response = await api.get('/vendors/shops/');
             return response.data;
@@ -21,7 +22,7 @@ export const vendorService = {
         }
     },
 
-    getShopBySlug: async (slug: string) => {
+    getShopBySlug: async (slug: string): Promise<Shop> => {
         try {
             const response = await api.get(`/vendors/shops/${slug}/`);
             return response.data;
@@ -31,7 +32,7 @@ export const vendorService = {
         }
     },
 
-    updateShop: async (slug: string, data: any) => {
+    updateShop: async (slug: string, data: Partial<Shop>): Promise<Shop> => {
         try {
             const response = await api.patch(`/vendors/shops/${slug}/`, data);
             return response.data;

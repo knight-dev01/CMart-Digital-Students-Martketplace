@@ -1,7 +1,8 @@
 import api from './api';
+import { Product, Category, Shop } from '@/types';
 
 export const productService = {
-  getProducts: async () => {
+  getProducts: async (): Promise<Product[]> => {
     try {
       const response = await api.get('/products/');
       return response.data;
@@ -11,7 +12,7 @@ export const productService = {
     }
   },
   
-  getCategories: async () => {
+  getCategories: async (): Promise<Category[]> => {
     try {
       const response = await api.get('/products/categories/');
       return response.data;
@@ -21,7 +22,7 @@ export const productService = {
     }
   },
   
-  getShops: async () => {
+  getShops: async (): Promise<Shop[]> => {
     try {
       const response = await api.get('/vendors/shops/');
       return response.data;
@@ -31,7 +32,7 @@ export const productService = {
     }
   },
 
-  getShopBySlug: async (slug: string) => {
+  getShopBySlug: async (slug: string): Promise<Shop> => {
     try {
       const response = await api.get(`/vendors/shops/${slug}/`);
       return response.data;
@@ -41,7 +42,7 @@ export const productService = {
     }
   },
 
-  getProductsByShop: async (shopSlug: string) => {
+  getProductsByShop: async (shopSlug: string): Promise<Product[]> => {
     try {
       const response = await api.get('/products/', {
         params: { shop_slug: shopSlug }
@@ -53,12 +54,13 @@ export const productService = {
     }
   },
   
-  createProduct: async (productData: any, images?: File[]) => {
+  createProduct: async (productData: Partial<Product>, images?: File[]): Promise<Product> => {
     try {
       if (images && images.length > 0) {
         const formData = new FormData();
         Object.keys(productData).forEach(key => {
-          formData.append(key, productData[key]);
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          formData.append(key, (productData as any)[key]);
         });
         images.forEach(image => {
           formData.append('images', image);
@@ -80,7 +82,7 @@ export const productService = {
     }
   },
 
-  getProductById: async (id: string | number) => {
+  getProductById: async (id: string | number): Promise<Product> => {
     try {
       const response = await api.get(`/products/${id}/`);
       return response.data;
@@ -90,7 +92,7 @@ export const productService = {
     }
   },
 
-  likeProduct: async (id: string | number) => {
+  likeProduct: async (id: string | number): Promise<any> => {
     try {
       const response = await api.post(`/products/${id}/like/`);
       return response.data;

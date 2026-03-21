@@ -1,7 +1,8 @@
 import api from './api';
+import { Conversation, ChatMessage } from '@/types';
 
 export const chatService = {
-  getConversations: async () => {
+  getConversations: async (): Promise<Conversation[]> => {
     try {
       const response = await api.get('/chat/conversations/');
       return response.data;
@@ -11,7 +12,7 @@ export const chatService = {
     }
   },
 
-  getMessages: async (conversationId: number) => {
+  getMessages: async (conversationId: number): Promise<ChatMessage[]> => {
     try {
       const response = await api.get(`/chat/messages/?conversation=${conversationId}`);
       return response.data;
@@ -21,7 +22,7 @@ export const chatService = {
     }
   },
 
-  sendMessage: async (conversationId: number, text: string) => {
+  sendMessage: async (conversationId: number, text: string): Promise<ChatMessage> => {
     try {
       const response = await api.post('/chat/messages/', {
         conversation: conversationId,
@@ -34,7 +35,7 @@ export const chatService = {
     }
   },
 
-  startConversation: async (participantId: number, productId?: number) => {
+  startConversation: async (participantId: number, productId?: number): Promise<Conversation> => {
     try {
       const response = await api.post('/chat/conversations/', {
         participants: [participantId],
@@ -47,10 +48,10 @@ export const chatService = {
     }
   },
 
-  getOrCreateConversation: async (participantId: number) => {
+  getOrCreateConversation: async (participantId: number): Promise<Conversation> => {
     try {
       const conversations = await chatService.getConversations();
-      const existing = conversations.find((c: any) => 
+      const existing = conversations.find((c: Conversation) => 
         c.participants.some((p: any) => p.id === participantId)
       );
       if (existing) return existing;

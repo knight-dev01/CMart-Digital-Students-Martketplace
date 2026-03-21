@@ -4,13 +4,14 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { chatService } from '@/services/chat';
 import { useAuth } from '@/components/AuthContext';
+import { Conversation, ChatMessage } from '@/types';
 import { LoadingScreen } from '@/components/LoadingScreen';
 
 export default function MessagesPage() {
     const { user } = useAuth();
-    const [conversations, setConversations] = useState<any[]>([]);
-    const [selectedConv, setSelectedConv] = useState<any>(null);
-    const [messages, setMessages] = useState<any[]>([]);
+    const [conversations, setConversations] = useState<Conversation[]>([]);
+    const [selectedConv, setSelectedConv] = useState<Conversation | null>(null);
+    const [messages, setMessages] = useState<ChatMessage[]>([]);
     const [newMessage, setNewMessage] = useState('');
     const [loading, setLoading] = useState(true);
     const messagesEndRef = useRef<HTMLDivElement>(null);
@@ -30,7 +31,7 @@ export default function MessagesPage() {
                 
                 // If convId is in URL, auto-select it
                 if (convId) {
-                    const target = data.find((c: any) => c.id === parseInt(convId));
+                    const target = data.find((c: Conversation) => c.id === parseInt(convId));
                     if (target) {
                         setSelectedConv(target);
                     }
@@ -45,7 +46,7 @@ export default function MessagesPage() {
     }, [convId]);
 
     useEffect(() => {
-        let interval: any;
+        let interval: ReturnType<typeof setInterval>;
         if (selectedConv) {
             const fetchMessages = async () => {
                 const data = await chatService.getMessages(selectedConv.id);
@@ -159,7 +160,7 @@ export default function MessagesPage() {
                                                 {/* Fancy timestamp on hover appearance? maybe not for marketplace */}
                                             </div>
                                             <div className="mt-2 flex items-center gap-2 px-1">
-                                                <span className="text-[8px] font-black uppercase tracking-widest text-[var(--text-muted)]">{msg.sender} • {msg.time}</span>
+                                                <span className="text-[8px] font-black uppercase tracking-widest text-[var(--text-muted)]">{String(msg.sender)} • {msg.timestamp}</span>
                                                 {msg.sender === user?.username && (
                                                      <svg className="w-3 h-3 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" /></svg>
                                                 )}

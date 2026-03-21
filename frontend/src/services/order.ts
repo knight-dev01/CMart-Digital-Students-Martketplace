@@ -1,7 +1,8 @@
 import api from './api';
+import { Order } from '@/types';
 
 export const orderService = {
-    async checkout() {
+    async checkout(): Promise<Order> {
         try {
             const response = await api.post('/orders/checkout/');
             return response.data;
@@ -11,7 +12,7 @@ export const orderService = {
         }
     },
     
-    async getOrders() {
+    async getOrders(): Promise<Order[]> {
         try {
             const response = await api.get('/orders/orders/');
             return response.data;

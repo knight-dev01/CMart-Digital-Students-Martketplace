@@ -9,7 +9,7 @@ import { useRequireAuth } from '@/hooks/useRequireAuth';
 import { ChatOverlay } from './ChatComponent';
 
 // Featured Shops (Circles at the top)
-export const FeaturedShops = ({ shops }: { shops: any[] }) => (
+export const FeaturedShops = ({ shops }: { shops: Shop[] }) => (
     <div className="flex space-x-3 sm:space-x-4 overflow-x-auto pb-4 sm:pb-6 pt-2 scrollbar-hide px-4 sm:px-0 scroll-smooth">
         {shops.map((shop) => (
             <Link key={shop.id} href={`/shops/${shop.shop_slug || shop.id}`} className="flex-none flex flex-col items-center space-y-1 cursor-pointer group">
@@ -33,7 +33,7 @@ export const FeaturedShops = ({ shops }: { shops: any[] }) => (
 
 // ProductAd logic removed - use ProductCard.tsx instead
 
-export const FeaturedAds = ({ shops }: { shops: any[] }) => {
+export const FeaturedAds = ({ shops }: { shops: Shop[] }) => {
     const router = useRouter();
     const [isChatOpen, setIsChatOpen] = useState(false);
     const [selectedVendor, setSelectedVendor] = useState<any>(null);
@@ -59,7 +59,7 @@ export const FeaturedAds = ({ shops }: { shops: any[] }) => {
     };
 
     useEffect(() => {
-        const handleOpenChat = (e: any) => {
+        const handleOpenChat = (e: React.MouseEvent) => {
             if (e.detail) {
                 setSelectedVendor(e.detail);
                 setIsChatOpen(true);

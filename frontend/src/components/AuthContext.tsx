@@ -1,7 +1,8 @@
 'use client';
 
 import React, { createContext, useContext, useEffect, useState } from 'react';
-import { AuthService, User } from '@/services/auth';
+import { AuthService } from '@/services/auth';
+import { User, LoginCredentials, RegisterData } from '@/types';
 
 interface AuthContextType {
     user: User | null;
@@ -56,7 +57,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         initAuth();
     }, []);
 
-    const login = async (data: any) => {
+    const login = async (data: LoginCredentials) => {
         const resp = await AuthService.login(data);
         AuthService.saveTokens(resp.access, resp.refresh);
         const profile = await AuthService.getProfile(resp.access);
@@ -64,7 +65,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         localStorage.setItem('user', JSON.stringify(profile));
     };
 
-    const register = async (data: any) => {
+    const register = async (data: RegisterData) => {
         await AuthService.register(data);
         // Do not auto-login, just complete the request
     };
@@ -72,6 +73,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     const logout = () => {
         AuthService.logout();
         setUser(null);
+        localStorage.removeItem('user');
+        localStorage.removeItem('cmart_cart'); // Ensure cart initializes 0 in guest mode
     };
 
     return (

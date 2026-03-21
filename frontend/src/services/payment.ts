@@ -1,7 +1,8 @@
 import api from './api';
+import { PaymentInitResponse } from '@/types';
 
 export const paymentService = {
-    async initializePayment(orderId: number, callbackUrl: string) {
+    async initializePayment(orderId: number, callbackUrl: string): Promise<PaymentInitResponse> {
         try {
             const response = await api.post('/payments/initialize/', {
                 order_id: orderId,

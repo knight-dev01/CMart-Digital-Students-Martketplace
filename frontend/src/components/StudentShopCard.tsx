@@ -2,9 +2,10 @@
 
 import React from 'react';
 import { useRequireAuth } from '@/hooks/useRequireAuth';
+import { Shop } from '@/types';
 
 // Student Shop Card: Trust and social focused
-export const StudentShopCard = ({ shop }: { shop: any }) => {
+export const StudentShopCard = ({ shop }: { shop: Shop }) => {
     const { handleAuthAction } = useRequireAuth();
 
     return (

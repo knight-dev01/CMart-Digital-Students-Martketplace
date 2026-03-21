@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { useAuth } from './AuthContext';
 import { chatService } from '@/services/chat';
+import { Conversation, ChatMessage, User } from '@/types';
 
-export const ChatOverlay = ({ isOpen, onClose, selectedUser }: { isOpen: boolean, onClose: () => void, selectedUser?: any }) => {
+export const ChatOverlay = ({ isOpen, onClose, selectedUser }: { isOpen: boolean, onClose: () => void, selectedUser?: Partial<User> }) => {
     const { user } = useAuth();
     const [message, setMessage] = useState('');
-    const [messages, setMessages] = useState<any[]>([]);
+    const [messages, setMessages] = useState<ChatMessage[]>([]);
     const [conversationId, setConversationId] = useState<number | null>(null);
 
     // Initial load and conversation creation
@@ -16,7 +17,7 @@ export const ChatOverlay = ({ isOpen, onClose, selectedUser }: { isOpen: boolean
                     // Try to find an existing conversation or create a new one
                     // For now, we'll try to fetch all conversations and find the one with this user
                     const conversations = await chatService.getConversations();
-                    const existing = conversations.find((c: any) => 
+                    const existing = conversations.find((c: Conversation) => 
                         c.participants.some((p: any) => p.username === selectedUser.username)
                     );
 
@@ -38,7 +39,7 @@ export const ChatOverlay = ({ isOpen, onClose, selectedUser }: { isOpen: boolean
 
     // Simple Polling for new messages
     React.useEffect(() => {
-        let interval: any;
+        let interval: ReturnType<typeof setInterval>;
         if (isOpen && conversationId) {
             interval = setInterval(async () => {
                 const newMsgs = await chatService.getMessages(conversationId);
@@ -89,7 +90,7 @@ export const ChatOverlay = ({ isOpen, onClose, selectedUser }: { isOpen: boolean
                             <div className={`max-w-[80%] px-6 py-4 rounded-[1.5rem] shadow-sm ${msg.sender === user?.username ? 'bg-emerald-600 text-white rounded-tr-none' : 'bg-[var(--background)] border border-[var(--border-color)] text-[var(--foreground)] rounded-tl-none'}`}>
                                 <p className="text-sm font-medium leading-relaxed">{msg.text}</p>
                             </div>
-                            <span className="text-[8px] font-black uppercase tracking-widest text-[var(--text-muted)] mt-2 mx-1">{msg.time} • {msg.sender}</span>
+                            <span className="text-[8px] font-black uppercase tracking-widest text-[var(--text-muted)] mt-2 mx-1">{msg.timestamp} • {String(msg.sender)}</span>
                         </div>
                     ))}
                 </div>

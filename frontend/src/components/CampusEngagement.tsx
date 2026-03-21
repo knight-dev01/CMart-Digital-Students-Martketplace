@@ -4,6 +4,7 @@ import React from 'react';
 import { useRequireAuth } from '@/hooks/useRequireAuth';
 import { ProductCard } from './ProductCard';
 import { StudentShopCard } from './StudentShopCard';
+import { Product, Shop } from '@/types';
 
 // Trust Indicator: Verified Student Vendor Badge
 export const VerifiedBadge = () => (
@@ -41,7 +42,7 @@ export const MarketCategories = () => {
 // CampusDropCard logic removed - use ProductCard.tsx (compact variant) instead
 
 // Campus Drops Component: Highlights new products with horizontal navigation
-export const CampusDrops = ({ products }: { products: any[] }) => {
+export const CampusDrops = ({ products }: { products: Product[] }) => {
     const scrollRef = React.useRef<HTMLDivElement>(null);
     const [showLeftArrow, setShowLeftArrow] = React.useState(false);
     const [showRightArrow, setShowRightArrow] = React.useState(true);
@@ -115,7 +116,7 @@ export const CampusDrops = ({ products }: { products: any[] }) => {
 };
 
 // Market Ticker: Horizontal scrolling activity feed for high mobile impact
-export const MarketTicker = ({ activities }: { activities: any[] }) => (
+export const MarketTicker = ({ activities }: { activities: Record<string, any>[] }) => (
     <div className="w-full bg-white/5 backdrop-blur-md border-y border-white/5 overflow-hidden py-2 sm:py-3">
         <div className="flex whitespace-nowrap animate-marquee">
             <div className="flex items-center space-x-8 px-4">
@@ -140,7 +141,7 @@ export const MarketTicker = ({ activities }: { activities: any[] }) => (
 );
 
 // Top Vendors Carousel: Horizontal vendor discovery for mobile
-export const TopVendorsCarousel = ({ shops }: { shops: any[] }) => {
+export const TopVendorsCarousel = ({ shops }: { shops: Shop[] }) => {
     const { handleAuthAction } = useRequireAuth();
 
     return (

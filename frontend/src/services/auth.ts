@@ -1,13 +1,6 @@
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api';
+import { User, LoginCredentials, RegisterData } from '@/types';
 
-export interface User {
-    id: number;
-    username: string;
-    email: string;
-    role: 'BUYER' | 'VENDOR' | 'ADMIN' | 'SUPERADMIN';
-    university?: string;
-    avatar?: string;
-}
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api';
 
 export interface AuthResponse {
     user: User;
@@ -16,7 +9,7 @@ export interface AuthResponse {
 }
 
 export const AuthService = {
-    async register(data: any): Promise<AuthResponse> {
+    async register(data: RegisterData): Promise<AuthResponse> {
         const response = await fetch(`${API_URL}/auth/register/`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -29,7 +22,7 @@ export const AuthService = {
         return response.json();
     },
 
-    async login(data: any): Promise<AuthResponse> {
+    async login(data: LoginCredentials): Promise<AuthResponse> {
         const response = await fetch(`${API_URL}/auth/login/`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },

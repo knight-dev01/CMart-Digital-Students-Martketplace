@@ -31,16 +31,14 @@ export const LoadingProvider = ({ children }: { children: React.ReactNode }) => 
     }, []);
 
     useEffect(() => {
-        const handleLoadingEvent = (e: any) => {
-            if (typeof e.detail === 'boolean') {
-                setIsLoading(e.detail);
-            }
+        const handleLoadingEvent = (e: CustomEvent<boolean>) => {
+            setIsLoading(e.detail);
         };
-        window.addEventListener('cmart-loading', handleLoadingEvent);
-        return () => window.removeEventListener('cmart-loading', handleLoadingEvent);
+        window.addEventListener('cmart-loading', handleLoadingEvent as EventListener);
+        return () => window.removeEventListener('cmart-loading', handleLoadingEvent as EventListener);
     }, [setIsLoading]);
 
-    const withLoading = useCallback(async <T>(fn: () => Promise<T>): Promise<T> => {
+    const withLoading = useCallback(async <T,>(fn: () => Promise<T>): Promise<T> => {
         setIsLoading(true);
         try {
             return await fn();

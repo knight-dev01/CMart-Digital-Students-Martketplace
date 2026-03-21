@@ -5,6 +5,7 @@ import { CampusDrops, MarketTicker, TopVendorsCarousel, MarketCategories } from 
 import { FeaturedShops, FeaturedAds, AIShopAssistant } from '@/components/SocialEngagement';
 import { ProductCard } from '@/components/ProductCard';
 import { ErrorBoundary } from '@/components/ErrorBoundary';
+import { Product } from '@/types';
 
 import { mockProducts, mockActivities, mockShops } from '@/services/mockData';
 
@@ -14,8 +15,8 @@ import { useNotifications } from '@/components/NotificationContext';
 
 export default function Home() {
   const { activities } = useNotifications();
-  const [products, setProducts] = React.useState(mockProducts);
-  const [shops, setShops] = React.useState(mockShops);
+  const [products, setProducts] = React.useState<any[]>(mockProducts);
+  const [shops, setShops] = React.useState<any[]>(mockShops);
 
   React.useEffect(() => {
     const fetchData = async () => {
@@ -23,7 +24,7 @@ export default function Home() {
         const dbProducts = await productService.getProducts();
         if (dbProducts && dbProducts.length > 0) {
           // Map real DB products to the UI structure if needed
-          const mappedProducts = dbProducts.map((p: any) => ({
+          const mappedProducts = dbProducts.map((p: Product) => ({
             ...p,
             image: p.images && p.images.length > 0 ? p.images[0].image : 'https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&q=80'
           }));
@@ -102,7 +103,7 @@ export default function Home() {
             <div className="bg-white/[0.03] backdrop-blur-3xl rounded-[2.5rem] p-8 border border-white/10 shadow-2xl shadow-black/40">
               <h3 className="font-black text-[var(--text-muted)] text-[10px] uppercase tracking-widest mb-6 opacity-40">Market Insights</h3>
               <div className="space-y-4">
-                {(activities.length > 0 ? activities : mockActivities).map((activity: any) => (
+                {(activities.length > 0 ? activities : mockActivities).map((activity: Record<string, unknown> | any) => (
                   <div key={activity.id} className="flex gap-3 group">
                     <div className="w-1.5 h-1.5 rounded-full bg-emerald-500/50 group-hover:bg-emerald-400 mt-1.5 group-hover:scale-150 transition-all"></div>
                     <p className="text-xs text-[var(--foreground)] font-medium leading-relaxed opacity-60 group-hover:opacity-100 transition-all font-sans">{activity.message}</p>

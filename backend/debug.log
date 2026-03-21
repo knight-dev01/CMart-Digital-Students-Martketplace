@@ -4866,3 +4866,47 @@ INFO 2026-03-21 11:02:02,992 autoreload 1132 16696 C:\Users\Adegoke\Desktop\CMar
 INFO 2026-03-21 11:02:18,880 autoreload 5408 9644 Watching for file changes with StatReloader
 INFO 2026-03-21 11:03:11,763 autoreload 5408 9644 C:\Users\Adegoke\Desktop\CMart\backend\products\serializers.py changed, reloading.
 INFO 2026-03-21 11:03:22,095 autoreload 4228 12804 Watching for file changes with StatReloader
+INFO 2026-03-21 11:28:53,175 autoreload 4228 12804 C:\Users\Adegoke\Desktop\CMart\backend\core\settings.py changed, reloading.
+INFO 2026-03-21 11:29:21,309 autoreload 8288 19340 Watching for file changes with StatReloader
+INFO 2026-03-21 11:43:13,378 log 8288 9628 "GET /api/products/ HTTP/1.1" 200 8963
+INFO 2026-03-21 11:43:13,702 log 8288 3084 "GET /api/products/ HTTP/1.1" 200 8963
+INFO 2026-03-21 11:43:13,709 log 8288 9628 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-21 11:43:21,643 log 8288 9628 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+WARNING 2026-03-21 11:43:24,123 log 8288 6420 Not Found: /media/https:/images.unsplash.com/photo-1604329760661-e71dc83f8f26?auto=format&fit=crop&q=80
+WARNING 2026-03-21 11:43:24,286 log 8288 15720 Not Found: /media/https:/images.unsplash.com/photo-1531346878377-a5be20888e57?auto=format&fit=crop&q=80
+WARNING 2026-03-21 11:43:24,391 log 8288 6420 "GET /media/https%3A/images.unsplash.com/photo-1604329760661-e71dc83f8f26%3Fauto%3Dformat%26fit%3Dcrop%26q%3D80 HTTP/1.1" 404 5450
+WARNING 2026-03-21 11:43:24,485 log 8288 15720 "GET /media/https%3A/images.unsplash.com/photo-1531346878377-a5be20888e57%3Fauto%3Dformat%26fit%3Dcrop%26q%3D80 HTTP/1.1" 404 5450
+WARNING 2026-03-21 11:43:35,225 log 8288 9664 Not Found: /media/https:/images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&q=80
+WARNING 2026-03-21 11:43:35,226 log 8288 9664 "GET /media/https%3A/images.unsplash.com/photo-1590658268037-6bf12165a8df%3Fauto%3Dformat%26fit%3Dcrop%26q%3D80 HTTP/1.1" 404 5450
+WARNING 2026-03-21 11:43:35,596 log 8288 11268 Not Found: /media/https:/images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&q=80
+WARNING 2026-03-21 11:43:35,634 log 8288 11268 "GET /media/https%3A/images.unsplash.com/photo-1523381210434-271e8be1f52b%3Fauto%3Dformat%26fit%3Dcrop%26q%3D80 HTTP/1.1" 404 5450
+WARNING 2026-03-21 11:43:47,891 log 8288 4308 Not Found: /media/https:/images.unsplash.com/photo-1527443154391-507e9dc6c5cc?auto=format&fit=crop&q=80
+WARNING 2026-03-21 11:43:47,894 log 8288 4308 "GET /media/https%3A/images.unsplash.com/photo-1527443154391-507e9dc6c5cc%3Fauto%3Dformat%26fit%3Dcrop%26q%3D80 HTTP/1.1" 404 5450
+INFO 2026-03-21 11:44:38,272 log 8288 9628 "GET /api/products/ HTTP/1.1" 200 8963
+INFO 2026-03-21 11:44:38,348 log 8288 3084 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-21 11:44:38,465 log 8288 9628 "GET /api/products/ HTTP/1.1" 200 8963
+INFO 2026-03-21 11:44:40,210 log 8288 9628 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+WARNING 2026-03-21 11:44:40,509 log 8288 16092 Not Found: /media/https:/images.unsplash.com/photo-1604329760661-e71dc83f8f26?auto=format&fit=crop&q=80
+WARNING 2026-03-21 11:44:40,524 log 8288 2504 Not Found: /media/https:/images.unsplash.com/photo-1531346878377-a5be20888e57?auto=format&fit=crop&q=80
+WARNING 2026-03-21 11:44:40,538 log 8288 16300 Not Found: /media/https:/images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&q=80
+WARNING 2026-03-21 11:44:40,539 log 8288 16092 "GET /media/https%3A/images.unsplash.com/photo-1604329760661-e71dc83f8f26%3Fauto%3Dformat%26fit%3Dcrop%26q%3D80 HTTP/1.1" 404 5450
+WARNING 2026-03-21 11:44:40,546 log 8288 2504 "GET /media/https%3A/images.unsplash.com/photo-1531346878377-a5be20888e57%3Fauto%3Dformat%26fit%3Dcrop%26q%3D80 HTTP/1.1" 404 5450
+WARNING 2026-03-21 11:44:40,558 log 8288 16300 "GET /media/https%3A/images.unsplash.com/photo-1590658268037-6bf12165a8df%3Fauto%3Dformat%26fit%3Dcrop%26q%3D80 HTTP/1.1" 404 5450
+WARNING 2026-03-21 11:44:41,234 log 8288 16516 Not Found: /media/https:/images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&q=80
+WARNING 2026-03-21 11:44:41,235 log 8288 16516 "GET /media/https%3A/images.unsplash.com/photo-1523381210434-271e8be1f52b%3Fauto%3Dformat%26fit%3Dcrop%26q%3D80 HTTP/1.1" 404 5450
+WARNING 2026-03-21 11:44:41,605 log 8288 17084 Not Found: /media/https:/images.unsplash.com/photo-1527443154391-507e9dc6c5cc?auto=format&fit=crop&q=80
+WARNING 2026-03-21 11:44:41,622 log 8288 17084 "GET /media/https%3A/images.unsplash.com/photo-1527443154391-507e9dc6c5cc%3Fauto%3Dformat%26fit%3Dcrop%26q%3D80 HTTP/1.1" 404 5450
+INFO 2026-03-21 11:48:23,025 log 8288 7296 "GET /api/products/ HTTP/1.1" 200 8963
+INFO 2026-03-21 11:48:23,712 log 8288 9408 "GET /api/products/ HTTP/1.1" 200 8963
+INFO 2026-03-21 11:48:26,890 log 8288 9408 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+INFO 2026-03-21 11:48:26,961 log 8288 9408 "GET /api/vendors/shops/ HTTP/1.1" 200 1721
+WARNING 2026-03-21 11:48:29,467 log 8288 9516 Not Found: /media/https:/images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&q=80
+WARNING 2026-03-21 11:48:29,570 log 8288 9020 Not Found: /media/https:/images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&q=80
+WARNING 2026-03-21 11:48:29,588 log 8288 340 Not Found: /media/https:/images.unsplash.com/photo-1527443154391-507e9dc6c5cc?auto=format&fit=crop&q=80
+WARNING 2026-03-21 11:48:29,656 log 8288 12160 Not Found: /media/https:/images.unsplash.com/photo-1531346878377-a5be20888e57?auto=format&fit=crop&q=80
+WARNING 2026-03-21 11:48:29,672 log 8288 12744 Not Found: /media/https:/images.unsplash.com/photo-1604329760661-e71dc83f8f26?auto=format&fit=crop&q=80
+WARNING 2026-03-21 11:48:31,065 log 8288 9516 "GET /media/https%3A/images.unsplash.com/photo-1590658268037-6bf12165a8df%3Fauto%3Dformat%26fit%3Dcrop%26q%3D80 HTTP/1.1" 404 5450
+WARNING 2026-03-21 11:48:32,383 log 8288 9020 "GET /media/https%3A/images.unsplash.com/photo-1523381210434-271e8be1f52b%3Fauto%3Dformat%26fit%3Dcrop%26q%3D80 HTTP/1.1" 404 5450
+WARNING 2026-03-21 11:48:35,063 log 8288 340 "GET /media/https%3A/images.unsplash.com/photo-1527443154391-507e9dc6c5cc%3Fauto%3Dformat%26fit%3Dcrop%26q%3D80 HTTP/1.1" 404 5450
+WARNING 2026-03-21 11:48:43,173 log 8288 12160 "GET /media/https%3A/images.unsplash.com/photo-1531346878377-a5be20888e57%3Fauto%3Dformat%26fit%3Dcrop%26q%3D80 HTTP/1.1" 404 5450
+WARNING 2026-03-21 11:48:47,333 log 8288 12744 "GET /media/https%3A/images.unsplash.com/photo-1604329760661-e71dc83f8f26%3Fauto%3Dformat%26fit%3Dcrop%26q%3D80 HTTP/1.1" 404 5450

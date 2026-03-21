@@ -63,8 +63,8 @@ export default function LoginPage() {
                     router.push('/');
                 }
             }, 1000);
-        } catch (err: any) {
-            setError(err.message || 'Login failed');
+        } catch (err: unknown) {
+            setError(err instanceof Error ? err.message : 'Login failed');
         } finally {
             setLoading(false);
         }

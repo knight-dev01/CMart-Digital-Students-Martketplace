@@ -3,6 +3,7 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import { useAuth } from './AuthContext';
 import { useLoading } from './LoadingContext';
+import { Product } from '@/types';
 
 export interface CartItem {
     id: number;
@@ -15,7 +16,7 @@ export interface CartItem {
 
 interface CartContextType {
     cart: CartItem[];
-    addToCart: (product: any) => void;
+    addToCart: (product: Product) => void;
     removeFromCart: (productId: number) => void;
     updateQuantity: (productId: number, quantity: number) => void;
     clearCart: () => void;
@@ -53,7 +54,7 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
         }
     }, [cartItems, isInitialized]);
 
-    const addToCart = (product: any) => {
+    const addToCart = (product: Product) => {
         // Only block if logged in as a non-buyer
         if (user && user.role === 'VENDOR') {
             return;

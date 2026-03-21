@@ -8,8 +8,9 @@ import { useCart } from './CartContext';
 import { useRequireAuth } from '@/hooks/useRequireAuth';
 import { productService } from '@/services/product';
 import { chatService } from '@/services/chat';
+import { Product } from '@/types';
 
-export const ProductCard = ({ product, variant = 'default' }: { product: any, variant?: 'default' | 'compact' }) => {
+export const ProductCard = ({ product, variant = 'default' }: { product: Product, variant?: 'default' | 'compact' }) => {
     const router = useRouter();
     const { addToCart } = useCart();
     const { user } = useAuth();

@@ -2,11 +2,12 @@
 
 import React, { useState, useEffect } from 'react';
 import { productService } from '@/services/product';
+import { Product, Shop } from '@/types';
 import Link from 'next/link';
 
 export const SearchOverlay = ({ isOpen, onClose }: { isOpen: boolean, onClose: () => void }) => {
     const [query, setQuery] = useState('');
-    const [results, setResults] = useState<{ products: any[], shops: any[] }>({ products: [], shops: [] });
+    const [results, setResults] = useState<{ products: Product[], shops: Shop[] }>({ products: [], shops: [] });
     const [loading, setLoading] = useState(false);
 
     useEffect(() => {
