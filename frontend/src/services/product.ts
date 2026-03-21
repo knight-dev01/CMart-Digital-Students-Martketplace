@@ -59,8 +59,10 @@ export const productService = {
       if (images && images.length > 0) {
         const formData = new FormData();
         Object.keys(productData).forEach(key => {
-          // eslint-disable-next-line @typescript-eslint/no-explicit-any
-          formData.append(key, (productData as any)[key]);
+          const value = (productData as any)[key];
+          if (value !== undefined && value !== null) {
+            formData.append(key, value);
+          }
         });
         images.forEach(image => {
           formData.append('images', image);

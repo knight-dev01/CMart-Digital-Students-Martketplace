@@ -12,10 +12,23 @@ export default function CreateProductPage() {
     const [step, setStep] = useState(1);
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [images, setImages] = useState<File[]>([]);
+    const [categories, setCategories] = useState<{id: number, name: string}[]>([]);
+
+    React.useEffect(() => {
+        const fetchCategories = async () => {
+            const cats = await productService.getCategories();
+            if (cats && cats.length > 0) {
+                setCategories(cats);
+                setFormData(prev => ({ ...prev, category: String(cats[0].id) }));
+            }
+        };
+        fetchCategories();
+    }, []);
+
     const [formData, setFormData] = useState({
         name: '',
         price: '',
-        category: 'Fashion',
+        category: '',
         description: '',
         condition: 'New',
         campus_drop: true
@@ -32,11 +45,12 @@ export default function CreateProductPage() {
                 price: Number(formData.price),
                 vendor_id: user?.id
             }, images);
-            alert("Your campus drop is live! 🔥");
-            router.push('/vendor/dashboard');
+            setStep(4);
+            setTimeout(() => {
+                router.push('/vendor/dashboard');
+            }, 2000);
         } catch (error) {
             alert("Failed to list product. Please try again.");
-        } finally {
             setIsSubmitting(false);
         }
     };
@@ -58,7 +72,7 @@ export default function CreateProductPage() {
                 <div className="h-1 w-full bg-[var(--border-color)]/20 rounded-full mb-12 overflow-hidden">
                     <div 
                         className="h-full bg-emerald-600 transition-all duration-500"
-                        style={{ width: `${(step / 3) * 100}%` }}
+                        style={{ width: `${(Math.min(step, 3) / 3) * 100}%` }}
                     ></div>
                 </div>
 
@@ -97,11 +111,11 @@ export default function CreateProductPage() {
                                             onChange={(e) => setFormData({...formData, category: e.target.value})}
                                             className="w-full bg-[var(--background)] border-2 border-[var(--border-color)] rounded-2xl p-5 text-sm font-bold outline-none focus:border-emerald-500 appearance-none cursor-pointer"
                                         >
-                                            <option>Fashion</option>
-                                            <option>Gadgets</option>
-                                            <option>Food & Snacks</option>
-                                            <option>Academics</option>
-                                            <option>Other</option>
+                                            {categories.length === 0 ? <option value="">Loading categories...</option> : 
+                                                categories.map(cat => (
+                                                    <option key={cat.id} value={cat.id}>{cat.name}</option>
+                                                ))
+                                            }
                                         </select>
                                         <div className="absolute right-5 top-1/2 -translate-y-1/2 pointer-events-none text-emerald-500">
                                             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M19 9l-7 7-7-7" /></svg>
@@ -204,6 +218,17 @@ export default function CreateProductPage() {
                                     {isSubmitting ? 'Launching...' : 'Release for Sale'}
                                 </button>
                             </div>
+                        </div>
+                    )}
+
+                    {/* Step 4: Success */}
+                    {step === 4 && (
+                        <div className="space-y-6 animate-in zoom-in-50 duration-500 text-center py-10">
+                            <div className="w-24 h-24 bg-emerald-500 rounded-full flex items-center justify-center mx-auto mb-6 shrink-0 shadow-lg shadow-emerald-500/40">
+                                <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="4" d="M5 13l4 4L19 7" /></svg>
+                            </div>
+                            <h2 className="text-3xl font-black text-[var(--foreground)] uppercase tracking-tight">Drop is Live! 🔥</h2>
+                            <p className="text-[var(--text-muted)] font-bold text-xs uppercase tracking-widest">Redirecting to Dashboard...</p>
                         </div>
                     )}
                 </div>

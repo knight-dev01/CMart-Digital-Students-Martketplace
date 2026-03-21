@@ -55,7 +55,7 @@ export const ProductCard = ({ product, variant = 'default' }: { product: Product
                         <img src={product.image || 'https://via.placeholder.com/300'} alt={product.name} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
                     </Link>
                     <div className="absolute top-2 right-2 bg-white/80 backdrop-blur-md px-2 py-1 rounded-full text-[9px] font-black">
-                        ₦{product.price.toLocaleString()}
+                        ₦{Number(product.price).toLocaleString()}
                     </div>
                     {/* Compact Actions Row Top Left */}
                     <div className="absolute top-2 left-2 flex gap-1.5">

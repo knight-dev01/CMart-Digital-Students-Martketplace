@@ -154,7 +154,7 @@ body::after {
 .animate-marquee {
   display: flex;
   width: max-content;
-  animation: marquee 30s linear infinite;
+  animation: marquee 300s linear infinite;
 }
 
 @keyframes marquee {
@@ -165,4 +165,9 @@ body::after {
   100% {
     transform: translateX(-50%);
   }
+}
+
+/* Hide Next.js DevTools portal to prevent overlap with bottom nav */
+nextjs-portal {
+  display: none !important;
 }
