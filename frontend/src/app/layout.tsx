@@ -1,5 +1,5 @@
 import { Navbar } from "@/components/Navbar";
-import { MobileBottomNav } from "@/components/SocialEngagement";
+import { MobileBottomNav } from "@/components/MobileBottomNav";
 import { ThemeProvider } from "@/components/ThemeContext";
 import { AuthProvider } from "@/components/AuthContext";
 import { AuthGuard } from "@/components/AuthGuard";

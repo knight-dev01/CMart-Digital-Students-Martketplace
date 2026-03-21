@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { productService } from '@/services/product';
 import { useCart } from './CartContext';
 import { useRequireAuth } from '@/hooks/useRequireAuth';
+import { ProductCard } from './ProductCard';
 
 // Trust Indicator: Verified Student Vendor Badge
 export const VerifiedBadge = () => (
@@ -39,64 +40,7 @@ export const MarketCategories = () => {
     );
 };
 
-// Individual Product Card for Campus Drops
-const CampusDropCard = ({ product }: { product: any }) => {
-    const { addToCart } = useCart();
-    const { handleAuthAction } = useRequireAuth();
-    const [isLiked, setIsLiked] = useState(product.is_liked || false);
-    const [likesCount, setLikesCount] = useState(product.likes_count || 0);
-
-    const handleLike = async () => {
-        try {
-            await productService.likeProduct(product.id);
-            setIsLiked(!isLiked);
-            setLikesCount(prev => isLiked ? prev - 1 : prev + 1);
-        } catch (err) {
-            console.error("Liking failed:", err);
-        }
-    };
-
-    return (
-        <div className="flex-none w-[240px] sm:w-64 glass-card rounded-2xl shadow-sm overflow-hidden hover:shadow-lg transition-all transform hover:-translate-y-1 snap-start text-left">
-            <Link href={`/products/${product.id}`} className="relative h-40 w-full bg-[var(--border-color)]/20 overflow-hidden block group/img">
-                <img src={product.images?.[0]?.image || 'https://via.placeholder.com/300?text=Product'} alt={product.name} className="h-full w-full object-cover transition-transform duration-500 group-hover/img:scale-110" />
-            </Link>
-            <div className="p-4">
-                <Link href={`/shops/${product.shop_slug || product.vendor_id}`} className="text-[10px] text-emerald-600 dark:text-emerald-400 font-bold uppercase tracking-wider mb-1 hover:underline block">{product.shop_name}</Link>
-                <Link href={`/products/${product.id}`}>
-                    <h3 className="text-base font-bold text-[var(--foreground)] truncate hover:text-emerald-500 transition-colors cursor-pointer">{product.name}</h3>
-                </Link>
-                <p className="text-lg font-black text-[var(--foreground)] mt-1">₦{Number(product.price).toLocaleString()}</p>
-                <div className="mt-3 flex items-center justify-between text-[11px] text-[var(--text-muted)]">
-                    <span className="flex items-center gap-1">
-                        <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>
-                        {product.view_count} students
-                    </span>
-                    <div className="flex items-center gap-2">
-                        <button
-                            onClick={(e) => {
-                                e.preventDefault();
-                                e.stopPropagation();
-                                addToCart(product);
-                            }}
-                            className="p-1.5 bg-emerald-50 dark:bg-emerald-950/30 text-emerald-600 dark:text-emerald-400 rounded-lg hover:bg-emerald-600 hover:text-white transition-all"
-                            title="Add to Cart"
-                        >
-                            <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
-                        </button>
-                        <button
-                            onClick={() => handleAuthAction(handleLike)}
-                            className={`flex items-center gap-1 transition-transform active:scale-95 ${isLiked ? 'text-red-500 scale-110' : 'text-emerald-600'}`}
-                        >
-                            <svg className="w-3 h-3" fill={isLiked ? "currentColor" : "none"} stroke="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd" /></svg>
-                            {likesCount}
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    );
-};
+// CampusDropCard logic removed - use ProductCard.tsx (compact variant) instead
 
 // Campus Drops Component: Highlights new products
 export const CampusDrops = ({ products }: { products: any[] }) => {
@@ -108,7 +52,7 @@ export const CampusDrops = ({ products }: { products: any[] }) => {
             </div>
             <div className="flex space-x-3 sm:space-x-4 overflow-x-auto pb-4 scrollbar-hide snap-x snap-mandatory">
                 {products?.map(product => (
-                    <CampusDropCard key={product.id} product={product} />
+                    <ProductCard key={product.id} product={product} variant="compact" />
                 ))}
             </div>
         </section>

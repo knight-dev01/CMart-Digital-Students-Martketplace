@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import { productService } from '@/services/product';
 import { chatService } from '@/services/chat';
-import { ProductAd } from '@/components/SocialEngagement';
+import { ProductCard } from '@/components/ProductCard';
 import { useRequireAuth } from '@/hooks/useRequireAuth';
 import { LoadingScreen } from '@/components/LoadingScreen';
 import Link from 'next/link';
@@ -156,7 +156,7 @@ export default function ShopProfilePage() {
                 ) : (
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center">
                         {products.map(product => (
-                            <ProductAd key={product.id} product={product} />
+                            <ProductCard key={product.id} product={product} />
                         ))}
                     </div>
                 )}
