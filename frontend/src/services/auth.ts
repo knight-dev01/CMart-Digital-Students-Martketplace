@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:8000/api';
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api';
 
 export interface User {
     id: number;
@@ -39,8 +39,6 @@ export const AuthService = {
             throw new Error('Login failed. Please check your credentials.');
         }
         const tokenData = await response.json();
-        // Since login endpoint only returns tokens, we need to fetch profile separately or adjust backend
-        // For now, let's assume we fetch profile after login
         return tokenData;
     },
 

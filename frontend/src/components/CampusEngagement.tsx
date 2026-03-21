@@ -1,11 +1,9 @@
 'use client';
 
-import React, { useState } from 'react';
-import Link from 'next/link';
-import { productService } from '@/services/product';
-import { useCart } from './CartContext';
+import React from 'react';
 import { useRequireAuth } from '@/hooks/useRequireAuth';
 import { ProductCard } from './ProductCard';
+import { StudentShopCard } from './StudentShopCard';
 
 // Trust Indicator: Verified Student Vendor Badge
 export const VerifiedBadge = () => (
@@ -179,7 +177,3 @@ export const TopVendorsCarousel = ({ shops }: { shops: any[] }) => {
     );
 };
 
-
-import { StudentShopCard } from './StudentShopCard';
-
-// Student Shop Card logic removed and imported from StudentShopCard.tsx

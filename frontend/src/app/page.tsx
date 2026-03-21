@@ -4,6 +4,7 @@ import React from 'react';
 import { CampusDrops, MarketTicker, TopVendorsCarousel, MarketCategories } from '@/components/CampusEngagement';
 import { FeaturedShops, FeaturedAds, AIShopAssistant } from '@/components/SocialEngagement';
 import { ProductCard } from '@/components/ProductCard';
+import { ErrorBoundary } from '@/components/ErrorBoundary';
 
 import { mockProducts, mockActivities, mockShops } from '@/services/mockData';
 
@@ -59,7 +60,9 @@ export default function Home() {
 
             {/* 3. Featured Ads - High Impact Gallery */}
             <div className="w-full mb-8 p-6 sm:p-10 rounded-t-[3.5rem] bg-white/[0.05] dark:bg-white/[0.02] backdrop-blur-3xl border border-white/10 shadow-2xl shadow-black/10 transition-all duration-500">
-              <FeaturedAds shops={shops} />
+              <ErrorBoundary>
+                <FeaturedAds shops={shops} />
+              </ErrorBoundary>
             </div>
 
             {/* 4. Top Vendors Carousel - Discovery Break */}
@@ -69,7 +72,9 @@ export default function Home() {
 
             {/* 4.5 Campus Drops - Newest Items */}
             <div className="w-full mt-4">
-              <CampusDrops products={products.slice(0, 6)} />
+              <ErrorBoundary>
+                <CampusDrops products={products.slice(0, 6)} />
+              </ErrorBoundary>
             </div>
 
             {/* 5. Product Ads - Main Market Listings */}
@@ -83,9 +88,11 @@ export default function Home() {
               <MarketCategories />
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 mt-6">
-                {products.map(product => (
-                  <ProductCard key={product.id} product={product} />
-                ))}
+                <ErrorBoundary>
+                  {products.map(product => (
+                    <ProductCard key={product.id} product={product} />
+                  ))}
+                </ErrorBoundary>
               </div>
             </div>
           </div>

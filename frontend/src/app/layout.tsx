@@ -3,6 +3,7 @@ import { MobileBottomNav } from "@/components/MobileBottomNav";
 import { ThemeProvider } from "@/components/ThemeContext";
 import { AuthProvider } from "@/components/AuthContext";
 import { AuthGuard } from "@/components/AuthGuard";
+import { CartProvider } from "@/components/CartContext";
 import PWARegistration from "@/components/PWARegistration";
 import { PageTransitionOverlay } from "@/components/PageTransitionOverlay";
 import { LoadingProvider } from "@/components/LoadingContext";
@@ -13,9 +14,6 @@ export const metadata = {
   title: "CMart | Digital Student Marketplace",
   description: "Independent student shops and campus vendors in one place.",
 };
-
-
-import { CartProvider } from "@/components/CartContext";
 
 export default function RootLayout({
   children,

@@ -94,8 +94,7 @@ export const Navbar = () => {
                         ) : (
                             <>
                                 <Link href="/" className="text-[var(--foreground)] hover:text-emerald-400 transition-colors">Marketplace</Link>
-                                <Link href="/shops" className="text-[var(--text-muted)] hover:text-[var(--foreground)] transition-colors">Student Shops</Link>
-                                <Link href="/shops" className="text-[var(--text-muted)] hover:text-[var(--foreground)] transition-colors">Campus Vendors</Link>
+                                <Link href="/shops" className="text-[var(--text-muted)] hover:text-[var(--foreground)] transition-colors">Shops</Link>
                             </>
                         )}
                     </div>
@@ -218,8 +217,7 @@ export const Navbar = () => {
                     ) : (
                         <>
                             <Link href="/" onClick={() => setIsMenuOpen(false)} className="block text-sm font-black uppercase tracking-widest text-[var(--foreground)]">Marketplace</Link>
-                            <Link href="/shops" onClick={() => setIsMenuOpen(false)} className="block text-sm font-black uppercase tracking-widest text-[var(--text-muted)] hover:text-[var(--foreground)]">Student Shops</Link>
-                            <Link href="/shops" onClick={() => setIsMenuOpen(false)} className="block text-sm font-black uppercase tracking-widest text-[var(--text-muted)] hover:text-[var(--foreground)]">Campus Vendors</Link>
+                            <Link href="/shops" onClick={() => setIsMenuOpen(false)} className="block text-sm font-black uppercase tracking-widest text-[var(--text-muted)] hover:text-[var(--foreground)]">Shops</Link>
                         </>
                     )}
                     <Link

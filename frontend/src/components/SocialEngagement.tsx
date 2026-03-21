@@ -5,12 +5,8 @@ import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { useAuth } from './AuthContext';
 import { chatService } from '@/services/chat';
-import { productService } from '@/services/product';
-import { useCart } from './CartContext';
 import { useRequireAuth } from '@/hooks/useRequireAuth';
 import { ChatOverlay } from './ChatComponent';
-import { SearchOverlay } from './SearchOverlay';
-import { QuickSellModal } from './QuickSellModal';
 
 // Featured Shops (Circles at the top)
 export const FeaturedShops = ({ shops }: { shops: any[] }) => (
