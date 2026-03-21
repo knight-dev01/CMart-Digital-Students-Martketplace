@@ -1,6 +1,5 @@
-import hmac
-import hashlib
 import json
+import logging
 from rest_framework import status, permissions
 from rest_framework.response import Response
 from rest_framework.views import APIView
@@ -9,35 +8,69 @@ from django.db import transaction
 from orders.models import Order, OrderItem, CommissionRecord
 from vendors.models import VendorWallet
 from .models import Transaction
+from . import services
+
+logger = logging.getLogger(__name__)
 
 class InitializePaymentView(APIView):
     permission_classes = (permissions.IsAuthenticated,)
 
     def post(self, request):
         order_id = request.data.get('order_id')
-        order = Order.objects.get(id=order_id, buyer=request.user)
-        # In a real app, call Paystack API to get authorization_url
-        # For MVP, we simulate or assume frontend handles redirection
-        # We'll just create a pending transaction
+        if not order_id:
+            return Response({'error': 'order_id is required'}, status=status.HTTP_400_BAD_REQUEST)
+
+        try:
+            order = Order.objects.get(id=order_id, buyer=request.user)
+        except Order.DoesNotExist:
+            return Response({'error': 'Order not found'}, status=status.HTTP_404_NOT_FOUND)
+
+        if order.payment_status == 'PAID':
+            return Response({'error': 'Order is already paid'}, status=status.HTTP_400_BAD_REQUEST)
+
         ref = f"PAY-{order.id}-{hash(request.user.email)}"
-        Transaction.objects.create(
+        
+        # Create pending transaction
+        txn, _ = Transaction.objects.get_or_create(
             order=order,
-            payment_reference=ref,
-            amount=order.total_amount,
-            status='PENDING'
+            defaults={
+                'payment_reference': ref,
+                'amount': order.total_amount,
+                'status': 'PENDING'
+            }
         )
-        return Response({'reference': ref, 'amount': float(order.total_amount)})
+
+        try:
+            # Call Paystack initialization
+            paystack_data = services.initialize_transaction(
+                email=request.user.email,
+                amount_naira=float(order.total_amount),
+                reference=txn.payment_reference,
+                callback_url=request.data.get('callback_url')
+            )
+            return Response({
+                'authorization_url': paystack_data['authorization_url'],
+                'access_code': paystack_data['access_code'],
+                'reference': paystack_data['reference']
+            })
+        except Exception as e:
+            logger.error(f"Paystack initialization failed: {str(e)}")
+            return Response({'error': 'Payment initialization failed'}, status=status.HTTP_503_SERVICE_UNAVAILABLE)
+
 
 class PaystackWebhookView(APIView):
     permission_classes = (permissions.AllowAny,)
 
     def post(self, request):
-        # Verify Webhook (Simulated/Ready for integration)
-        # paystack_signature = request.headers.get('x-paystack-signature')
-        # secret = settings.PAYSTACK_SECRET_KEY
-        # computed_signature = hmac.new(secret.encode(), request.body, hashlib.sha512).hexdigest()
-        # if paystack_signature != computed_signature:
-        #     return Response(status=status.HTTP_400_BAD_REQUEST)
+        paystack_signature = request.headers.get('x-paystack-signature')
+        if not paystack_signature:
+            return Response({'error': 'Missing signature'}, status=status.HTTP_400_BAD_REQUEST)
+
+        # Verify Webhook signature
+        is_valid = services.validate_webhook_signature(request.body, paystack_signature)
+        if not is_valid:
+            logger.warning("Invalid Paystack webhook signature")
+            return Response(status=status.HTTP_400_BAD_REQUEST)
 
         payload = request.data
         if payload.get('event') == 'charge.success':
@@ -55,9 +88,10 @@ class PaystackWebhookView(APIView):
                         order.payment_status = 'PAID'
                         order.save()
                         
-                        # Phase 4: Commission engine
+                        # Process commission distribution
                         self.process_commissions(order)
             except Transaction.DoesNotExist:
+                logger.error(f"Webhook transaction not found for ref: {reference}")
                 return Response({'error': 'Transaction not found'}, status=status.HTTP_404_NOT_FOUND)
 
         return Response(status=status.HTTP_200_OK)

@@ -53,10 +53,27 @@ export const productService = {
     }
   },
   
-  createProduct: async (productData: any) => {
+  createProduct: async (productData: any, images?: File[]) => {
     try {
-      const response = await api.post('/products/', productData);
-      return response.data;
+      if (images && images.length > 0) {
+        const formData = new FormData();
+        Object.keys(productData).forEach(key => {
+          formData.append(key, productData[key]);
+        });
+        images.forEach(image => {
+          formData.append('images', image);
+        });
+        
+        const response = await api.post('/products/create/', formData, {
+          headers: {
+            'Content-Type': 'multipart/form-data'
+          }
+        });
+        return response.data;
+      } else {
+        const response = await api.post('/products/create/', productData);
+        return response.data;
+      }
     } catch (error) {
       console.error('Error creating product:', error);
       throw error;

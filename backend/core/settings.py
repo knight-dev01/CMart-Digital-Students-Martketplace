@@ -24,6 +24,10 @@ DEBUG = os.environ.get('DEBUG', 'True').lower() in ('true', '1', 'yes')
 
 ALLOWED_HOSTS = [h.strip() for h in os.environ.get('ALLOWED_HOSTS', 'localhost,127.0.0.1').split(',')]
 
+# Paystack settings
+PAYSTACK_SECRET_KEY = os.environ.get('PAYSTACK_SECRET_KEY', '')
+PAYSTACK_PUBLIC_KEY = os.environ.get('PAYSTACK_PUBLIC_KEY', '')
+
 
 # Application definition
 
@@ -129,6 +133,9 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
 
 # Custom User Model
 AUTH_USER_MODEL = 'users.User'

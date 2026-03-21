@@ -101,9 +101,13 @@ class CategoryListView(generics.ListAPIView):
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
 
+from rest_framework.parsers import MultiPartParser, FormParser
+from .models import ProductImage
+
 class ProductCreateView(generics.CreateAPIView):
     permission_classes = (permissions.IsAuthenticated,)
     serializer_class = ProductSerializer
+    parser_classes = (MultiPartParser, FormParser)
 
     def perform_create(self, serializer):
         user = self.request.user
@@ -122,4 +126,8 @@ class ProductCreateView(generics.CreateAPIView):
                 description="Student-to-student quick listings."
             )
         
-        serializer.save(shop=user.vendor_profile.shop)
+        product = serializer.save(shop=user.vendor_profile.shop)
+        
+        # Save uploaded images
+        for image_file in self.request.FILES.getlist('images'):
+            ProductImage.objects.create(product=product, image=image_file)

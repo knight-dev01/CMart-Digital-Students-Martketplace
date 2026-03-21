@@ -4,6 +4,9 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { useCart } from '@/components/CartContext';
 import { useRouter } from 'next/navigation';
+import { orderService } from '@/services/order';
+import { paymentService } from '@/services/payment';
+import api from '@/services/api';
 
 export default function CheckoutPage() {
     const { cart, totalPrice, clearCart } = useCart();
@@ -11,14 +14,30 @@ export default function CheckoutPage() {
     const [isSuccess, setIsSuccess] = useState(false);
     const router = useRouter();
 
-    const handlePlaceOrder = () => {
+    const handlePlaceOrder = async () => {
         setIsProcessing(true);
-        // Simulate Paystack/Processing delay
-        setTimeout(() => {
-            setIsProcessing(false);
-            setIsSuccess(true);
+        try {
+            // 1. Sync local cart to server securely
+            await api.post('/orders/cart/sync/', { items: cart });
+            
+            // 2. Checkout to create an Order
+            const order = await orderService.checkout();
+            
+            // 3. Initialize Paystack Transaction
+            const callbackUrl = `${window.location.origin}/checkout/verify`;
+            const paymentData = await paymentService.initializePayment(order.id, callbackUrl);
+            
+            // 4. Clear local cart
             clearCart();
-        }, 2500);
+            
+            // 5. Redirect to Paystack
+            window.location.href = paymentData.authorization_url;
+            
+        } catch (error) {
+            console.error("Checkout failed:", error);
+            alert("Payment setup failed. Please try again.");
+            setIsProcessing(false);
+        }
     };
 
     if (cart.length === 0 && !isSuccess) {

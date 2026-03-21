@@ -4834,3 +4834,35 @@ INFO 2026-03-21 10:51:53,129 log 12804 15224 "GET /api/notifications/ HTTP/1.1" 
 INFO 2026-03-21 10:51:53,155 log 12804 15224 "GET /api/notifications/activity/ HTTP/1.1" 200 2934
 INFO 2026-03-21 10:52:24,838 log 12804 15224 "GET /api/notifications/ HTTP/1.1" 200 2
 INFO 2026-03-21 10:52:24,851 log 12804 18400 "GET /api/notifications/activity/ HTTP/1.1" 200 2934
+INFO 2026-03-21 10:52:53,392 log 12804 18400 "GET /api/notifications/ HTTP/1.1" 200 2
+INFO 2026-03-21 10:52:53,501 log 12804 18400 "GET /api/notifications/activity/ HTTP/1.1" 200 2934
+INFO 2026-03-21 10:53:23,139 log 12804 18400 "GET /api/notifications/ HTTP/1.1" 200 2
+INFO 2026-03-21 10:53:23,150 log 12804 15224 "GET /api/notifications/activity/ HTTP/1.1" 200 2934
+INFO 2026-03-21 10:53:52,913 log 12804 15224 "GET /api/notifications/ HTTP/1.1" 200 2
+INFO 2026-03-21 10:53:52,917 log 12804 18400 "GET /api/notifications/activity/ HTTP/1.1" 200 2934
+INFO 2026-03-21 10:54:23,135 log 12804 18400 "GET /api/notifications/ HTTP/1.1" 200 2
+INFO 2026-03-21 10:54:23,157 log 12804 18400 "GET /api/notifications/activity/ HTTP/1.1" 200 2934
+INFO 2026-03-21 10:54:53,144 log 12804 18400 "GET /api/notifications/ HTTP/1.1" 200 2
+INFO 2026-03-21 10:54:53,148 log 12804 15224 "GET /api/notifications/activity/ HTTP/1.1" 200 2934
+INFO 2026-03-21 10:55:23,132 log 12804 15224 "GET /api/notifications/ HTTP/1.1" 200 2
+INFO 2026-03-21 10:55:23,136 log 12804 18400 "GET /api/notifications/activity/ HTTP/1.1" 200 2934
+INFO 2026-03-21 10:55:54,516 log 12804 18400 "GET /api/notifications/ HTTP/1.1" 200 2
+INFO 2026-03-21 10:55:54,533 log 12804 18400 "GET /api/notifications/activity/ HTTP/1.1" 200 2934
+INFO 2026-03-21 10:56:23,140 log 12804 18400 "GET /api/notifications/ HTTP/1.1" 200 2
+INFO 2026-03-21 10:56:23,146 log 12804 15224 "GET /api/notifications/activity/ HTTP/1.1" 200 2934
+INFO 2026-03-21 10:56:53,348 log 12804 15224 "GET /api/notifications/ HTTP/1.1" 200 2
+INFO 2026-03-21 10:56:53,366 log 12804 18400 "GET /api/notifications/activity/ HTTP/1.1" 200 2934
+INFO 2026-03-21 10:57:25,354 log 12804 18400 "GET /api/notifications/ HTTP/1.1" 200 2
+INFO 2026-03-21 10:57:25,359 log 12804 15224 "GET /api/notifications/activity/ HTTP/1.1" 200 2934
+INFO 2026-03-21 10:58:03,141 log 12804 15224 "GET /api/notifications/ HTTP/1.1" 200 2
+INFO 2026-03-21 10:58:03,141 log 12804 18400 "GET /api/notifications/activity/ HTTP/1.1" 200 2934
+INFO 2026-03-21 10:58:23,139 log 12804 18400 "GET /api/notifications/ HTTP/1.1" 200 2
+INFO 2026-03-21 10:58:23,147 log 12804 15224 "GET /api/notifications/activity/ HTTP/1.1" 200 2934
+INFO 2026-03-21 10:58:53,188 log 12804 18400 "GET /api/notifications/activity/ HTTP/1.1" 200 2934
+INFO 2026-03-21 10:58:53,190 log 12804 15224 "GET /api/notifications/ HTTP/1.1" 200 2
+INFO 2026-03-21 10:58:57,783 autoreload 12804 6292 C:\Users\Adegoke\Desktop\CMart\backend\core\settings.py changed, reloading.
+INFO 2026-03-21 11:00:34,997 autoreload 1132 16696 Watching for file changes with StatReloader
+INFO 2026-03-21 11:02:02,992 autoreload 1132 16696 C:\Users\Adegoke\Desktop\CMart\backend\products\models.py changed, reloading.
+INFO 2026-03-21 11:02:18,880 autoreload 5408 9644 Watching for file changes with StatReloader
+INFO 2026-03-21 11:03:11,763 autoreload 5408 9644 C:\Users\Adegoke\Desktop\CMart\backend\products\serializers.py changed, reloading.
+INFO 2026-03-21 11:03:22,095 autoreload 4228 12804 Watching for file changes with StatReloader

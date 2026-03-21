@@ -12,7 +12,7 @@ class ProductImageSerializer(serializers.ModelSerializer):
         fields = ('id', 'image')
 
 class ProductSerializer(serializers.ModelSerializer):
-    images = ProductImageSerializer(many=True, required=False)
+    images = ProductImageSerializer(many=True, read_only=True)
     shop_name = serializers.ReadOnlyField(source='shop.shop_name')
     vendor_id = serializers.ReadOnlyField(source='shop.vendor.user.id')
     shop_logo = serializers.ReadOnlyField(source='shop.logo')
@@ -32,13 +32,6 @@ class ProductSerializer(serializers.ModelSerializer):
         if user and user.is_authenticated:
             return obj.likes.filter(id=user.id).exists()
         return False
-
-    def create(self, validated_data):
-        images_data = validated_data.pop('images', [])
-        product = Product.objects.create(**validated_data)
-        for image_data in images_data:
-            ProductImage.objects.create(product=product, **image_data)
-        return product
 
 
 class ReviewSerializer(serializers.ModelSerializer):

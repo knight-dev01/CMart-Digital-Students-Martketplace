@@ -11,6 +11,7 @@ export default function CreateProductPage() {
     const router = useRouter();
     const [step, setStep] = useState(1);
     const [isSubmitting, setIsSubmitting] = useState(false);
+    const [images, setImages] = useState<File[]>([]);
     const [formData, setFormData] = useState({
         name: '',
         price: '',
@@ -29,9 +30,8 @@ export default function CreateProductPage() {
             await productService.createProduct({
                 ...formData,
                 price: Number(formData.price),
-                vendor_id: user?.id,
-                images: [] // Initially empty, handled by a separate endpoint in a real scenario
-            });
+                vendor_id: user?.id
+            }, images);
             alert("Your campus drop is live! 🔥");
             router.push('/vendor/dashboard');
         } catch (error) {
@@ -147,6 +147,20 @@ export default function CreateProductPage() {
                                     placeholder="Describe the condition, size, or special features..." 
                                     className="w-full bg-[var(--background)] border-2 border-[var(--border-color)] rounded-2xl p-5 text-sm font-bold outline-none focus:border-emerald-500 resize-none transition-all placeholder:opacity-30"
                                 ></textarea>
+                            </div>
+
+                            <div className="space-y-3">
+                                <label className="text-[10px] font-black uppercase tracking-widest text-[var(--text-muted)] ml-1">Images</label>
+                                <input 
+                                    type="file" 
+                                    multiple 
+                                    accept="image/*"
+                                    onChange={(e) => setImages(Array.from(e.target.files || []))}
+                                    className="w-full bg-[var(--background)] border-2 border-[var(--border-color)] rounded-2xl p-5 text-sm font-bold outline-none focus:border-emerald-500 transition-all file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-xs file:font-semibold file:bg-emerald-50 file:text-emerald-700 hover:file:bg-emerald-100 dark:file:bg-emerald-950 dark:file:text-emerald-400"
+                                />
+                                {images.length > 0 && (
+                                    <div className="text-xs text-emerald-600 mt-2 font-bold px-2">{images.length} file(s) selected</div>
+                                )}
                             </div>
 
                             <div className="flex gap-4">

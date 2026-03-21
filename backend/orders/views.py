@@ -31,6 +31,30 @@ class CartView(APIView):
             
         return Response(CartSerializer(cart).data, status=status.HTTP_201_CREATED)
 
+class CartSyncView(APIView):
+    permission_classes = (permissions.IsAuthenticated,)
+
+    def post(self, request):
+        cart, _ = Cart.objects.get_or_create(user=request.user)
+        items_data = request.data.get('items', [])
+        
+        # Clear existing items and replace with sync data
+        cart.items.all().delete()
+        
+        for item in items_data:
+            try:
+                product = Product.objects.get(id=item['id'])
+                CartItem.objects.create(
+                    cart=cart,
+                    product=product,
+                    shop=product.shop,
+                    quantity=int(item.get('quantity', 1))
+                )
+            except Product.DoesNotExist:
+                continue
+                
+        return Response(CartSerializer(cart).data, status=status.HTTP_200_OK)
+
 class CheckoutView(APIView):
     permission_classes = (permissions.IsAuthenticated,)
 
