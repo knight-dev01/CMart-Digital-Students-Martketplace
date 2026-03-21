@@ -42,15 +42,72 @@ export const MarketCategories = () => {
 
 // CampusDropCard logic removed - use ProductCard.tsx (compact variant) instead
 
-// Campus Drops Component: Highlights new products
+// Campus Drops Component: Highlights new products with horizontal navigation
 export const CampusDrops = ({ products }: { products: any[] }) => {
+    const scrollRef = React.useRef<HTMLDivElement>(null);
+    const [showLeftArrow, setShowLeftArrow] = React.useState(false);
+    const [showRightArrow, setShowRightArrow] = React.useState(true);
+
+    const checkScroll = () => {
+        if (scrollRef.current) {
+            const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
+            setShowLeftArrow(scrollLeft > 0);
+            setShowRightArrow(scrollLeft < scrollWidth - clientWidth - 10);
+        }
+    };
+
+    const scroll = (direction: 'left' | 'right') => {
+        if (scrollRef.current) {
+            const { clientWidth } = scrollRef.current;
+            const scrollAmount = direction === 'left' ? -clientWidth * 0.8 : clientWidth * 0.8;
+            scrollRef.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        }
+    };
+
+    React.useEffect(() => {
+        const el = scrollRef.current;
+        if (el) {
+            el.addEventListener('scroll', checkScroll);
+            checkScroll();
+            window.addEventListener('resize', checkScroll);
+            return () => {
+                el.removeEventListener('scroll', checkScroll);
+                window.removeEventListener('resize', checkScroll);
+            };
+        }
+    }, []);
+
     return (
-        <section className="my-8 px-2 md:px-0">
+        <section className="my-8 px-2 md:px-0 relative group/drops">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-6 gap-2">
-                <h2 className="text-xl sm:text-2xl font-black text-[var(--foreground)] uppercase tracking-tight">🔥 Campus Drops</h2>
-                <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-widest bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-100 dark:border-emerald-900/50 px-3 py-1 rounded-full w-fit">New in last 48h</span>
+                <div className="flex items-center gap-3">
+                    <h2 className="text-xl sm:text-2xl font-black text-[var(--foreground)] uppercase tracking-tight">🔥 Campus Drops</h2>
+                    <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-widest bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-100 dark:border-emerald-900/50 px-3 py-1 rounded-full w-fit">New in last 48h</span>
+                </div>
+                
+                {/* Desktop Navigation Arrows */}
+                <div className="hidden sm:flex items-center gap-1.5">
+                    <button
+                        onClick={() => scroll('left')}
+                        disabled={!showLeftArrow}
+                        className={`w-8 h-8 rounded-full flex items-center justify-center border border-[var(--border-color)] transition-all ${showLeftArrow ? 'bg-[var(--card-bg)] text-[var(--foreground)] opacity-100 hover:scale-110 active:scale-95 shadow-sm' : 'bg-transparent text-[var(--text-muted)] opacity-30 cursor-not-allowed'}`}
+                    >
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M15 19l-7-7 7-7" /></svg>
+                    </button>
+                    <button
+                        onClick={() => scroll('right')}
+                        disabled={!showRightArrow}
+                        className={`w-8 h-8 rounded-full flex items-center justify-center border border-[var(--border-color)] transition-all ${showRightArrow ? 'bg-[var(--card-bg)] text-[var(--foreground)] opacity-100 hover:scale-110 active:scale-95 shadow-sm' : 'bg-transparent text-[var(--text-muted)] opacity-30 cursor-not-allowed'}`}
+                    >
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M9 5l7 7-7 7" /></svg>
+                    </button>
+                </div>
             </div>
-            <div className="flex space-x-3 sm:space-x-4 overflow-x-auto pb-4 scrollbar-hide snap-x snap-mandatory">
+
+            <div 
+                ref={scrollRef}
+                className="flex space-x-3 sm:space-x-4 overflow-x-auto pb-4 scrollbar-hide snap-x snap-mandatory"
+            >
                 {products?.map(product => (
                     <ProductCard key={product.id} product={product} variant="compact" />
                 ))}

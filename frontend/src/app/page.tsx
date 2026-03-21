@@ -73,7 +73,7 @@ export default function Home() {
             </div>
 
             {/* 5. Product Ads - Main Market Listings */}
-            <div className="w-full max-w-[min(600px,100vw)] mt-10 transition-all">
+            <div className="w-full mt-10 transition-all">
               <h2 className="text-xl font-black text-[var(--foreground)] uppercase tracking-tight px-4 sm:px-0 mb-4 flex items-center gap-2">
                 <span className="w-2 h-8 bg-emerald-600 rounded-full"></span>
                 Market Listings
@@ -82,7 +82,7 @@ export default function Home() {
               {/* Quick Filters */}
               <MarketCategories />
 
-              <div className="space-y-4 sm:space-y-8 mt-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 mt-6">
                 {products.map(product => (
                   <ProductCard key={product.id} product={product} />
                 ))}

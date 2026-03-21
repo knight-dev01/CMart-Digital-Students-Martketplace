@@ -49,24 +49,32 @@ export const ProductCard = ({ product, variant = 'default' }: { product: any, va
     if (variant === 'compact') {
         return (
             <div className="flex-none w-[220px] bg-[var(--card-bg)] rounded-[2.5rem] overflow-hidden border border-[var(--border-color)] group hover:shadow-xl transition-all">
-                <Link href={`/products/${product.id}`} className="block h-40 overflow-hidden relative">
-                    <img src={product.image || 'https://via.placeholder.com/300'} alt={product.name} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                <div className="block h-40 overflow-hidden relative">
+                    <Link href={`/products/${product.id}`} className="block w-full h-full">
+                        <img src={product.image || 'https://via.placeholder.com/300'} alt={product.name} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                    </Link>
                     <div className="absolute top-2 right-2 bg-white/80 backdrop-blur-md px-2 py-1 rounded-full text-[9px] font-black">
                         ₦{product.price.toLocaleString()}
                     </div>
-                </Link>
+                    {/* Compact Actions Row Top Left */}
+                    <div className="absolute top-2 left-2 flex gap-1.5">
+                        <button 
+                            onClick={() => handleAuthAction(handleLike)}
+                            className={`p-1.5 rounded-full backdrop-blur-md transition-all active:scale-95 ${isLiked ? 'bg-red-500 text-white' : 'bg-white/40 text-[var(--foreground)] hover:bg-white/60'}`}
+                        >
+                            <svg className="w-3.5 h-3.5" fill={isLiked ? "currentColor" : "none"} stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
+                        </button>
+                        <button 
+                            onClick={() => handleAuthAction(() => addToCart(product))}
+                            className="p-1.5 rounded-full backdrop-blur-md bg-white/40 text-[var(--foreground)] hover:bg-emerald-500 hover:text-white transition-all active:scale-95 animate-pulse shadow-lg shadow-emerald-500/20"
+                        >
+                            <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" /></svg>
+                        </button>
+                    </div>
+                </div>
                 <div className="p-4">
                     <h4 className="text-xs font-black text-[var(--foreground)] truncate uppercase tracking-tight">{product.name}</h4>
                     <p className="text-[9px] text-[var(--text-muted)] font-bold uppercase tracking-widest mt-1">{product.shop_name}</p>
-                    <button 
-                        onClick={(e) => {
-                            e.preventDefault();
-                            addToCart(product);
-                        }}
-                        className="mt-4 w-full py-2 bg-emerald-600 text-white rounded-xl text-[9px] font-black uppercase tracking-widest hover:bg-emerald-700 transition-all opacity-0 group-hover:opacity-100"
-                    >
-                        Quick Add
-                    </button>
                 </div>
             </div>
         );
@@ -92,7 +100,7 @@ export const ProductCard = ({ product, variant = 'default' }: { product: any, va
                     <div>
                         <h3 className="text-sm font-black text-[var(--foreground)] leading-none">{product.shop_name}</h3>
                         <div className="flex items-center gap-1.5 mt-1">
-                            <p className="text-[10px] text-[var(--text-muted)] font-bold uppercase tracking-widest leading-none">Campus Campus</p>
+                            <p className="text-[10px] text-[var(--text-muted)] font-bold uppercase tracking-widest leading-none">Campus Marketplace</p>
                             <span className="w-1 h-1 bg-[var(--border-color)] rounded-full"></span>
                             <div className="flex items-center gap-1 bg-green-50 dark:bg-green-900/20 px-1.5 py-0.5 rounded-md border border-green-100 dark:border-green-900/50">
                                 <svg className="w-2.5 h-2.5 text-green-600 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" /></svg>
@@ -112,18 +120,6 @@ export const ProductCard = ({ product, variant = 'default' }: { product: any, va
                     <span className="text-xs font-black text-[var(--foreground)]">₦{Number(product.price).toLocaleString()}</span>
                 </div>
 
-                {(!user || user.role === 'BUYER') && (
-                    <button
-                        onClick={(e) => {
-                            e.preventDefault();
-                            e.stopPropagation();
-                            addToCart(product);
-                        }}
-                        className="absolute bottom-4 left-4 right-4 sm:left-auto sm:right-4 bg-emerald-600/90 backdrop-blur-xl text-white px-6 py-3 rounded-2xl font-black text-[10px] uppercase tracking-widest shadow-2xl shadow-emerald-500/50 hover:bg-emerald-700 hover:scale-105 active:scale-95 transition-all opacity-0 group-hover:opacity-100 sm:translate-y-4 group-hover:translate-y-0"
-                    >
-                        Add to Cart
-                    </button>
-                )}
             </Link>
 
             <div className="p-4 px-4 sm:px-6">
@@ -139,6 +135,9 @@ export const ProductCard = ({ product, variant = 'default' }: { product: any, va
                             <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" /></svg>
                         </button>
                     </div>
+                    <button onClick={() => handleAuthAction(() => addToCart(product))} className="text-[var(--foreground)] hover:text-emerald-500 transition-all hover:scale-110 active:scale-95 animate-pulse bg-emerald-50 dark:bg-emerald-900/20 p-2 rounded-xl border border-emerald-100 dark:border-emerald-900/50">
+                        <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" /></svg>
+                    </button>
                 </div>
                 <div className="space-y-1">
                     <p className="text-xs font-black text-[var(--foreground)]">{likesCount} students like this</p>
