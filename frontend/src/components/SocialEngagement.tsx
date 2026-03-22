@@ -8,6 +8,15 @@ import { chatService } from '@/services/chat';
 import { useRequireAuth } from '@/hooks/useRequireAuth';
 import { ChatOverlay } from './ChatComponent';
 
+interface Shop {
+    id: number;
+    shop_name: string;
+    shop_slug?: string;
+    description?: string;
+    logo?: string;
+    vendor_user_id?: number;
+}
+
 // Featured Shops (Circles at the top)
 export const FeaturedShops = ({ shops }: { shops: Shop[] }) => (
     <div className="flex space-x-3 sm:space-x-4 overflow-x-auto pb-4 sm:pb-6 pt-2 scrollbar-hide px-4 sm:px-0 scroll-smooth">
@@ -59,9 +68,10 @@ export const FeaturedAds = ({ shops }: { shops: Shop[] }) => {
     };
 
     useEffect(() => {
-        const handleOpenChat = (e: React.MouseEvent) => {
-            if (e.detail) {
-                setSelectedVendor(e.detail);
+        const handleOpenChat = (e: Event) => {
+            const detail = (e as CustomEvent).detail;
+            if (detail) {
+                setSelectedVendor(detail);
                 setIsChatOpen(true);
             }
         };
@@ -120,12 +130,12 @@ export const FeaturedAds = ({ shops }: { shops: Shop[] }) => {
 
                 <div
                     ref={scrollRef}
-                    className="flex space-x-4 overflow-x-auto pb-10 scrollbar-hide snap-x snap-mandatory"
+                    className="flex space-x-4 overflow-x-auto pb-6 scrollbar-hide snap-x snap-mandatory"
                 >
                     {shops.map((shop, idx) => (
                         <div
                             key={shop.id}
-                            className="flex-none w-[240px] sm:w-[280px] h-[380px] sm:h-[480px] relative rounded-[2rem] sm:rounded-[2.5rem] overflow-hidden shadow-2xl group cursor-pointer transition-transform hover:scale-[1.02] snap-start"
+                            className="flex-none w-[240px] sm:w-[280px] h-[360px] sm:h-[420px] relative rounded-[2rem] sm:rounded-[2.5rem] overflow-hidden shadow-2xl group cursor-pointer transition-transform hover:scale-[1.02] snap-start"
                         >
                             <img
                                 src={idx === 0 ? "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80" : 

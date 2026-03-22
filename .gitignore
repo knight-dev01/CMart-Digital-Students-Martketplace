@@ -29,6 +29,7 @@ env/
 db.sqlite3
 *.log
 staticfiles/
+media/
 
 # IDE
 .vscode/

@@ -8,6 +8,7 @@ import PWARegistration from "@/components/PWARegistration";
 import { PageTransitionOverlay } from "@/components/PageTransitionOverlay";
 import { LoadingProvider } from "@/components/LoadingContext";
 import { NotificationProvider } from "@/components/NotificationContext";
+import { ErrorBoundary } from "@/components/ErrorBoundary";
 import "./globals.css";
 
 export const metadata = {
@@ -39,7 +40,9 @@ export default function RootLayout({
                   <CartProvider>
                     <PageTransitionOverlay />
                     <Navbar />
-                    {children}
+                    <ErrorBoundary>
+                      {children}
+                    </ErrorBoundary>
                     <MobileBottomNav />
                   </CartProvider>
                 </AuthGuard>

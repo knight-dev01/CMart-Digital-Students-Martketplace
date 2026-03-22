@@ -42,9 +42,13 @@ export const ChatOverlay = ({ isOpen, onClose, selectedUser }: { isOpen: boolean
         let interval: ReturnType<typeof setInterval>;
         if (isOpen && conversationId) {
             interval = setInterval(async () => {
-                const newMsgs = await chatService.getMessages(conversationId);
-                if (newMsgs.length !== messages.length) {
-                    setMessages(newMsgs);
+                try {
+                    const newMsgs = await chatService.getMessages(conversationId);
+                    if (newMsgs.length !== messages.length) {
+                        setMessages(newMsgs);
+                    }
+                } catch (err) {
+                    console.error("Chat polling error:", err);
                 }
             }, 3000);
         }

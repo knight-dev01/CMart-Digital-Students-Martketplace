@@ -5566,3 +5566,348 @@ INFO 2026-03-21 23:30:31,037 log 8288 19060 "GET /api/notifications/ HTTP/1.1" 2
 INFO 2026-03-21 23:30:31,055 log 8288 19060 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
 INFO 2026-03-21 23:31:21,088 log 8288 19060 "GET /api/notifications/ HTTP/1.1" 200 216
 INFO 2026-03-21 23:31:21,122 log 8288 19060 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-21 23:31:34,818 log 8288 19060 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-21 23:31:36,343 log 8288 15616 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-21 23:32:00,107 log 8288 15616 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-21 23:32:02,022 log 8288 15616 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-21 23:32:30,235 log 8288 15616 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-21 23:32:30,261 log 8288 19060 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-21 23:33:00,141 log 8288 19060 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-21 23:33:00,174 log 8288 19060 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-21 23:33:30,082 log 8288 19060 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-21 23:33:30,090 log 8288 15616 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-21 23:34:00,061 log 8288 15616 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-21 23:34:01,172 log 8288 15616 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-21 23:34:31,025 log 8288 15616 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-21 23:34:31,037 log 8288 15616 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-21 23:35:00,099 log 8288 15616 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-21 23:35:00,177 log 8288 15616 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-21 23:35:34,035 log 8288 15616 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-21 23:35:34,092 log 8288 19060 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-21 23:35:38,980 log 8288 15616 "OPTIONS /api/products/2/like/ HTTP/1.1" 200 0
+INFO 2026-03-21 23:35:39,964 log 8288 19060 "OPTIONS /api/products/2/like/ HTTP/1.1" 200 0
+INFO 2026-03-21 23:35:42,975 log 8288 14768 "OPTIONS /api/products/2/like/ HTTP/1.1" 200 0
+INFO 2026-03-21 23:35:44,405 log 8288 15616 "OPTIONS /api/products/2/like/ HTTP/1.1" 200 0
+INFO 2026-03-21 23:35:46,143 log 8288 19060 "OPTIONS /api/products/2/like/ HTTP/1.1" 200 0
+INFO 2026-03-21 23:35:47,205 log 8288 10092 "OPTIONS /api/products/2/like/ HTTP/1.1" 200 0
+INFO 2026-03-21 23:35:52,213 log 8288 10176 "OPTIONS /api/products/2/like/ HTTP/1.1" 200 0
+INFO 2026-03-21 23:35:53,465 log 8288 9628 "OPTIONS /api/products/2/like/ HTTP/1.1" 200 0
+INFO 2026-03-21 23:35:54,360 log 8288 14768 "POST /api/products/2/like/ HTTP/1.1" 200 18
+INFO 2026-03-21 23:35:57,461 log 8288 14768 "OPTIONS /api/products/1/like/ HTTP/1.1" 200 0
+INFO 2026-03-21 23:36:05,453 log 8288 14768 "OPTIONS /api/products/1/like/ HTTP/1.1" 200 0
+INFO 2026-03-21 23:36:12,614 log 8288 15616 "POST /api/products/2/like/ HTTP/1.1" 200 20
+INFO 2026-03-21 23:36:18,527 log 8288 19060 "POST /api/products/2/like/ HTTP/1.1" 200 18
+INFO 2026-03-21 23:36:35,812 log 8288 14768 "POST /api/products/2/like/ HTTP/1.1" 200 20
+INFO 2026-03-21 23:36:35,892 log 8288 15616 "POST /api/products/2/like/ HTTP/1.1" 200 20
+INFO 2026-03-21 23:36:35,894 log 8288 10176 "POST /api/products/2/like/ HTTP/1.1" 200 20
+INFO 2026-03-21 23:36:44,121 log 8288 10176 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-21 23:36:36,015 log 8288 19060 "POST /api/products/1/like/ HTTP/1.1" 200 18
+INFO 2026-03-21 23:36:44,135 log 8288 14768 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-21 23:36:44,236 log 8288 10176 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-21 23:37:03,698 log 8288 15616 "POST /api/products/1/like/ HTTP/1.1" 200 20
+INFO 2026-03-21 23:37:04,927 log 8288 19060 "POST /api/products/2/like/ HTTP/1.1" 200 18
+INFO 2026-03-21 23:37:04,944 log 8288 10176 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-21 23:37:05,016 log 8288 14768 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-21 23:37:05,055 log 8288 14768 "GET /api/notifications/ HTTP/1.1" 200 216
+ERROR 2026-03-21 23:37:10,497 log 8288 10092 Internal Server Error: /api/products/2/like/
+Traceback (most recent call last):
+  File "C:\Users\Adegoke\Desktop\CMart\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\CMart\backend\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Adegoke\Desktop\CMart\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Adegoke\Desktop\CMart\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Adegoke\Desktop\CMart\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Adegoke\Desktop\CMart\backend\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\CMart\backend\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Adegoke\Desktop\CMart\backend\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Adegoke\Desktop\CMart\backend\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Adegoke\Desktop\CMart\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Adegoke\Desktop\CMart\backend\products\views.py", line 90, in post
+    product = get_object_or_404(Product, pk=pk)
+  File "C:\Users\Adegoke\Desktop\CMart\backend\venv\Lib\site-packages\django\shortcuts.py", line 90, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\CMart\backend\venv\Lib\site-packages\django\db\models\query.py", line 635, in get
+    num = len(clone)
+  File "C:\Users\Adegoke\Desktop\CMart\backend\venv\Lib\site-packages\django\db\models\query.py", line 372, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\Adegoke\Desktop\CMart\backend\venv\Lib\site-packages\django\db\models\query.py", line 2000, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\CMart\backend\venv\Lib\site-packages\django\db\models\query.py", line 95, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "C:\Users\Adegoke\Desktop\CMart\backend\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1624, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\CMart\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\CMart\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Adegoke\Desktop\CMart\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Adegoke\Desktop\CMart\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\CMart\backend\venv\Lib\site-packages\django\db\utils.py", line 94, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Adegoke\Desktop\CMart\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\CMart\backend\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: database is locked
+ERROR 2026-03-21 23:37:10,502 log 8288 9628 Internal Server Error: /api/products/2/like/
+Traceback (most recent call last):
+  File "C:\Users\Adegoke\Desktop\CMart\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\CMart\backend\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Adegoke\Desktop\CMart\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Adegoke\Desktop\CMart\backend\venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Adegoke\Desktop\CMart\backend\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Adegoke\Desktop\CMart\backend\venv\Lib\site-packages\django\views\generic\base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\CMart\backend\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Adegoke\Desktop\CMart\backend\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Adegoke\Desktop\CMart\backend\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Adegoke\Desktop\CMart\backend\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Adegoke\Desktop\CMart\backend\products\views.py", line 92, in post
+    product.likes.remove(request.user)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\CMart\backend\venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1256, in remove
+    self._remove_items(self.source_field_name, self.target_field_name, *objs)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\CMart\backend\venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1586, in _remove_items
+    self.through._default_manager.using(db).filter(filters).delete()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Adegoke\Desktop\CMart\backend\venv\Lib\site-packages\django\db\models\query.py", line 1238, in delete
+    num_deleted, num_deleted_per_model = collector.delete()
+                                         ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Adegoke\Desktop\CMart\backend\venv\Lib\site-packages\django\db\models\deletion.py", line 471, in delete
+    count = qs._raw_delete(using=self.using)
+  File "C:\Users\Adegoke\Desktop\CMart\backend\venv\Lib\site-packages\django\db\models\query.py", line 1260, in _raw_delete
+    return query.get_compiler(using).execute_sql(ROW_COUNT)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\CMart\backend\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1624, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\CMart\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\CMart\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Adegoke\Desktop\CMart\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Adegoke\Desktop\CMart\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\CMart\backend\venv\Lib\site-packages\django\db\utils.py", line 94, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Adegoke\Desktop\CMart\backend\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Adegoke\Desktop\CMart\backend\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 359, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: database is locked
+ERROR 2026-03-21 23:37:11,323 log 8288 10092 "POST /api/products/2/like/ HTTP/1.1" 500 23697
+ERROR 2026-03-21 23:37:11,803 log 8288 9628 "POST /api/products/2/like/ HTTP/1.1" 500 24021
+INFO 2026-03-21 23:37:31,048 log 8288 9628 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-21 23:37:31,085 log 8288 9628 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-21 23:38:00,156 log 8288 9628 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-21 23:38:00,245 log 8288 9628 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-21 23:39:21,035 log 8288 9628 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-21 23:39:21,087 log 8288 9628 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-21 23:40:21,112 log 8288 9628 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-21 23:40:21,125 log 8288 9628 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-21 23:48:34,517 log 8288 17636 "OPTIONS /api/notifications/ HTTP/1.1" 200 0
+INFO 2026-03-21 23:48:34,854 log 8288 8656 "OPTIONS /api/notifications/activity/ HTTP/1.1" 200 0
+INFO 2026-03-21 23:48:35,134 log 8288 17636 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-21 23:48:35,154 log 8288 8656 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-21 23:49:01,363 log 8288 8656 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-21 23:49:01,397 log 8288 17636 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-21 23:49:31,052 log 8288 17636 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-21 23:49:31,057 log 8288 8656 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-21 23:50:01,032 log 8288 8656 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-21 23:50:01,036 log 8288 17636 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-21 23:50:52,379 log 8288 17636 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-21 23:50:52,384 log 8288 8656 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-21 23:51:00,039 log 8288 8656 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-21 23:51:00,053 log 8288 8656 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-21 23:51:30,379 log 8288 8656 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-21 23:51:30,408 log 8288 8656 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-21 23:52:01,078 log 8288 8656 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-21 23:52:01,089 log 8288 17636 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-21 23:53:21,244 log 8288 17636 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-21 23:53:21,306 log 8288 17636 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 00:01:04,439 autoreload 8288 19340 C:\Users\Adegoke\Desktop\CMart\backend\orders\views.py changed, reloading.
+INFO 2026-03-22 00:02:29,081 autoreload 9800 6136 Watching for file changes with StatReloader
+INFO 2026-03-22 00:04:06,934 autoreload 9800 6136 C:\Users\Adegoke\Desktop\CMart\backend\payments\views.py changed, reloading.
+INFO 2026-03-22 00:04:16,676 autoreload 8544 3144 Watching for file changes with StatReloader
+INFO 2026-03-22 00:05:20,305 autoreload 8544 3144 C:\Users\Adegoke\Desktop\CMart\backend\payments\views.py changed, reloading.
+INFO 2026-03-22 00:05:27,427 autoreload 8092 15168 Watching for file changes with StatReloader
+INFO 2026-03-22 01:07:39,530 log 8092 14096 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 01:07:39,531 log 8092 10680 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 01:08:00,693 log 8092 10680 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 01:08:00,710 log 8092 14096 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 01:08:31,314 log 8092 14096 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 01:08:31,332 log 8092 10680 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 01:09:00,754 log 8092 14096 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 01:09:00,770 log 8092 10680 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 01:09:31,087 log 8092 14096 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 01:09:31,502 log 8092 10680 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 01:10:00,727 log 8092 10680 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 01:10:00,745 log 8092 14096 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 01:10:30,675 log 8092 14096 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 01:10:31,183 log 8092 10680 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 01:11:01,364 log 8092 10680 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 01:11:01,382 log 8092 14096 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 01:11:30,752 log 8092 14096 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 01:11:30,771 log 8092 10680 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 01:12:00,836 log 8092 10680 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 01:12:00,856 log 8092 14096 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 01:12:30,709 log 8092 14096 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 01:12:30,750 log 8092 10680 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 01:13:00,212 log 8092 10680 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 01:13:00,255 log 8092 14096 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 01:13:30,802 log 8092 14096 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 01:13:30,817 log 8092 10680 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 01:14:00,160 log 8092 14096 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 01:14:00,164 log 8092 10680 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 01:14:31,689 log 8092 10680 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 01:14:31,793 log 8092 14096 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 01:15:05,510 log 8092 14096 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 01:15:05,526 log 8092 10680 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 01:15:31,025 log 8092 10680 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 01:15:31,061 log 8092 10680 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 01:16:01,036 log 8092 10680 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 01:16:01,497 log 8092 10680 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 01:17:21,024 log 8092 10680 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 01:17:21,132 log 8092 10680 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 01:18:21,321 log 8092 10680 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 01:18:21,329 log 8092 14096 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 01:19:21,117 log 8092 14096 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 01:19:21,124 log 8092 10680 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 01:20:21,062 log 8092 10680 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 01:20:21,066 log 8092 14096 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 01:21:21,068 log 8092 14096 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 01:21:21,072 log 8092 10680 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 01:22:21,035 log 8092 10680 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 01:22:21,047 log 8092 10680 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 01:23:21,039 log 8092 10680 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 01:23:21,052 log 8092 10680 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 01:24:21,036 log 8092 10680 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 01:24:21,048 log 8092 10680 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 01:25:21,111 log 8092 10680 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 01:25:21,139 log 8092 10680 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 01:26:21,039 log 8092 10680 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 01:26:21,051 log 8092 10680 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 01:27:21,040 log 8092 10680 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 01:27:21,052 log 8092 10680 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 01:28:21,145 log 8092 10680 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 01:28:21,200 log 8092 10680 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 01:29:21,031 log 8092 10680 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 01:29:21,043 log 8092 10680 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 01:30:21,042 log 8092 10680 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 01:30:21,054 log 8092 10680 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 01:31:21,023 log 8092 10680 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 01:31:21,036 log 8092 10680 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 01:32:21,071 log 8092 10680 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 01:32:21,082 log 8092 10680 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 01:33:21,033 log 8092 10680 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 01:33:21,045 log 8092 10680 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 01:34:21,033 log 8092 10680 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 01:34:21,045 log 8092 10680 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 01:35:21,093 log 8092 10680 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 01:35:21,124 log 8092 10680 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 01:36:21,025 log 8092 10680 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 01:36:21,087 log 8092 10680 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 01:37:25,271 log 8092 10300 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 01:37:25,277 log 8092 7828 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 01:38:21,039 log 8092 7828 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 01:38:21,052 log 8092 7828 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 01:39:21,090 log 8092 7828 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 01:39:21,096 log 8092 10300 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 01:40:21,041 log 8092 10300 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 01:40:21,055 log 8092 10300 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 01:41:21,099 log 8092 10300 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 01:41:21,113 log 8092 10300 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 01:42:21,039 log 8092 10300 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 01:42:21,052 log 8092 10300 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 01:43:21,031 log 8092 10300 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 01:43:21,043 log 8092 10300 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 01:44:21,181 log 8092 10300 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 01:44:21,206 log 8092 10300 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 01:45:21,068 log 8092 10300 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 01:45:21,085 log 8092 10300 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 01:46:21,039 log 8092 10300 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 01:46:21,065 log 8092 10300 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 01:47:21,039 log 8092 10300 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 01:47:21,053 log 8092 10300 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 01:48:21,054 log 8092 10300 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 01:48:21,067 log 8092 10300 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 01:49:21,529 log 8092 15676 "OPTIONS /api/notifications/ HTTP/1.1" 200 0
+INFO 2026-03-22 01:49:21,530 log 8092 12552 "OPTIONS /api/notifications/activity/ HTTP/1.1" 200 0
+INFO 2026-03-22 01:49:21,669 log 8092 12552 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 01:49:21,675 log 8092 15676 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 02:02:54,742 autoreload 8092 15168 C:\Users\Adegoke\Desktop\CMart\backend\core\settings.py changed, reloading.
+INFO 2026-03-22 02:03:16,380 autoreload 17916 16820 Watching for file changes with StatReloader
+INFO 2026-03-22 02:04:06,252 autoreload 17916 16820 C:\Users\Adegoke\Desktop\CMart\backend\core\settings.py changed, reloading.
+INFO 2026-03-22 02:04:10,681 autoreload 9980 16676 Watching for file changes with StatReloader
+INFO 2026-03-22 02:05:37,354 log 9980 9500 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 02:05:37,354 log 9980 12308 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 02:06:00,221 log 9980 9500 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 02:06:00,307 log 9980 9500 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 02:06:30,735 log 9980 12664 "GET /api/notifications/activity/ HTTP/1.1" 200 2921
+INFO 2026-03-22 02:06:30,781 log 9980 13064 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 02:07:21,036 log 9980 13064 "GET /api/notifications/ HTTP/1.1" 200 216
+INFO 2026-03-22 02:07:21,048 log 9980 13064 "GET /api/notifications/activity/ HTTP/1.1" 200 2921

@@ -48,7 +48,7 @@ class CartSyncView(APIView):
                     cart=cart,
                     product=product,
                     shop=product.shop,
-                    quantity=int(item.get('quantity', 1))
+                    quantity=max(1, int(item.get('quantity', 1)))
                 )
             except Product.DoesNotExist:
                 continue

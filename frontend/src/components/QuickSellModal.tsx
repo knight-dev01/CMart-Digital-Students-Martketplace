@@ -28,7 +28,7 @@ export const QuickSellModal = ({ isOpen, onClose }: { isOpen: boolean, onClose: 
         setStatus('idle');
 
         try {
-            const token = localStorage.getItem('token');
+            const token = localStorage.getItem('access_token');
             const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'}/api/products/create/`, {
                 method: 'POST',
                 headers: {

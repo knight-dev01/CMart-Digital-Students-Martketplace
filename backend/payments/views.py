@@ -5,8 +5,7 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from django.conf import settings
 from django.db import transaction
-from orders.models import Order, OrderItem, CommissionRecord
-from vendors.models import VendorWallet
+from orders.models import Order, OrderItem
 from .models import Transaction
 from . import services
 
@@ -88,28 +87,10 @@ class PaystackWebhookView(APIView):
                         order.payment_status = 'PAID'
                         order.save()
                         
-                        # Process commission distribution
-                        self.process_commissions(order)
+                        # Process commission distribution securely
+                        order.complete_order()
             except Transaction.DoesNotExist:
                 logger.error(f"Webhook transaction not found for ref: {reference}")
                 return Response({'error': 'Transaction not found'}, status=status.HTTP_404_NOT_FOUND)
 
         return Response(status=status.HTTP_200_OK)
-
-    def process_commissions(self, order):
-        for item in order.items.all():
-            # 10% Platform Commission
-            commission_amt = item.subtotal * 0.10
-            vendor_amt = item.subtotal - commission_amt
-            
-            CommissionRecord.objects.create(
-                order_item=item,
-                platform_commission=commission_amt,
-                vendor_earnings=vendor_amt
-            )
-
-            
-            # Update Vendor Wallet
-            wallet, created = VendorWallet.objects.get_or_create(vendor=item.vendor)
-            wallet.balance += vendor_amt
-            wallet.save()
