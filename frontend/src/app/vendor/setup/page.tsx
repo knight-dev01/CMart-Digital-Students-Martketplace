@@ -13,9 +13,8 @@ export default function ShopSetupPage() {
     const [formData, setFormData] = useState({
         shop_name: '',
         description: '',
-        phone: '',
-        university_id: '',
-        university: user?.university || ''
+        phone_number: '',
+        matric_number: ''
     });
 
     const handleSubmit = async (e: React.FormEvent) => {
@@ -92,8 +91,8 @@ export default function ShopSetupPage() {
                                     <input 
                                         type="tel" 
                                         required
-                                        value={formData.phone}
-                                        onChange={(e) => setFormData({...formData, phone: e.target.value})}
+                                        value={formData.phone_number}
+                                        onChange={(e) => setFormData({...formData, phone_number: e.target.value})}
                                         placeholder="081XXXXXXX" 
                                         className="w-full bg-[var(--background)] border-2 border-[var(--border-color)] rounded-2xl p-5 text-sm font-bold outline-none focus:border-emerald-500 transition-all" 
                                     />
@@ -103,8 +102,8 @@ export default function ShopSetupPage() {
                                     <input 
                                         type="text" 
                                         required
-                                        value={formData.university_id}
-                                        onChange={(e) => setFormData({...formData, university_id: e.target.value})}
+                                        value={formData.matric_number}
+                                        onChange={(e) => setFormData({...formData, matric_number: e.target.value})}
                                         placeholder="TNU/2024/..." 
                                         className="w-full bg-[var(--background)] border-2 border-[var(--border-color)] rounded-2xl p-5 text-sm font-bold outline-none focus:border-emerald-500 transition-all" 
                                     />

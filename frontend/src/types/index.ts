@@ -7,6 +7,7 @@ export interface User {
   is_vendor: boolean;
   role: string;
   avatar?: string;
+  university?: string;
 }
 
 export interface Shop {

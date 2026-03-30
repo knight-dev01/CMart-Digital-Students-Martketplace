@@ -21,9 +21,10 @@ export const ProductCard = ({ product, variant = 'default' }: { product: Product
     const [showCopiedBadge, setShowCopiedBadge] = useState(false);
 
     const handleChat = async () => {
-        if (!product.vendor_id && !product.vendor_user_id) return;
+        const targetId = product.vendor_id || product.vendor_user_id;
+        if (!targetId) return;
         try {
-            const conv = await chatService.getOrCreateConversation(product.vendor_id || product.vendor_user_id);
+            const conv = await chatService.getOrCreateConversation(targetId);
             router.push(`/messages?convId=${conv.id}`);
         } catch (err) {
             console.error("Chat redirection failed:", err);
@@ -34,7 +35,7 @@ export const ProductCard = ({ product, variant = 'default' }: { product: Product
         try {
             await productService.likeProduct(product.id);
             setIsLiked(!isLiked);
-            setLikesCount((prev: number) => isLiked ? prev - 1 : prev + 1);
+            setLikesCount((prev: number) => isLiked ? Math.max(0, prev - 1) : prev + 1);
         } catch (err) {
             console.error("Liking failed:", err);
         }

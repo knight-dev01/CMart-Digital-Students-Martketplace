@@ -1,9 +1,15 @@
+﻿from django.http import JsonResponse
+
+def health_check(request):
+    return JsonResponse({'status': 'ok'})
+
 from django.contrib import admin
 from django.urls import path, include
 from django.views.generic import TemplateView
 from drf_spectacular.views import SpectacularAPIView, SpectacularRedocView, SpectacularSwaggerView
 
 urlpatterns = [
+    path('api/health/', health_check, name='health_check'),
     path('', TemplateView.as_view(template_name='index.html'), name='home'),
     path('shops/', TemplateView.as_view(template_name='shops_list.html'), name='shops_list'),
     path('shops/<slug:shop_slug>/', TemplateView.as_view(template_name='shop_detail.html'), name='shop_detail_view'),
@@ -31,5 +37,6 @@ from django.conf.urls.static import static
 
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
 
 

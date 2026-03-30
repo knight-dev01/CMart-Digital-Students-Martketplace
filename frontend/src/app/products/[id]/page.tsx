@@ -10,6 +10,7 @@ import Link from 'next/link';
 
 export default function ProductDetailPage() {
     const { id } = useParams();
+    const router = useRouter();
     const [product, setProduct] = useState<any>(null);
     const [loading, setLoading] = useState(true);
     const [isLiked, setIsLiked] = useState(false);
