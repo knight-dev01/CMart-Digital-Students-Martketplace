@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Deploy to Railway
-        uses: railwayapp/deploy-action@v1
+        uses: railwayapp/actions@latest
         with:
           token: ${{ secrets.RAILWAY_TOKEN }}
           service: CMart-Digital-Students-Martketplace
