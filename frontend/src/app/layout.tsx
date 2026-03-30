@@ -9,6 +9,7 @@ import { PageTransitionOverlay } from "@/components/PageTransitionOverlay";
 import { LoadingProvider } from "@/components/LoadingContext";
 import { NotificationProvider } from "@/components/NotificationContext";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
 export const metadata = {
@@ -50,6 +51,7 @@ export default function RootLayout({
             </LoadingProvider>
           </AuthProvider>
         </ThemeProvider>
+        <SpeedInsights />
       </body>
     </html>
   );
