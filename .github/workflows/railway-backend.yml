@@ -14,9 +14,17 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Install Railway CLI
+        env:
+          npm_config_fetch_timeout: 120000
+        run: |
+          npm config set fetch-timeout 120000
+          npm config set fetch-retry-mintimeout 20000
+          npm config set fetch-retry-maxtimeout 120000
+          npm i -g @railway/cli || (sleep 10 && npm i -g @railway/cli)
+
       - name: Deploy to Railway
-        uses: railwayapp/actions@latest
-        with:
-          token: ${{ secrets.RAILWAY_TOKEN }}
-          service: CMart-Digital-Students-Martketplace
-          environment: production
+        working-directory: ./backend
+        run: railway up --service "CMart-Digital-Students-Martketplace" --detach
+        env:
+          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
